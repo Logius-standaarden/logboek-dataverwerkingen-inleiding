@@ -29,7 +29,7 @@ In het Register van verwerkingsactiviteiten (art 30 AVG) zijn de binnen de organ
 In de standaard wordt geen identificerende informatie opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). We gaan ervan uit dat daar in de organisatie een Audit log voor is ingericht, aangezien dat verplicht is vanuit BIO. 
 Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard door te verwijzen naar de Operation ID die de verwerking identificeert. 
 
-*Voor redenatie hierachter, zie besluit 4.4 (@Nil/Martin: maak een link naar 4.4 ajb)*
+Voor redenatie hierachter, zie [besluit 4.4](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#geen-gegevens-over-gebruikers-in-logregels)
 
 Daarnaast is het van belang om te beseffen dat het vastleggen van informatie over een gebruiker in de Audit Log, ook een dataverwerking is. Immers, de gegevens van de gebruiker (bijv. de ambtenaar die het systeem heeft gebruikt) worden daarbij opgeslagen (verwerkt). Dat is dus een eigen, aparte, dataverwerking die gelogd dient te worden in de Logboek Dataverwerkingen van de verwerker.
 
