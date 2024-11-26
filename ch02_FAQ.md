@@ -66,5 +66,3 @@ Wat gebeurt er als ik mijn RvvA wil wijzigen na de implementatie van de Logboek 
 Het is van belang dat als de RvvA aangepast moet worden,de wijzigingen toegevoegd worden als nieuwe verwerkingsactiviteit met een eigen unieke identificator. Bestaande verwerkingsactiviteiten mogen niet worden aangepast of verwijderd.
 
 Hierdoor blijven de oude verwijzingen uit de Logboek Dataverwerking intact. 
-
-### Waar vind ik meer informatie? 
