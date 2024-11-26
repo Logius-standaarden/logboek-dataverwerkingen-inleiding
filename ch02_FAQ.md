@@ -39,7 +39,7 @@ In de logging worden geen identificerende gegevens opgeslagen over gebruiker van
 ### Kan je de standaard implementeren als je een cloud (SaaS) applicatie gebruikt?
 Ja dat kan. Het is wel van belang een duidelijk onderscheid te maken tussen verwerkingsverantwoordelijke en een verwerker van de gegevens. Dit bepaalt bijvoorbeeld de Register van verwerkingsactiviteiten waarnaar u dient te verwijzen bij implementatie van de standaard. 
 
-Voor meer informatie over de rol van een verwerkingsverantwoordelijke en een verwerker kunt u de de website van Autoriteit Persoonsgegevens raadplegen. *(Nil/Martin: link https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verantwoordelijke-en-verwerker invoegen).*
+Voor meer informatie over de rol van een verwerkingsverantwoordelijke en een verwerker kunt u de de website van [Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verantwoordelijke-en-verwerker) raadplegen.
 
 ### Is de performance van de standaard getest? / Zal de standaard de performance van mijn applicaties beperken?
 Ja, de performance is getest met een aantal demo-applicaties. De testen toonden aan dat er weinig tot geen performanceverlies was op geraakte applicaties.
