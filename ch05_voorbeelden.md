@@ -774,7 +774,7 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |receiver |27fdey98605etc48|
 |attributeKey |dplCoreProcessingActivityId|
 |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|<u>BSN 2<\u>|OK|
+|<u>BSN 2</u>|OK|
 |attributeKey |dplCoreDataSubjectId|
 |attributeValue |342ec27-aa41-dav6-219a178f5ty6|
 |operationId |aef53rfa59e240ert|
