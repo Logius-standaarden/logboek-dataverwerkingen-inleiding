@@ -704,16 +704,19 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |receiver |`<leeg>`|
 |attributeKey |dplCoreProcessingActivityId|
 |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |ddj2ey299-0cf4-3541-9ar6-21ia178fcfrr|
 |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
 |foreignOperation.operationId |b2e339a595246e01|
+|<u>BSN 1</u>|`<leeg>`|
+|attributeKey |dplCoreDataSubjectId|
+|attributeValue |ddj2ey299-0cf4-3541-9ar6-21ia178fcfrr|
+|operationId |r2e3229059BG246e01|
+|parentOperationId |7a22eb38-bca6-463f-9955-54ab040287cb|
 
 **2. Log opvragenPersoonsgegevens (log BRP) persoon 2:**
 
 | Attribuut   | Waarde   |
 |-------------|----------|
-|operationId |7a45638-bca6-463f-www955-54ab04028786|
+|operationId |7a22eb38-bca6-463f-9955-54ab040287cb|
 |operationName |opvragenPersoonsgegevens|
 |parentOperationId |`<leeg>`|
 |traceId |c6adf4df949d03c662b53e95debdc411|
@@ -725,10 +728,13 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |receiver |`<leeg>`|
 |attributeKey| dplCoreProcessingActivityId|
 |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |f4j2ey299-3er4-3aa41-9ar6-21ia178fc3tyy|
 |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
 |foreignOperation.operationId |b2e339a595246e01|
+|<u>BSN 2</u> |`<leeg>`|
+|attributeKey |dplCoreDataSubjectId|
+|attributeValue |f4j2ey299-3er4-3aa41-9ar6-21ia178fc3tyy|
+|operationId|9as5y3t-3ca7-463f-wwt9a5-54ab0402rft|
+|parentOperationId|7a22eb38-bca6-463f-9955-54ab040287cb|
 
 **3. Log tonenNAWGegevens (log gemeente) persoon 1:**
 
@@ -746,8 +752,11 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |receiver |27fdey98605etc48|
 |attributeKey |dplCoreProcessingActivityId|
 |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+|<u>BSN 1</u>|`<leeg>`|
 |attributeKey| dplCoreDataSubjectId|
 |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+|operationId|42f33gfa595246ert|
+|parentOperationId|b2e339a595246e01|
 
 **4. Log tonenNAWGegevens (log gemeente) persoon 2:**
 
@@ -765,8 +774,11 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |receiver |27fdey98605etc48|
 |attributeKey |dplCoreProcessingActivityId|
 |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+|<u>BSN 2<\u>|OK|
 |attributeKey |dplCoreDataSubjectId|
 |attributeValue |342ec27-aa41-dav6-219a178f5ty6|
+|operationId |aef53rfa59e240ert|
+|parentOperationId |b2e339a595246e01|
 
 ### Relatie tussen gegevens (Registratie verhuizing)
 
@@ -777,9 +789,9 @@ Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegev
 
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
-- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de gegevens van een Betrokkene kan bekijken. Deze acties zijn gegevensverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
+- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de gegevens van een Betrokkene kan bekijken. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
 
-- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het operationId en traceId (gemeentelogboek) te linken aan het foreignOperationId en foreignTraceId (BRP-logboek). De aanroep van de gemeente-applicatie naar het BRP betreft één opvraag op basis van één adres, één operationId en één traceId. Het resultaat is meervoudig en moeten naar dezelfde operationId en traceId leiden van de gemeente-applicatie. Het onderscheid zit in de verschillende BSN’s van de personen.
+- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het operationId en traceId (gemeentelogboek) te linken aan het foreignOperationId en foreignTraceId (BRP-logboek). De aanroep van de gemeente-applicatie naar het BRP betreft één opvraag op basis van één adres, één operationId en één traceId. Het resultaat is meervoudig en moeten naar dezelfde operationId en traceId leiden van de gemeente-applicatie. Het onderscheid zit in de verschillende BSN’s van de personen die via een parentOperationiD gekoppeld zijn.
 
 - **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
