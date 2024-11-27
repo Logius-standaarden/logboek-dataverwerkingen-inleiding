@@ -25,9 +25,9 @@ De volgende zaken worden **niet** behandeld in deze standaard:
 
 •	**Logging ten behoeve van motivatie totstandkoming besluitvorming**: anders dan uitgevoerde  dataverwerkingen (niet: beslisregels, algoritmes, etcetera).
 
-•	**Correcties op- en verwijdering van verwerkte data**: dit wordt gezien als verwerking en volgt de gewone route van datalogging. Voor meer informatie zie besluit 4.5.
+•	**Correcties op- en verwijdering van verwerkte data**: dit wordt gezien als verwerking en volgt de gewone route van datalogging. Voor meer informatie zie [besluit 4.5](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#standaard-beschrijft-geen-interface-voor-verwijderen-van-logs).
 
-•	**Beperkingen op informatieplichten (bijvoorbeeld indien er een strafrechtelijk onderzoek plaatsvindt)**: het is aan de organisatie zelf om procedures te implementeren om beperking van inzage uit te voeren. Voor meer informatie zie besluit 4.6.
+•	**Beperkingen op informatieplichten (bijvoorbeeld indien er een strafrechtelijk onderzoek plaatsvindt)**: het is aan de organisatie zelf om procedures te implementeren om beperking van inzage uit te voeren. Voor meer informatie zie [besluit 4.6](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#vertrouwelijkheid-wordt-vastgelegd-per-verwerkingsactiviteit).
 
 
 ## Totstandkoming van de standaard - aanleiding en achtergrond
