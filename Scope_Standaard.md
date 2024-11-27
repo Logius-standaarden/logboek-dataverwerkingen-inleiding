@@ -1,9 +1,9 @@
-# Scope
+## Scope
 Dit beschrijft een overzicht van de scope van de standaard, inclusief de zaken die wel en niet binnen de scope van de standaard vallen.
-## In scope van deze standaard
+### In scope van deze standaard
 Logging over dataverwerkingen in overheidssystemen. Het uitgangspunt van deze standaard is de verantwoordingsplicht van de overheid over de uitvoering van haar taken en de wetten en kaders die daarbij horen. 
 
-## Buiten scope van deze standaard
+### Buiten scope van deze standaard
 De volgende zaken worden **niet** behandeld in deze standaard:
 
 •	**Toegangsbeheer**: Logging rondom toegang tot systemen en data, waarbij zowel succesvolle als mislukte pogingen om toegang te krijgen worden vastgelegd. Deze logs zijn bedoeld voor het controleren van wie toegang heeft tot gevoelige informatie en voor het detecteren van ongeautoriseerde toegang.
