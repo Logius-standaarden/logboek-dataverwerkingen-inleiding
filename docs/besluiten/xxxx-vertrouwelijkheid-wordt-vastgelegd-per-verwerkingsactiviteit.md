@@ -6,9 +6,7 @@
 
 ## Context en probleemstelling
 
-Alle verwerkingen worden gelogd. Een deel van deze verwerkingen mag (moet!) bekend worden bij Betrokkenen, een deel niet. Hoe moet dit onderscheid geïmplementeerd worden?
-
-Voorbeeld:
+Alle verwerkingen worden gelogd. Een deel van deze verwerkingen mag bekend worden bij Betrokkenen, een deel niet. Hoe moet dit onderscheid geïmplementeerd worden?
 
 Voorbeeld:
 
