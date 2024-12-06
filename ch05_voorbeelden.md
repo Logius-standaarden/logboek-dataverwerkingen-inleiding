@@ -644,7 +644,7 @@ Deze case beschrijft de samenstelling van een huishouding op een bepaald adres. 
   - resource/name/version
   - receiver
   - dataSubject
-- Het is optioneel om het BSN-nummer (dplCoreDataSubjectId) te versleutelen ten behoeve van extra gegevensbeveiliging. In dit voorbeeld wordt versleuteling van gegevens toegepast.
+- Het is optioneel om het BSN (dplCoreDataSubjectId) te versleutelen ten behoeve van extra gegevensbeveiliging. In dit voorbeeld wordt versleuteling van gegevens toegepast.
 
 ### Globaal proces (Registratie verhuizing)
 
