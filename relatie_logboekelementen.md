@@ -41,6 +41,7 @@ Elke (sub)Operation krijgt een eigen, unieke operationId. Hiermee zijn alle logg
 ![Alt text](./medias/relatie_logboekelementen_afbeelding8.png)
 
 Als er ook subOperations plaatsvinden, moet er ook een ‘parentOperationId’ worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
+
 ![Alt text](./medias/relatie_logboekelementen_afbeelding9.png)
 
 In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke operationId. Daarnaast wordt bij deze Operation ook het operationId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke operationId wordt het ‘foreignOperationId’ genoemd en krijgt de waarde gelijk aan het operationId van de initiërende Operation van de vragende organisatie.
