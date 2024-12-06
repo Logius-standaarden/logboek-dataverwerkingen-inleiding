@@ -16,7 +16,7 @@ Elke organisatie die data verwerkt kan de standaard Logboek Dataverwerking inzet
 
 Nee, de standaard kan worden toegepast voor andere toepassingen zoals bijvoorbeeld de registratie van (geografische) objecten.
 
-### Wordt in de standaard ook uitgelegd hoe loggings plaatsvinden ten aanzien van beveiligingsincidenten, technische systeemactiviteiten en toegangsbeheer?
+### Is in de standaard  opgenomen hoe logging plaatsvinden ten aanzien van beveiligingsincidenten (denk ook aan technische systeemactiviteiten en toegangsbeheer)?
 
 Nee, deze materie is buiten scope van de standaard Logboek Dataverwerkingen.
 
