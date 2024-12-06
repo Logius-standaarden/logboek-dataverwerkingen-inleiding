@@ -805,11 +805,11 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 ## Voorbeeldapplicaties
 
-### Register van de verwerkingsactiviteiten (RVA)
+### Register van de verwerkingsactiviteiten (RvvA)
 
-Dit project biedt een overzicht van gegevensverwerkingen binnen de overheid, waaronder het Register van de verwerkingsactiviteiten (RVA). Dit register documenteert hoe gegevens worden verwerkt, waarschijnlijk ter ondersteuning van transparantie en naleving van de Algemene Verordening Gegevensbescherming (AVG).
+Dit project biedt een overzicht van gegevensverwerkingen binnen de overheid, waaronder het Register van de verwerkingsactiviteiten (RvvA). Dit register documenteert hoe gegevens worden verwerkt, waarschijnlijk ter ondersteuning van transparantie en naleving van de Algemene Verordening Gegevensbescherming (AVG).
 
-Je kunt de voorbeeldapplicatie van het logboek en de specifieke RVA-sectie hier bekijken:
+Je kunt de voorbeeldapplicatie van het logboek en de specifieke RvvA-sectie hier bekijken:
 
 - [gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen/rva](https://gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen/rva)
 - [gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen](https://gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen)
