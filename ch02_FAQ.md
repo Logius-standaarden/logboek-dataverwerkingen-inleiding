@@ -26,16 +26,12 @@ Het ministerie van Binnenlandse Zaken en Koninkrijksrelaties is verantwoordelijk
 
 ### Is mijn organisatie verplicht de standaard Logboek Dataverwerking te implementeren?
 
-Er zijn momenteel geen verplichtingen voor gebruik van de standaard. Op termijn zal de standaard aangeboden worden aan het Forum Standaardisatie voor mogelijke opname op de Pas-toe-of-leg-uit-lijst. 
-
-### Hoe werken het Register van verwerkingsactiviteiten en het Logboek Dataverwerkingen samen?
-
-In het Register van verwerkingsactiviteiten (art 30 AVG) zijn de binnen de organisatie uit te voeren taken en processen waarin verwerkingen worden uitgevoerd benoemd. In de standaard wordt de relatie gelegd tussen de beschreven processen in het register en de daadwerkelijk uitgevoerde activiteit waarbij data zijn verwerkt. Hiermee is inzicht in de taak en activiteit waarvoor de data verwerkt zijn.
+Er zijn momenteel geen verplichtingen voor gebruik van de standaard. Op termijn zal de standaard aangeboden worden aan het Forum Standaardisatie voor mogelijke opname op de Pas-toe-of-leg-uit-lijst.
 
 ### Wat is de relatie van Audit Log met de standaard?
 
 In de standaard wordt geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). We gaan ervan uit dat daar in de organisatie een Audit log voor is ingericht, aangezien dat verplicht is vanuit BIO. 
-Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard door te verwijzen naar de Operation ID die de verwerking identificeert. 
+Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard door te verwijzen naar de Operation ID die de verwerking identificeert.
 
 Voor redenatie hierachter, zie [besluit 4.4](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#geen-gegevens-over-gebruikers-in-logregels)
 
@@ -43,7 +39,7 @@ Daarnaast is het van belang om te beseffen dat het vastleggen van data over een 
 
 ### Zijn er dingen die je moet aanpassen aan je Audit Log als je de standaard implementeert?
 
-In de logging worden geen identificerende gegevens opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard te maken, kan de Audit Log worden aangepast door te verwijzen naar de Operation ID die de dataverwerking identificeert die door de gebruiker is uitgevoerd. 
+In de logging worden geen identificerende gegevens opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard te maken, kan de Audit Log worden aangepast door te verwijzen naar de Operation ID die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
 
 ### Kan je de standaard implementeren als je een cloud (SaaS) applicatie gebruikt?
 
@@ -55,6 +51,10 @@ Voor meer informatie over de rol van een verantwoordelijke en een verwerker kunt
 
 Ja, de performance is getest met een aantal demo-applicaties. De testen toonden aan dat er weinig tot geen performanceverlies was op geraakte applicaties.
 
+### Hoe werken het Register van verwerkingsactiviteiten (RvvA) en het Logboek Dataverwerkingen samen?
+
+In het RvvA ofwel het Register van verwerkingsactiviteiten (art 30 AVG) zijn de binnen de organisatie uit te voeren taken en processen waarin verwerkingen worden uitgevoerd benoemd. In de standaard wordt de relatie gelegd tussen de beschreven processen in het register en de daadwerkelijk uitgevoerde activiteit waarbij data zijn verwerkt. Hiermee is inzicht in de taak en activiteit waarvoor de data verwerkt zijn.
+
 ### Moet ik mijn RvvA aanpassen als ik deze standaard implementeer?
 
 Voor de implementatie van deze standaard is het noodzakelijk dat iedere verwerkingsactiviteit in uw RvvA uniek te identificeren is. Mocht dat nog niet het geval zijn, voeg dan een unieke identificator toe aan alle dataverwerkingen.
@@ -65,7 +65,7 @@ Het is van belang dat, als de  RvvA wordt aangepast,de wijzigingen toevoegd word
 
 ### Mijn organisatie heeft geen RvvA API. (Hoe) Kan ik dan nog steeds de standaard implementeren?
 
-Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de RvvA is uiteraard wel verplicht in het geval van persoonsgegevensverwerking. Voor de implementatie van de Logboek Dataverwerkingen is het van belang dat iedere verwerkingsactiviteit te identificeren is met een unieke identificator. 
+Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de RvvA is uiteraard wel verplicht in het geval van persoonsgegevensverwerking. Voor de implementatie van de Logboek Dataverwerkingen is het van belang dat iedere verwerkingsactiviteit te identificeren is met een unieke identificator.
 
 Stel de RvvA is  uitgewerkt in een MS-Exceldocument en het systeem heeft daar geen API-toegang toe Daarnaast zijn de dataverwerkingenin de RvvA niet uniek te identificeren met een identificator. 
 
