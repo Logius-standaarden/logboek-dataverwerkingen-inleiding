@@ -6,7 +6,7 @@ Het idee is dat het Logboek Dataverwerkingen een basis biedt om te zorgen dat de
 
 *Informatiehuishouding van de overheid moet op orde worden gebracht.* De overheid werkt ten dienste van burgers en bedrijven. De overheid verwerkt daarvoor informatie van deze burgers en bedrijven. Het is belangrijk dat de informatiehuishouding van de overheid op orde is, zodat de overheid transparant en aanspreekbaar is, en zich daarover goed kan verantwoorden.  
 
-Dat werkt als een soort vliegwiel, omdat daardoor ook de kwaliteit van de informatie beter wordt, waardoor de overheid betere dienstverlening kan bieden en ook kan zorgen dat de burger minder met fouten wordt geconfronteerd, of fouten beter en sneller kan herstellen als deze zich onverhoopt voordoen.
+Dat werkt als een soort vliegwiel, omdat daardoor ook de kwaliteit van de informatie beter wordt. De overheid kan daarmee betere dienstverlening bieden en ook zorgen dat de burger minder met fouten wordt geconfronteerd, of dat overheden fouten beter en sneller kunnen herstellen als deze zich onverhoopt voordoen.
 
 *Eenduidige en integrale verantwoording over dataverwerkingen door de overheid.* Belangrijk is dat overheidsorganisaties op een eenduidige manier met informatie omgaan en op een eenduidige manier informatie met elkaar uitwisselen.  
 
