@@ -18,10 +18,13 @@ Als er een Dataverwerking plaatsvindt, moet dit altijd een relatie hebben met he
 Als er meerdere dezelfde Dataverwerkingen (‘Operations’) zijn, krijgen deze dus allemaal dezelfde processingActivityId.
 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding1.png)
+
 In het geval er een Dataverwerking plaatsvindt ter ondersteuning van een andere Dataverwerking (suboperation), dan kan deze ondersteunende Dataverwerking een eigen processingActivityId krijgen. Deze kan anders zijn dan het processingActivityId van de ‘hoofdprocessingActivity’.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding2.png)
+
 De subOperation heeft nu een eigen processingActivityId gekregen, maar het is nog niet duidelijk aan welke hoofdprocessingActivityId deze gekoppeld is. Om dit op te lossen, wordt ook een ‘parentProcessingActivityId’ geregistreerd. Bij de subOperation wordt in dit geval naast de processingActivityId ook een parentProcessingActivityId geregistreerd. De waarde van deze parentProcessingActivityId is gelijk aan de waarde van het hoofdProcessingActivityId.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding3.png)
+
 Bij een Dataverwerking kan het zijn dat gegevens moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation. Bij het verstrekken van deze gegevens aan de aanvragende organisatie, wordt het processingActivityId van de gegevensverstrekkende organisatie geregistreerd. Er is dus GEEN rechtstreekse koppeling tussen het Register van de aanvragende en het Register van de verstrekkende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding4.png)
 ### TraceId als grootste gemene deler
