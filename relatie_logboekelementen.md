@@ -30,15 +30,19 @@ Bij een Dataverwerking kan het zijn dat gegevens moeten worden opgevraagd bij ee
 ### TraceId als grootste gemene deler
 Operations kunnen bestaan uit meerdere (sub)Operations binnen de eigen organisatie maar ook over organisaties heen. Het geheel kan een grote en ingewikkelde constructie worden. Om toch het overzicht te kunnen behouden, is het noodzakelijk een ‘traceId’ te introduceren per (sub)Operation. Het traceId is als het ware de ‘lijm’ tussen alle  (sub)Operations. Als er nog geen traceId bekend is, wordt deze automatisch gegenereerd voor de eerste Operation.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding5.png)
+
 Alle bij elkaar horende (sub)Operations, krijgen vervolgens dezelfde traceId-waarde.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding6.png)
+
 In het geval er gegevens worden opgevraagd aan een andere organisatie, krijgt elke operation bij verstrekkende organisatie een traceId. Om de relatie te leggen tussen de vragende en de verstrekkende organisatie, wordt bij elke Operation van de verstrekkende organisatie een ‘foreignOperationTraceId’ geregistreerd. De waarde van de foreignOperationTraceId van de verstrekkende organisatie is gelijk aan de waarde van traceId van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding7.png)
 ### Relatie tussen (sub)Operations
 Elke (sub)Operation krijgt een eigen, unieke operationId. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke OperationId. 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding8.png)
+
 Als er ook subOperations plaatsvinden, moet er ook een ‘parentOperationId’ worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding9.png)
+
 In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke operationId. Daarnaast wordt bij deze Operation ook het operationId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke operationId wordt het ‘foreignOperationId’ genoemd en krijgt de waarde gelijk aan het operationId van de initiërende Operation van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding10.png)
 ### Voorbeeld van een traceringsconstructie
