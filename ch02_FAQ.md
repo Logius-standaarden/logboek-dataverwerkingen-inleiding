@@ -14,7 +14,7 @@ Elke organisatie die gegevens verwerkt kan de standaard Logboek Dataverwerking i
 
 ### Is de standaard Logboek Dataverwerking alleen bedoeld voor de verwerking van persoonsgegevens?
 
-Nee, de standaard Logboek Dataverwerking kan worden toegepast voor andere toepassingen zoals bijvoorbeeld de registratie van (geografische) objecten.
+Nee, de standaard kan ook worden gebruikt voor verwerking van andere typen gegevens, zoals bijvoorbeeld de registratie van (geografische) objecten.
 
 ### Is in de standaard Logboek Dataverwerking opgenomen hoe logging plaatsvinden ten aanzien van beveiligingsincidenten (denk ook aan technische systeemactiviteiten en toegangsbeheer)?
 
