@@ -1,4 +1,4 @@
-# Logregels bevatten geen gegevens die al vastliggen in een Register
+# Logregels bevatten geen gegevens die al vastliggen in een [Register](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-registers)
 
 - Status: proposed
 - Datum: 2024-02-01
