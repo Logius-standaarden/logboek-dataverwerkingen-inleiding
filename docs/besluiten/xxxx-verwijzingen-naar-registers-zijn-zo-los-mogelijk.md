@@ -6,7 +6,7 @@
 
 ## Context en probleemstelling
 
-In de logrecords staat zo min mogelijk inhoudelijke informatie (ADR xxx). Informatie over verwerkingsactiviteiten ligt vast in specifieke registers.
+In de logrecords staat zo min mogelijk inhoudelijke informatie [[[ADR]]]. Informatie over verwerkingsactiviteiten ligt vast in specifieke registers.
 
 - Er kunnen meerdere van deze Registers zijn
 - Deze kunnen ook van andere organisaties zijn
