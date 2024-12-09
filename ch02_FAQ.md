@@ -53,7 +53,7 @@ Ja, de performance is getest met een aantal demo-applicaties. De testen toonden 
 
 ### Hoe werken het Register van verwerkingsactiviteiten (RvvA) en het Logboek Dataverwerkingen samen?
 
-In het RvvA ofwel het Register van verwerkingsactiviteiten (art 30 AVG) zijn de binnen de organisatie uit te voeren taken en processen waarin verwerkingen worden uitgevoerd benoemd. In de standaard Logboek Dataverwerking wordt de relatie gelegd tussen de beschreven processen in het register en de daadwerkelijk uitgevoerde activiteit waarbij data zijn verwerkt. Hiermee is inzicht in de taak en activiteit waarvoor de data verwerkt zijn.
+In het Register van verwerkingsactiviteiten (art 30 AVG) zijn de binnen de organisatie uit te voeren taken en processen waarin verwerkingen worden uitgevoerd benoemd. In de **Logboek Dataverwerkingen standaard** wordt de relatie gelegd tussen de beschreven processen in het register en de daadwerkelijk uitgevoerde activiteit waarbij **data** zijn verwerkt. **Door deze relatie ontstaat** inzicht in de taak en activiteit waarvoor de **data** verwerkt zijn.
 
 ### Moet ik mijn RvvA aanpassen als ik deze standaard Logboek Dataverwerking implementeer?
 
