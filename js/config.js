@@ -4,7 +4,7 @@ var respecConfig = {
   specStatus: "WV",
   specType: "PR",
   pubDomain: "api",
-  shortName: "Logboek_Algemeen",
+  shortName: "logboek_algemeen",
   publishDate: "2024-10-23",
   publishVersion: "0.1.0",
   title: "Algemene inleiding - Logboek dataverwerkingen",
