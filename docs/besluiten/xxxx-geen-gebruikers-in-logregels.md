@@ -14,7 +14,7 @@ Echter, de vastlegging van een handeling van een gebruiker als medewerker van ee
 
 Ook is de relatie van de gebruiker tot de Dataverwerking niet eenvoudig eenduidig te modelleren, o.a. omdat bij een enkele Dataverwerking meerdere gebruikers in meerdere rollen betrokken kunnen zijn.
 
-Daarnaast kan het goed zijn dat de Dataverwerking in het Audit Log onder een andere Verantwoordelijke valt dan de Dataverwerking die op dat moment door de gebruiker wordt uitgevoerd. Bijvoorbeeld:
+Daarnaast kan het goed zijn dat de Dataverwerking in het Audit Log (Een log file die activiteiten van gebruikers, uitzonderingen en informatiebeveiligingsgebeurtenissen vastgelegd. Dit is o.a. vanuit BIO verplicht) onder een andere Verantwoordelijke valt dan de Dataverwerking die op dat moment door de gebruiker wordt uitgevoerd. Bijvoorbeeld:
 
 - Een Dataverwerking wordt door een gebruiker bij een [Verwerker](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkers) uitgevoerd
 - De Dataverwerking valt onder verantwoordelijkheid van de [Verantwoordelijke](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verantwoordelijke), namelijk de organisatie die de Verwerker heeft ingehuurd
