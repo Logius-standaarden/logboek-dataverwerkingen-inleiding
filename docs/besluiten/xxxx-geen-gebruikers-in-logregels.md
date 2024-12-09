@@ -16,8 +16,8 @@ Ook is de relatie van de gebruiker tot de Dataverwerking niet eenvoudig eenduidi
 
 Daarnaast kan het goed zijn dat de Dataverwerking in het Audit Log onder een andere Verantwoordelijke valt dan de Dataverwerking die op dat moment door de gebruiker wordt uitgevoerd. Bijvoorbeeld:
 
-- Een Dataverwerking wordt door een gebruiker bij een Verwerker uitgevoerd
-- De Dataverwerking valt onder verantwoordelijkheid van de Verantwoordelijke, namelijk de organisatie die de Verwerker heeft ingehuurd
+- Een Dataverwerking wordt door een gebruiker bij een [Verwerker](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkers) uitgevoerd
+- De Dataverwerking valt onder verantwoordelijkheid van de [Verantwoordelijke](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verantwoordelijke), namelijk de organisatie die de Verwerker heeft ingehuurd
 - De Audit Log is een aparte Dataverwerking die valt onder verantwoordelijkheid van de Verwerker, in de rol van Verantwoordelijke over de eigen bedrijfsvoering.
 
 Het is daarom zuiverder om een andere oplossing te kiezen, namelijk:
