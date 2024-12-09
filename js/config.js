@@ -8,6 +8,9 @@ var respecConfig = {
   publishDate: "2024-10-23",
   publishVersion: "0.1.0",
   title: "Algemene inleiding - Logboek dataverwerkingen",
+
+  edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/",
+  
   // previousPublishVersion: "(none)",
   // content: {"ch01": "informative", "ch02": "", "mermaid": ""},
   editors:
