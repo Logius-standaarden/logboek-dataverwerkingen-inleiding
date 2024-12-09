@@ -12,6 +12,7 @@ Dit heeft nadelen, zoals:
 - Wanneer de statische gegevens (zoals bewaartermijn, verantwoordelijke, etc.) wijzigen, zou dit moeten worden aangepast in alle logrecords. Dat verhoudt zich slecht tot het 'inmutable' zijn van deze logrecords.
 - De grote vrijheid in alle clients om invulling te geven aan deze gegevens leidt er vrijwel zeker toe dat verdere divergentie optreedt. Dit heeft o.a. tot gevolg dat het lastig wordt om te rapporteren uit de logs
 - De API voor het wegschrijven van logs wordt ingewikkeld en relatief traag voor het wegschrijven van records
+- We niet voldoen aan alle uitgangspunten die horen bij dataminimalisatie
 
 In de gewenste situatie:
 
