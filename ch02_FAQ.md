@@ -26,7 +26,7 @@ Het ministerie van Binnenlandse Zaken en Koninkrijksrelaties is verantwoordelijk
 
 ### Is mijn organisatie verplicht de standaard Logboek Dataverwerking te implementeren?
 
-Er zijn momenteel geen verplichtingen voor gebruik van de standaard Logboek Dataverwerking. Op termijn zal de standaard aangeboden worden aan het Forum Standaardisatie voor mogelijke opname op de Pas-toe-of-leg-uit-lijst.
+Er zijn momenteel geen verplichtingen voor gebruik van de standaard. Indien de standaard ooit verplicht wordt zal dit worden gepubliceerd bij het Forum Standaardisatie op de Pas-toe-of-leg-uit-lijst. Hiervoor dient eerst de gehele procedure te worden doorlopen.
 
 ### Wat is de relatie van Audit Log met de standaard Logboek Dataverwerking?
 
