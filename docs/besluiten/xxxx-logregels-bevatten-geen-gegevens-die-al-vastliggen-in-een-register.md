@@ -16,7 +16,7 @@ Dit heeft nadelen, zoals:
 
 In de gewenste situatie:
 
-- staan alle statische gegevens in het Register van de Verwerkingsactiviteiten (RvVA), en bevatten logrecords verwijzigen naar dat Register. Specifiek gaat dit om de resources ['verwerkingsactiviteiten'](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkingsactiviteiten) en 'organisaties'.
+- staan alle statische gegevens in het Register van de Verwerkingsactiviteiten (RvVA), en bevatten logrecords verwijzingen naar dat Register. Specifiek gaat dit om de resources ['verwerkingsactiviteiten'](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkingsactiviteiten) en 'organisaties'.
 - kan bij het configureren van clients in de RvVA-API worden opgezocht welke organisaties en verwerkingsactiviten van toepassing zijn
 - kunnen wijzigingen in verwerkingsactiviteiten worden doorgevoerd zonder dat logrecords gewijzigd behoeven te worden
 
