@@ -11,7 +11,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de ge
 ### Uitgangspunten (Parkeervergunning - inzien)
 
 - Het beschreven proces is een voorbeeld, het werkelijke proces kan anders verlopen.
-- Het proces is een ‘happy flow’ dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
+- Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 - Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
@@ -128,7 +128,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de ge
 ### Uitgangspunten (Parkeervergunning - wijzigen)
 
 - Het beschreven proces is een voorbeeld, het werkelijke proces kan anders verlopen.
-- Het proces is een ‘happy flow’ dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
+- Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 - Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
@@ -409,7 +409,7 @@ Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De besch
 ### Uitgangspunten (Registratie Verhuizing - Eenvoudig)
 
 - Het beschreven proces is een voorbeeld, het werkelijke proces kan anders verlopen.
-- Het proces is een ‘happy flow’ dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
+- Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 - Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
@@ -637,7 +637,7 @@ Deze case beschrijft de samenstelling van een huishouding op een bepaald adres. 
 ### Uitgangspunten (Registratie verhuizing)
 
 - Het beschreven proces is een voorbeeld, het werkelijke proces kan anders verlopen.
-- Het proces is een ‘happy flow’ dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
+- Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 - Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
