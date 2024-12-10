@@ -29,9 +29,9 @@ Pogingen om het geschetste probleem op te lossen door op logrecord-niveau vast t
 
 
 - Vertrouwelijkheid vastleggen per logrecord betekent dat deze vertrouwelijkheid ook moet kunnen worden opgeheven
-- Logrecords zijn dan niet langer 'immutable' tenzij ingewikkelde constructies worden gekozen waarbij een logrecord logisch wordt vervangen door een nieuw record toe te voegen
+- Logregels zijn dan niet langer 'immutable' tenzij ingewikkelde constructies worden gekozen waarbij een logrecord logisch wordt vervangen door een nieuw record toe te voegen
 - Er zou een interface gedefinieerd moeten worden voor het wijzigen van de status 'vertrouwelijkheid'
-- Vertrouwelijkheid van een handeling aan het einde van een proces zou gevolgen kunnen hebben voor reeds vastgelegde logrecords
+- Vertrouwelijkheid van een handeling aan het einde van een proces zou gevolgen kunnen hebben voor reeds vastgelegde Logregels
 
 Bovendien geldt dat Overheidsorganisatie B op impliciete wijze zou leren dat Betrokkene X onderwerp is van een opsporingsonderzoek, terwijl dit beter op expliciete wijze geregeld kan worden. Door het expliciet te regelen kan Overheidsorganisatie B alle benodigde maatregelen nemen om te zorgen dat de vertrouwelijkheid ook in die organisatie geborgd is.
 
@@ -43,7 +43,7 @@ Vertrouwelijkheid wordt vastgelegd per Verwerkingsactiviteit
 
 ## Gevolgen
 
-- Vertrouwelijkheid wordt niet vastgelegd in logrecords
+- Vertrouwelijkheid wordt niet vastgelegd in Logregels
 - Vertrouwelijkheid wordt per logrecord afgeleid uit wat over vertrouwelijkheid is vastgelegd bij de bijbehorende Verwerkingsactiviteit
 - Vertrouwelijkheid wordt NIET uitgewisseld tussen organisaties
 - Wanneer een verwerking niet langer vertrouwelijk is, bijvoorbeeld na verjaring, dan volgt dit uit gegevens die vastliggen in het Register (bijvoorbeeld status vertrouwelijkheid, duur vertrouwelijkheid) en wat vastligt in een logrecord (verwerkingsactiviteit_id en datum)

@@ -9,16 +9,16 @@ Om logs zo begrijpelijk mogelijk te maken is het aantrekkelijk om de benodigde i
 
 Dit heeft nadelen, zoals:
 
-- Wanneer de statische gegevens (zoals bewaartermijn, verantwoordelijke, etc.) wijzigen, zou dit moeten worden aangepast in alle logrecords. Dat verhoudt zich slecht tot het 'inmutable' (onveranderbaar) zijn van deze logrecords.
+- Wanneer de statische gegevens (zoals bewaartermijn, verantwoordelijke, etc.) wijzigen, zou dit moeten worden aangepast in alle Logregels. Dat verhoudt zich slecht tot het 'inmutable' (onveranderbaar) zijn van deze Logregels.
 - De grote vrijheid in alle clients om invulling te geven aan deze gegevens leidt er vrijwel zeker toe dat verdere divergentie optreedt. Dit heeft o.a. tot gevolg dat het lastig wordt om te rapporteren uit de logs
 - De API voor het wegschrijven van logs wordt ingewikkeld en relatief traag voor het wegschrijven van records
 - We niet voldoen aan alle uitgangspunten die horen bij dataminimalisatie
 
 In de gewenste situatie:
 
-- staan alle statische gegevens in het Register van de Verwerkingsactiviteiten (RvVA), en bevatten logrecords verwijzingen naar dat Register. Specifiek gaat dit om de resources ['verwerkingsactiviteiten'](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkingsactiviteiten) en 'organisaties'.
+- staan alle statische gegevens in het Register van de Verwerkingsactiviteiten (RvVA), en bevatten Logregels verwijzingen naar dat Register. Specifiek gaat dit om de resources ['verwerkingsactiviteiten'](https://logius-standaarden.github.io/logboek-dataverwerkingen/#dfn-verwerkingsactiviteiten) en 'organisaties'.
 - kan bij het configureren van clients in de RvVA-API worden opgezocht welke organisaties en verwerkingsactiviten van toepassing zijn
-- kunnen wijzigingen in verwerkingsactiviteiten worden doorgevoerd zonder dat logrecords gewijzigd behoeven te worden
+- kunnen wijzigingen in verwerkingsactiviteiten worden doorgevoerd zonder dat Logregels gewijzigd behoeven te worden
 
 Met name het wegschrijven van logs kan op deze manier met hogere performance worden uitgevoerd. Dit kan nog verder worden geoptimaliseerd door niet te vereisen dat dit middels REST API calls gebeurt, maar een interface te definiëren die kan worden geïmplementeerd met bijvoorbeeld gRPC of andere streaming protocollen.
 
@@ -63,10 +63,10 @@ sequenceDiagram
     participant L as Logboek
     participant R as Register
     Note over F, R: Betrokkene vraagt om inzage
-    F->>+L: Vraag logrecords van Betrokkene
+    F->>+L: Vraag Logregels van Betrokkene
     Activate F
-    L-->>-F: logrecords
-    F->>+R: Vraag Verwerkingsactiviteiten bij logrecords
+    L-->>-F: Logregels
+    F->>+R: Vraag Verwerkingsactiviteiten bij Logregels
     R-->>-F: verwerkingsactiviteiten
     F-->>F: Combineeer
     Deactivate F
