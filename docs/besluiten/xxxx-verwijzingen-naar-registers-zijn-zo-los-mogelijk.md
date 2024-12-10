@@ -5,7 +5,7 @@
 
 ## Context en probleemstelling
 
-In de Logregels staat zo min mogelijk inhoudelijke informatie [[[ADR]]]. Informatie over verwerkingsactiviteiten ligt vast in specifieke registers.
+In de Logregels staat zo min mogelijk inhoudelijke informatie. Informatie over verwerkingsactiviteiten ligt vast in specifieke registers.
 
 - Er kunnen meerdere van deze Registers zijn
 - Deze kunnen ook van andere organisaties zijn
