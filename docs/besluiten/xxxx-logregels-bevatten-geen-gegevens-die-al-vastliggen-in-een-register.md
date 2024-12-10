@@ -46,7 +46,7 @@ Het wegschrijven van een verwerking in de log-API is uiterst simpel:
 sequenceDiagram
     participant A as Applicatie
     participant L as Logboek
-    Note over A, L: Dataverwerking in Applicatie
+    Note over A: Dataverwerking in Applicatie
     A->>+L: Schrijf logregel in Logboek
     L-->>-A: ack
 ```

@@ -3,7 +3,6 @@
 - Status: proposed
 - Datum: 2024-05-24
 
-
 ## Context en probleemstelling
 
 In de Logregels staat zo min mogelijk inhoudelijke informatie [[[ADR]]]. Informatie over verwerkingsactiviteiten ligt vast in specifieke registers.
@@ -16,12 +15,10 @@ In de Logregels staat zo min mogelijk inhoudelijke informatie [[[ADR]]]. Informa
 
 De standaard voor logging moet functioneren gegeven bovenstaande feiten.
 
-
 ## Besluit
 
 De link naar de uitwerking van een verwerkingsactiviteit bestaat uit een *identifier* en daarnaast een URI, URL of URN, in de vorm van *key value pairs*. Eventuele nadere invulling voor het verwijzen naar specifieke Registers (zoals het RvVA) wordt uitgewerkt in extensies.
 
-
 ## Gevolgen
 
-{ Wat zijn de gevolgen na het nemen van dit besluit }
+Door de verwijzingen naar de registers los te houden van de Registers wordt voorkomen dat er in de logs directe afhankelijkheden ontstaan van de registers.
