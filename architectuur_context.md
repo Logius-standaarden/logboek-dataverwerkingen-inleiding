@@ -1,4 +1,4 @@
-## Relatie met Architectuur Digitale Overheid 2030
+## Context
 
 De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossing. Wel biedt de standaard richtlijnen waar het Logboek dataverwerkingen van een applicatie aan moet voldoen. Dit document geeft aan hoe de standaard zich verhoudt tot de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) en de *Domeinarchitectuur Gegevensuitwisseling*
 
