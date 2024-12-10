@@ -23,7 +23,7 @@ Mogelijke oplossingsrichtingen:
 
 Overwegingen:
 
-Vertrouwelijke verwerkingen moeten meer strikt gescheiden moeten worden van niet-vertrouwelijke verwerkingen. Wanneer een bevraging zowel vertrouwelijk als niet-vetrouwelijk kan zijn (voorbeeld: het opvragen van eigenaargegevens van een voertuig) moeten twee gescheiden processen bestaan, waarbij de vertrouwelijke variant niet alleen apart wordt gelogd, maar in het geheel aan meer strikte regels wordt onderworpen, zoals eisen aan betrokken beheerders, classificatie van gegevens, etc.
+Vertrouwelijke verwerkingen moeten meer strikt gescheiden moeten worden van niet-vertrouwelijke verwerkingen. Als een bevraging zowel vertrouwelijk als niet-vertrouwelijk kan zijn, zoals bij het opvragen van eigenaargegevens van een voertuig, moeten hiervoor twee gescheiden processen bestaan. De vertrouwelijke variant moet apart worden gelogd en aan strengere regels voldoen. Dit omvat bijvoorbeeld eisen aan betrokken beheerders, de classificatie van gegevens en andere specifieke voorschriften.
 
 Pogingen om het geschetste probleem op te lossen door op logrecord-niveau vast te leggen of een verwerking vertrouwelijk is leiden tot veel complexiteit en uitzonderingsgevallen in de implemenentatie van de standaard. Een aantal voorbeelden van ongewenste complexiteit:
 
