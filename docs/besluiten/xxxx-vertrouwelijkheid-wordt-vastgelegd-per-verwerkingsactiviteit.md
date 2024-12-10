@@ -14,7 +14,7 @@ Voorbeeld:
 - Betrokkene krijgt geen inzage in / wordt niet geïnformeerd over de verwerking van Opsporingsinstantie A, dit zou het onderzoek hinderen
 - Als Betrokkene wel inzage krijgt / wordt geïnformeerd over de verwerking van Overheidsorgaan B, zou Betrokkene alsnog zien dat Opsporingsinstantie A deze gegevens heeft opgevraagd, met hetzelfde ongewenste effect.
 
-Er zijn meerdere oplossingsrichtingen denkbaar. Wat is de gewenste oplossingsrichting, hoe wordt deze gespecificeerd?
+Er zijn meerdere oplossingen denkbaar. Wat is de gewenste oplossingsrichting, hoe wordt deze gespecificeerd?
 
 Mogelijke oplossingsrichtingen:
 
