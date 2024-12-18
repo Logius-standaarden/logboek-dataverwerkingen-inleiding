@@ -87,4 +87,4 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke Operation
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 ![Alt text](./medias/relatie_logboekelementen_afbeelding14.png)
 
-Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding/blob/main/ch05_voorbeelden.md) van de standaard logboek dataverwerkingen.
+Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#voorbeelden) van de standaard logboek dataverwerkingen.

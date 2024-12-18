@@ -1,15 +1,24 @@
 <!-- markdownlint-disable first-line-heading -->
-## Canoniek Gegevensmodel
+## Informatiemodel
 
-Ter verduidelijking van de standaard is een Canoniek gegevensmodel uitgewerkt, dit gestandaardiseerd model voor datarepresentatie is  ontworpen om de attributen eenduidig en consistenter te maken. Het biedt een uniforme structuur en terminologie voor alle relevante gegevens in de standaard. Zie voor de definitie van de gebruikte terminologie ook [Paragraaf 1.2 van de standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/#terminologie).
+Ter verduidelijking van de standaard is een Informatiemodel uitgewerkt, dit model is opgesteld conform de [MIM standaard](https://docs.geostandaarden.nl/mim/mim/). Het MIM kent 4 beschouwingsniveaus:
 
-### attribute
+- Beschouwingsniveau 1 - Model van begrippen,
+- Beschouwingsniveau 2 - Conceptueel informatiemodel,
+- Beschouwingsniveau 3 - Logisch informatie- of gegevensmodel,
+- Beschouwingsniveau 4 - Fysiek of technisch gegevens- of datamodel.
+
+Deze inleiding bevat een aantal definities op beschouwingsniveau 3 ter toelichting.
+In de standaard zelf zijn zowel een aantal [begrippen](https://logius-standaarden.github.io/logboek-dataverwerkingen/#componenten) gedefinieerd als een [conceptueel informatiemodel voor de interface](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface) uitgewerkt.
+Zie voor de definitie van de gebruikte [terminologie § Paragraaf 1.2 van de standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/#terminologie).
+
+### attributes
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `attribute`                                                  |
+| **Attribuutnaam**            | `attributes`                                                  |
 | **Definitie Engels**         | Attributes in the form of key value pairs.                   |
-| **Attribuutnaam Nederlands** | attribuut                                                    |
+| **Attribuutnaam Nederlands** | attributen                                                    |
 | **Definitie Nederlands**     | Attributen in de vorm van key value pairs.                   |
 | **Toelichting**              | Organisaties hebben de vrijheid om zelf key value pairs te bepalen als dit bijdraagt aan de inzichtelijkheid van een gegevensverwerkingsactie. |
 | **Noodzakelijkheid**         | Vanuit de standaard is het onmogelijk om alle attribuutsoorten te definiëren die belangrijk zijn voor de inzichtelijkheid van een gegevensverwerkingsactie. Daarom is er in de standaard rekening gehouden met een mogelijkheid om per organisatie of per systeem eigen attribuutsoorten te bepalen. |

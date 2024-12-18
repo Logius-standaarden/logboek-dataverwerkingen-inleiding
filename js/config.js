@@ -5,8 +5,8 @@ var respecConfig = {
   specType: "PR",
   pubDomain: "api",
   shortName: "logboek_algemeen",
-  publishDate: "2024-10-23",
-  publishVersion: "0.1.0",
+  publishDate: "2024-12-17",
+  publishVersion: "0.8.1",
   title: "Algemene inleiding - Logboek dataverwerkingen",
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/",
