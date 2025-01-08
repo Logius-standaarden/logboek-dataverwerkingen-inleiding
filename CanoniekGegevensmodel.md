@@ -115,16 +115,16 @@ Ter verduidelijking van de standaard is een Canoniek gegevensmodel uitgewerkt, d
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### foreignOperation.operationId
+### foreignOperation.SpanId
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `foreignOperation.operationId`                               |
+| **Attribuutnaam**            | `foreignOperation.SpanId`                               |
 | **Definitie Engels**         | Unique name given to a foreign processing operation.         |
 | **Attribuutnaam Nederlands** | externeActie.actieId                                         |
 | **Definitie Nederlands**     | Identificator die de externe verwerkingsactie uniek identificeert. |
-| **Toelichting**              | Externe verwerkingsacties kunnen een onderdeel zijn van de totale verwerkingsactie. OperationId is in dit geval een attribuutsoort van het objecttype foreignOperation. |
-| **Noodzakelijkheid**         | Indien het noodzakelijk is ook gegevensverwerkingsacties van een externe gegevensbron te gebruiken, dan wordt een unieke referentie naar deze externe gegevensverwerkingsactie geregistreerd in het logboek. Het foreignOperation.operationId refereert naar één specifieke gegevensverwerkingsactie door de externe gegevensbron.  Door alleen te verwijzen naar de externe gegevensverwerkingsactie, kan voorkomen worden dat gegevens gedupliceerd worden opgeslagen in het logboek. |
+| **Toelichting**              | Externe verwerkingsacties kunnen een onderdeel zijn van de totale verwerkingsactie. SpanId is in dit geval een attribuutsoort van het objecttype foreignOperation. |
+| **Noodzakelijkheid**         | Indien het noodzakelijk is ook gegevensverwerkingsacties van een externe gegevensbron te gebruiken, dan wordt een unieke referentie naar deze externe gegevensverwerkingsactie geregistreerd in het logboek. Het foreignOperation.SpanId refereert naar één specifieke gegevensverwerkingsactie door de externe gegevensbron.  Door alleen te verwijzen naar de externe gegevensverwerkingsactie, kan voorkomen worden dat gegevens gedupliceerd worden opgeslagen in het logboek. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Nee                                                          |
@@ -186,16 +186,16 @@ Ter verduidelijking van de standaard is een Canoniek gegevensmodel uitgewerkt, d
 | **Gebruikt in**              | Register                                                     |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### operationId
+### SpanId
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `operationId`                                                |
+| **Attribuutnaam**            | `SpanId`                                                |
 | **Definitie Engels**         | Unique name given to a processing operation.                 |
 | **Attribuutnaam Nederlands** | actieId                                                      |
 | **Definitie Nederlands**     | Identificator die de gegevensverwerkingsactie uniek identificeert. |
 | **Toelichting**              | Het iD is betekenisloos, kent geen volgorde en is uniek over alle systemen in de wereld. |
-| **Noodzakelijkheid**         | Elke gegevensverwerkingsactie wordt uniek opgeslagen in het logboek. Indien een rapportage moet worden gemaakt voor de betrokkene, moet de unieke gegevensverwerkingsactie opgehaald kunnen worden uit het logboek. Het ophalen van de gegevens gaat op basis van het operationId, dus zonder dit gegeven is het aanmaken van een rapportage niet mogelijk. |
+| **Noodzakelijkheid**         | Elke gegevensverwerkingsactie wordt uniek opgeslagen in het logboek. Indien een rapportage moet worden gemaakt voor de betrokkene, moet de unieke gegevensverwerkingsactie opgehaald kunnen worden uit het logboek. Het ophalen van de gegevens gaat op basis van het SpanId, dus zonder dit gegeven is het aanmaken van een rapportage niet mogelijk. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Ja                                                           |
@@ -235,11 +235,11 @@ Ter verduidelijking van de standaard is een Canoniek gegevensmodel uitgewerkt, d
 | **Gebruikt in**              | Register en Logboek                                          |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### parentOperationId
+### parentSpanId
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `parentOperationId`                                          |
+| **Attribuutnaam**            | `parentSpanId`                                          |
 | **Definitie Engels**         | A parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class. The parentId refers to the parent class. |
 | **Attribuutnaam Nederlands** | parentActieId                                                |
 | **Definitie Nederlands**     | Een parent is één klasse, en een child is een andere klasse die alle attributen en functies overerft die aan de bovenliggende klasse zijn toegewezen. De parentId verwijst naar de bovenliggende klasse. |
