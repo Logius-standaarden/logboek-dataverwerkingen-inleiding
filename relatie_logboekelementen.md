@@ -44,7 +44,7 @@ Als er ook subOperations plaatsvinden, moet er ook een ‘parentSpanId’ worden
 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding9.png)
 
-In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke SpanId. Daarnaast wordt bij deze Operation ook het SpanId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke SpanId wordt het ‘foreignOperationId’ genoemd en krijgt de waarde gelijk aan het SpanId van de initiërende Operation van de vragende organisatie.
+In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke SpanId. Daarnaast wordt bij deze Operation ook het SpanId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke SpanId wordt het ‘foreignSpanId’ genoemd en krijgt de waarde gelijk aan het SpanId van de initiërende Operation van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding10.png)
 ### Voorbeeld van een traceringsconstructie
 Het nu volgende voorbeeld is volledig fictief en is puur bedoeld om een beeld te schetsen ten behoeve van een traceringsconstructie in een logboek.
