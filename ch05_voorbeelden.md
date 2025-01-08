@@ -101,7 +101,7 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 ### Relatie tussen gegevens  (Parkeervergunning - inzien)
 
 Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
-![Alt text](./medias/Parkeervergunning_Inzien_RelatieGegevens.png)
+![Alt text](./medias/6.1.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20inzien).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen  (Parkeervergunning - inzien)
 
@@ -380,7 +380,7 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 ### Relatie tussen gegevens (Parkeervergunning - wijzigen)
 
 Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
-![Alt text](./medias/Parkeervergunning_Wijzigen_RelatieGegevens.png)
+![Alt text](./medias/6.2.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20wijzigen).png)
 
 ### Relatie met de standaard Logboek Dataverwerkingen (Parkeervergunning - wijzigen)
 
@@ -610,7 +610,7 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 ### Relatie tussen gegevens (Registratie Verhuizing - Eenvoudig)
 
 Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
-![Alt text](./medias/Registratie_VerhuizingEenvoudigTraditioneel_RelatieGegevens.png)
+![Alt text](./medias/6.3.5%20Relatie%20tussen%20gegevens%20(Registratie%20Verhuizing%20-%20Eenvoudig).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie Verhuizing - Eenvoudig)
 
@@ -783,7 +783,7 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 ### Relatie tussen gegevens (Registratie verhuizing)
 
 Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
-![Alt text](./medias/Registratie_VerhuizingOpvragenBSNs_RelatieGegevens.png)
+![Alt text](./medias/6.4.5%20Relatie%20tussen%20gegevens%20(Registratie%20verhuizing).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie verhuizing)
 
