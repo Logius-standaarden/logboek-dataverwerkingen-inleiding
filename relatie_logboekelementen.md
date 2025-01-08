@@ -9,7 +9,7 @@ Om er zeker van te zijn dat de relatie tussen Logregels gelegd kan worden, moete
 
 •	**traceId**: alle logregels die voor een specifieke gegevensverwerking bij elkaar horen, krijgen een traceId. De traceId-waarde voor alle Logregels die bij elkaar horen is hetzelfde.
 
-•	**spanId**: elke individuele Logregel (Operation) krijgt een eigen, unieke spanId (net zoals elk databaserecord dat ook krijgt).
+•	**SpanId**: elke individuele Logregel (Operation) krijgt een eigen, unieke SpanId (net zoals elk databaserecord dat ook krijgt).
 
 In werkelijkheid worden alle relaties door de Applicatie in een fractie van een seconde (in parallel)  gelegd. Om het grote geheel beter te begrijpen, worden alle relaties hieronder stap voor stap uitgelegd.
 
@@ -37,14 +37,14 @@ Alle bij elkaar horende (sub)Operations, krijgen vervolgens dezelfde traceId-waa
 In het geval er gegevens worden opgevraagd aan een andere organisatie, krijgt elke operation bij verstrekkende organisatie een traceId. Om de relatie te leggen tussen de vragende en de verstrekkende organisatie, wordt bij elke Operation van de verstrekkende organisatie een ‘foreignOperationTraceId’ geregistreerd. De waarde van de foreignOperationTraceId van de verstrekkende organisatie is gelijk aan de waarde van traceId van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding7.png)
 ### Relatie tussen (sub)Operations
-Elke (sub)Operation krijgt een eigen, unieke operationId. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke OperationId. 
+Elke (sub)Operation krijgt een eigen, unieke SpanId. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke SpanId. 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding8.png)
 
-Als er ook subOperations plaatsvinden, moet er ook een ‘parentOperationId’ worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
+Als er ook subOperations plaatsvinden, moet er ook een ‘parentSpanId’ worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding9.png)
 
-In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke operationId. Daarnaast wordt bij deze Operation ook het operationId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke operationId wordt het ‘foreignOperationId’ genoemd en krijgt de waarde gelijk aan het operationId van de initiërende Operation van de vragende organisatie.
+In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke SpanId. Daarnaast wordt bij deze Operation ook het SpanId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke SpanId wordt het ‘foreignOperationId’ genoemd en krijgt de waarde gelijk aan het SpanId van de initiërende Operation van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding10.png)
 ### Voorbeeld van een traceringsconstructie
 Het nu volgende voorbeeld is volledig fictief en is puur bedoeld om een beeld te schetsen ten behoeve van een traceringsconstructie in een logboek.
@@ -77,11 +77,11 @@ In de RDW-applicatie wordt het verstrekken van gegevens aan de gemeenteapplicati
 •	De RDW-Operation **Verstrek houdergegevens** krijgt een eigen traceId. 
 •	Om het geheel te koppelen over de organisaties heen, wordt bij het RDW ook een foreignOperationTraceId opgeslagen, de waarde hier van is gelijk aan de waarde van de traceId van de Operation **Controleer tenaamstelling**.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding12.png)
-### OperationId
-In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke OperationId. 
-•	De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een parentOperationId met de waarde van OperationId van de **Operation Wijzig** kenteken om een relatie te leggen. 
-•	Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke OperationId. 
-•	Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een foreignOperationId moeten worden vastgelegd. De waarde van deze foreignOperationId is gelijk aan de waarde van de OperationId van de gemeente-Operation **Controleer tenaamstelling**.
+### SpanId
+In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke SpanId. 
+•	De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een parentSpanId met de waarde van SpanId van de **Operation Wijzig** kenteken om een relatie te leggen. 
+•	Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke SpanId. 
+•	Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een foreignSpanId moeten worden vastgelegd. De waarde van deze foreignSpanId is gelijk aan de waarde van de SpanId van de gemeente-Operation **Controleer tenaamstelling**.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding13.png)
 ### Totaalbeeld
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
