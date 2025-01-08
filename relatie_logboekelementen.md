@@ -38,7 +38,7 @@ In het geval er gegevens worden opgevraagd aan een andere organisatie, krijgt el
 ![Alt text](./medias/relatie_logboekelementen_afbeelding7.png)
 ### Relatie tussen (sub)Operations
 Elke (sub)Operation krijgt een eigen, unieke SpanId. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke SpanId. 
-![Alt text](./medias/relatie_logboekelementen_afbeelding8.png)
+![Alt text](./medias/)
 
 Als er ook subOperations plaatsvinden, moet er ook een ‘parentSpanId’ worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
 
