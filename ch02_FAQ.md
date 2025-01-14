@@ -80,3 +80,9 @@ De standaard Logboek Dataverwerking gaat er alleen vanuit dat er een RvvA is. Ho
 Het is van belang dat als de RvvA aangepast moet worden,de wijzigingen toegevoegd worden als nieuwe verwerkingsactiviteit met een eigen unieke identificator. Bestaande verwerkingsactiviteiten mogen niet worden aangepast of verwijderd.
 
 Hierdoor blijven de oude verwijzingen uit de Logboek Dataverwerking intact.
+
+### De standaard leunt zwaar op OpenTelemetry, waarom wordt OpenTelemetry niet voorgeschreven?
+
+De keuze om aan te sluiten bij OpenTelemetry betekent dat het voor veel organisaties eenvoudiger is om de standaard te implementeren. Als het echter niet mogelijk is om OpenTelemetry te gebruiken, bijvoorbeeld omdat men volledig gebruik maakt van proprietary log collectors die dat niet ondersteunen, kan men wel de kleine benodigde subset van de OpenTelemetry interfaces zelf implementeren zodat aan de standaard wordt voldaan.
+
+Door OpenTelemetry aan te bevelen als een eenvoudige implementatie houdt men de vrijheid om daar waar dat nuttig is een andere oplossing te kiezen dan een OpenTelemetry collector.
