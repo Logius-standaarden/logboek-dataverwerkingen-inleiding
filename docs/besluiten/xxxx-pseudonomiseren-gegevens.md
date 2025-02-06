@@ -10,10 +10,10 @@
 
 Bij vastleggen betrokkene wordt in veel gevallen een BSN vastgelegd, of een ander nummer bijvoorbeeld vreemdelingennummer of objectnummer. Wanneer we inhoud van verwerkte data-objecten gaan vastleggen dan betreft dat ook dit soort gegevens. Uit wet en regelgeving (bijvoorbeeld AVG) volgt dat pseudonimiseren wenselijk is.
 
-# Vraag:
+## Vraag:
 Moeten we in de standaard beschrijven hoe men pseudonimisering moet aanpakken?
 
-# Overwegingen:
+## Overwegingen:
 
 •	Pseudonimisering en het weer ‘ont-pseudonimiseren’ is iets wat binnen de organisatie relevant is, om onder andere de inzage-API te kunnen laten functioneren.
 
