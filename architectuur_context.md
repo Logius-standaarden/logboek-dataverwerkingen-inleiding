@@ -20,7 +20,7 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 - *Api’s / Services*
   - Naast richtlijnen voor de inrichting en het gedrag van het Logboek dataverwerkingen, biedt deze standaard ook een aantal voorbeeld API’s:
   - **Inzicht API:** deze service geeft de mogelijkheid een query uit te voeren op loggings van dataverwerkingen (nog niet beschikbaar). 
-  - **Register van de Verwerkingsactiviteiten:** deze service geeft de mogelijkheid de gegevens van een Register van Verwerkingsactiviteiten te bekijken (nog niet beschikbaar).
+  - **Register van de Verwerkingsactiviteiten:** deze service geeft de mogelijkheid de data van een Register van Verwerkingsactiviteiten te bekijken (nog niet beschikbaar).
 
 > De API’s zijn ontworpen en ontwikkeld volgens de standaard [Rest-API Design Rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules).
 
