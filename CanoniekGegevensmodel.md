@@ -1,7 +1,7 @@
 <!-- markdownlint-disable first-line-heading -->
-## Canoniek Gegevensmodel
+## Canoniek Datamodel
 
-Ter verduidelijking van de standaard is een Canoniek gegevensmodel uitgewerkt, dit gestandaardiseerd model voor datarepresentatie is  ontworpen om de attributen eenduidig en consistenter te maken. Het biedt een uniforme structuur en terminologie voor alle relevante gegevens in de standaard. Zie voor de definitie van de gebruikte terminologie ook [Paragraaf 1.2 van de standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/#terminologie).
+Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit gestandaardiseerd model voor datarepresentatie is  ontworpen om de attributen eenduidig en consistenter te maken. Het biedt een uniforme structuur en terminologie voor alle relevante gegevens in de standaard. Zie voor de definitie van de gebruikte terminologie ook [Paragraaf 1.2 van de standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/#terminologie).
 
 ### attribute
 
