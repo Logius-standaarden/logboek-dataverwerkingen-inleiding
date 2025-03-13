@@ -61,7 +61,7 @@ De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware
 
 ![technische architectuur](./medias/technische_architectuur.png)
 
-Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de gegevensberichten logt. 
+Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de databerichten logt. 
 
 ### Software architectuur
 
