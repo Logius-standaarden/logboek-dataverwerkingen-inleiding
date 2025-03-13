@@ -85,9 +85,9 @@ In de gemeenteapplicatie worden de volgende Operations uitgevoerd die een relati
 In de RDW-applicatie wordt het verstrekken van gegevens aan de gemeenteapplicatie ook geregistreerd. De Operation **Verstrek houdergegevens** is gerelateerd aan de processingActivity **Kentekenhoudergegevens verstrekken**. Merk op dat er hier dus GEEN directe relatie is tussen het Register van Verwerkingsactiviteiten van de gemeente en die van het RDW.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding11.png)
 ### traceId
-•	De gemeenteOperations **Toon alle vergunningen, Wijzig kenteken en Controleer tenaamstelling** behoren tot dezelfde handeling (met als eindresultaat het wijzigingen van het kenteken op de vergunning). Deze Operations krijgen allemaal dezelfde traceId. <br>
-•	De RDW-Operation **Verstrek houdergegevens** krijgt een eigen traceId. <br>
-•	Om het geheel te koppelen over de organisaties heen, wordt bij het RDW ook een foreignOperationTraceId opgeslagen, de waarde hier van is gelijk aan de waarde van de traceId van de Operation **Controleer tenaamstelling**.
+*	De gemeenteOperations **Toon alle vergunningen, Wijzig kenteken en Controleer tenaamstelling** behoren tot dezelfde handeling (met als eindresultaat het wijzigingen van het kenteken op de vergunning). Deze Operations krijgen allemaal dezelfde traceId.
+*	De RDW-Operation **Verstrek houdergegevens** krijgt een eigen traceId.
+*	Om het geheel te koppelen over de organisaties heen, wordt bij het RDW ook een foreignOperationTraceId opgeslagen, de waarde hier van is gelijk aan de waarde van de traceId van de Operation **Controleer tenaamstelling**.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding12.png)
 ### SpanId
 In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke SpanId. <br>
