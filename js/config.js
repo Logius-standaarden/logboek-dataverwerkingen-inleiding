@@ -1,6 +1,7 @@
 var respecConfig = {
   useLogo: true,
   useLabel: true,
+  maxTocLevel: 2,
   specStatus: "WV",
   specType: "PR",
   pubDomain: "api",
