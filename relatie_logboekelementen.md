@@ -91,6 +91,7 @@ In de RDW-applicatie wordt het verstrekken van gegevens aan de gemeenteapplicati
 ![Alt text](./medias/relatie_logboekelementen_afbeelding12.png)
 ### SpanId
 In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke SpanId.
+
 *	De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een parentSpanId met de waarde van SpanId van de **Operation Wijzig** kenteken om een relatie te leggen.
 *	Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke SpanId.
 *	Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een foreignSpanId moeten worden vastgelegd. De waarde van deze foreignSpanId is gelijk aan de waarde van de SpanId van de gemeente-Operation **Controleer tenaamstelling**.
