@@ -1,5 +1,5 @@
 ### De relatie tussen logboekelementen, waarom eigenlijk?
-Logging van gegevensverwerkingen kunnen vaak en veelvuldig plaatsvinden. Het geheel kan groot en complex worden want sommige Logregels zijn aan elkaar gerelateerd. Deze relaties kunnen gelegd worden met Logregels met andere applicaties binnen dezelfde organisatie of met logregels van applicaties van andere organisaties. <br>
+Logging van gegevensverwerkingen kunnen vaak en veelvuldig plaatsvinden. Het geheel kan groot en complex worden want sommige Logregels zijn aan elkaar gerelateerd. Deze relaties kunnen gelegd worden met Logregels met andere applicaties binnen dezelfde organisatie of met logregels van applicaties van andere organisaties. 
 
 Maar ook zijn er relaties nodig met activiteiten in het Register van Verwerkingsactiviteiten.
 Wat nu als alle Logregels zonder relaties worden opgeslagen? Bij een rapportage (bijvoorbeeld een verzoek tot inzage van een burger) moet nu handmatig worden uitgezocht welke gegevensverwerkingen bij elkaar horen en er moet, in het ernstigste geval, ook contact worden gezocht moet andere organisaties om te onderzoeken of daar ook de nodige gegevensverwerkingen zijn uitgevoerd. Als er bij elke Logregel de nodige relatiegegevens worden bijgevoegd, kan de rapportage snel en accuraat worden gegenereerd.
@@ -16,7 +16,7 @@ Om er zeker van te zijn dat de relatie tussen Logregels gelegd kan worden, moete
 In werkelijkheid worden alle relaties door de Applicatie in een fractie van een seconde (in parallel)  gelegd. Om het grote geheel beter te begrijpen, worden alle relaties hieronder stap voor stap uitgelegd.
 
 ### Het logboek en het Register van Verwerkingsactiviteiten 
-Als er een Dataverwerking plaatsvindt, moet dit altijd een relatie hebben met het Register van Verwerkingsactiviteiten. In dit Register staat informatie over de gegevens die een organisatie verwerkt. Het Register is verplicht, een geautomatiseerde koppeling met het Logboek niet. <br>
+Als er een Dataverwerking plaatsvindt, moet dit altijd een relatie hebben met het Register van Verwerkingsactiviteiten. In dit Register staat informatie over de gegevens die een organisatie verwerkt. Het Register is verplicht, een geautomatiseerde koppeling met het Logboek niet.
 
 Bij elke Dataverwerking wordt door het Logboek een relatie gelegd met het Register door middel van het processingActivityId. 
 Als er meerdere dezelfde Dataverwerkingen (‘Operations’) zijn, krijgen deze dus allemaal dezelfde processingActivityId.
@@ -26,17 +26,17 @@ Als er meerdere dezelfde Dataverwerkingen (‘Operations’) zijn, krijgen deze 
 In het geval er een Dataverwerking plaatsvindt ter ondersteuning van een andere Dataverwerking (suboperation), dan kan deze ondersteunende Dataverwerking een eigen processingActivityId krijgen. Deze kan anders zijn dan het processingActivityId van de ‘hoofdprocessingActivity’.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding2.png)
 
-De subOperation heeft nu een eigen processingActivityId gekregen, maar het is nog niet duidelijk aan welke hoofdprocessingActivityId deze gekoppeld is. Om dit op te lossen, wordt ook een ‘parentProcessingActivityId’ geregistreerd. <br>
+De subOperation heeft nu een eigen processingActivityId gekregen, maar het is nog niet duidelijk aan welke hoofdprocessingActivityId deze gekoppeld is. Om dit op te lossen, wordt ook een ‘parentProcessingActivityId’ geregistreerd. 
 
 Bij de subOperation wordt in dit geval naast de processingActivityId ook een parentProcessingActivityId geregistreerd. De waarde van deze parentProcessingActivityId is gelijk aan de waarde van het hoofdProcessingActivityId.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding3.png)
 
-Bij een Dataverwerking kan het zijn dat gegevens moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation. <br>
+Bij een Dataverwerking kan het zijn dat gegevens moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation. 
 
 Bij het verstrekken van deze gegevens aan de aanvragende organisatie, wordt het processingActivityId van de gegevensverstrekkende organisatie geregistreerd. Er is dus GEEN rechtstreekse koppeling tussen het Register van de aanvragende en het Register van de verstrekkende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding4.png)
 ### TraceId als grootste gemene deler
-Operations kunnen bestaan uit meerdere (sub)Operations binnen de eigen organisatie maar ook over organisaties heen. Het geheel kan een grote en ingewikkelde constructie worden. Om toch het overzicht te kunnen behouden, is het noodzakelijk een ‘traceId’ te introduceren per (sub)Operation. <br>
+Operations kunnen bestaan uit meerdere (sub)Operations binnen de eigen organisatie maar ook over organisaties heen. Het geheel kan een grote en ingewikkelde constructie worden. Om toch het overzicht te kunnen behouden, is het noodzakelijk een ‘traceId’ te introduceren per (sub)Operation. 
 
 Het traceId is als het ware de ‘lijm’ tussen alle  (sub)Operations. Als er nog geen traceId bekend is, wordt deze automatisch gegenereerd voor de eerste Operation.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding5.png)
@@ -54,7 +54,7 @@ Als er ook subOperations plaatsvinden, moet er ook een ‘parentSpanId’ worden
 
 ![Alt text](./medias/relatie_logboekelementen_afbeelding9.png)
 
-In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke SpanId. <br>
+In het geval er gegevens nodig zijn van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke SpanId. 
 
 Daarnaast wordt bij deze Operation ook het SpanId geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke SpanId wordt het ‘foreignSpanId’ genoemd en krijgt de waarde gelijk aan het SpanId van de initiërende Operation van de vragende organisatie.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding10.png)
