@@ -10,7 +10,7 @@ De overheid moet zich verantwoorden over haar handelen. Daar valt ook onder het 
 
 Elke organisatie die gegevens verwerkt kan de standaard Logboek Dataverwerking inzetten bij processen waar logging en monitoring, bijvoorbeeld vanuit de wetgeving wenselijk is.
 
-## Is de standaard Logboek Dataverwerking alleen bedoeld voor de verwerking van persoonsgegevens?
+## Is de standaard Logboek Dataverwerking alleen bedoeld voor de verwerking van persoonsdata?
 
 Nee, de standaard kan ook worden gebruikt voor verwerking van andere typen gegevens, zoals bijvoorbeeld de registratie van (geografische) objecten.
 
