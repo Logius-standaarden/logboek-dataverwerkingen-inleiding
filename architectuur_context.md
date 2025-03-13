@@ -28,7 +28,7 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
   - De standaard biedt geen applicatie aan, wel biedt het richtlijnen ten aanzien van het gedrag en invulling van het Logboek dataverwerkingen. Hiermee geeft de standaard de vrijheid aan organisaties om zelf op basis van de specifieke implementatie van een dataverwerkende Applicatie een Logboek te ontwikkelen wat qua gedrag en (meta)data gelijkvormig is over alle (overheids)organisaties heen.
 
 - *Berichtenverkeer / datauitwisseling*
-  - Het berichten verkeer met betrekking tot het Logboek dataverwerkingen heeft geen directe connectie met de burger. Wel is het van belang bij opvraag van gegevens bij andere organisaties traceringsdata worden verstuurd en opgeslagen in het Logboek zodat altijd duidelijk wat de bron is van data die verwerkt zijn. Deze standaard biedt een traceringsmethodiek aan zodat de gegevensuitwisseling tussen organisaties *vastgelegd en verantwoord* kan worden.
+  - Het berichten verkeer met betrekking tot het Logboek dataverwerkingen heeft geen directe connectie met de burger. Wel is het van belang bij opvraag van gegevens bij andere organisaties traceringsdata worden verstuurd en opgeslagen in het Logboek zodat altijd duidelijk wat de bron is van data die verwerkt zijn. Deze standaard biedt een traceringsmethodiek aan zodat de datauitwisseling tussen organisaties *vastgelegd en verantwoord* kan worden.
 
 - *Data*
   - De Nederlandse Basisregistraties vervullen een essentiële rol in het vastleggen en gecontroleerd beheren van data. Organisaties kunnen aan elkaar data ter beschikking te stellen vanuit ‘kernregistraties’. De standaard Logboek dataverwerkingen biedt een richtlijn voor het loggen van verwerkte data van al deze basisregistraties.
@@ -45,13 +45,13 @@ Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking
 
 *[Bron: GDI – Gegevensuitwisseling]*
 
-Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) en hun relatie met de belangrijkste functie voor data en gegevensuitwisseling.
+Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) en hun relatie met de belangrijkste functie voor data uitwisseling.
 
 ![architectuurprincipes ](./medias/architectuurprincipes.png)
 
 *[Bron: MIDO/GDI Domeinarchitectuur Gegevensuitwisseling]*
 
-De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewerkt in de volgenda paragraaf.
+De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewerkt in de volgende paragraaf.
 
 ### Technische architectuur (Technical architecture)
 
