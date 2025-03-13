@@ -37,7 +37,7 @@ Daarnaast is het van belang om te beseffen dat het vastleggen van data over een 
 
 ## Zijn er dingen die je moet aanpassen aan je Audit Log als je de standaard Logboek Dataverwerking implementeert?
 
-In de logging worden geen identificerende gegevens opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de SpanId die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
+In de logging worden geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de SpanId die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
 
 ## Kan je de standaard Logboek Dataverwerking implementeren als je een cloud (SaaS) applicatie gebruikt?
 
