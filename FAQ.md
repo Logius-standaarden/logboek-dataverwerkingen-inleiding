@@ -8,11 +8,11 @@ De overheid moet zich verantwoorden over haar handelen. Daar valt ook onder het 
 
 ## Wie kan de standaard Logboek Dataverwerking gebruiken?
 
-Elke organisatie die gegevens verwerkt kan de standaard Logboek Dataverwerking inzetten bij processen waar logging en monitoring, bijvoorbeeld vanuit de wetgeving wenselijk is.
+Elke organisatie die data verwerkt kan de standaard Logboek Dataverwerking inzetten bij processen waar logging en monitoring, bijvoorbeeld vanuit de wetgeving wenselijk is.
 
-## Is de standaard Logboek Dataverwerking alleen bedoeld voor de verwerking van persoonsgegevens?
+## Is de standaard Logboek Dataverwerking alleen bedoeld voor de verwerking van persoonsdata?
 
-Nee, de standaard kan ook worden gebruikt voor verwerking van andere typen gegevens, zoals bijvoorbeeld de registratie van (geografische) objecten.
+Nee, de standaard kan ook worden gebruikt voor verwerking van andere typen data, zoals bijvoorbeeld de registratie van (geografische) objecten.
 
 ## Is in de standaard Logboek Dataverwerking opgenomen hoe logging plaatsvinden ten aanzien van beveiligingsincidenten (denk ook aan technische systeemactiviteiten en toegangsbeheer)?
 
@@ -37,11 +37,11 @@ Daarnaast is het van belang om te beseffen dat het vastleggen van data over een 
 
 ## Zijn er dingen die je moet aanpassen aan je Audit Log als je de standaard Logboek Dataverwerking implementeert?
 
-In de logging worden geen identificerende gegevens opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de SpanId die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
+In de logging worden geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de SpanId die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
 
 ## Kan je de standaard Logboek Dataverwerking implementeren als je een cloud (SaaS) applicatie gebruikt?
 
-Ja dat kan. Het is wel van belang een duidelijk onderscheid te maken tussen verantwoordelijke en een verwerker van de gegevens. Dit bepaalt bijvoorbeeld de Register van verwerkingsactiviteiten waarnaar u dient te verwijzen bij implementatie van de standaard Logboek Dataverwerking.
+Ja dat kan. Het is wel van belang een duidelijk onderscheid te maken tussen verantwoordelijke en een verwerker van de data. Dit bepaalt bijvoorbeeld de Register van verwerkingsactiviteiten waarnaar u dient te verwijzen bij implementatie van de standaard Logboek Dataverwerking.
 
 Voor meer informatie over de rol van een verantwoordelijke en een verwerker kunt u de de website van [Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verantwoordelijke-en-verwerker) raadplegen.
 
@@ -63,7 +63,7 @@ Het is van belang dat, als de  RvvA wordt aangepast,de wijzigingen toevoegd word
 
 ## Mijn organisatie heeft geen RvvA API. (Hoe) Kan ik dan nog steeds de standaard Logboek Dataverwerking implementeren?
 
-Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de RvvA is uiteraard wel verplicht in het geval van persoonsgegevensverwerking. Voor de implementatie van de Logboek Dataverwerkingen is het van belang dat iedere verwerkingsactiviteit te identificeren is met een unieke identificator.
+Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de RvvA is uiteraard wel verplicht in het geval van persoonsdataverwerking. Voor de implementatie van de Logboek Dataverwerkingen is het van belang dat iedere verwerkingsactiviteit te identificeren is met een unieke identificator.
 
 Stel de RvvA is  uitgewerkt in een MS-Exceldocument en het systeem heeft daar geen API-toegang toe Daarnaast zijn de dataverwerkingenin de RvvA niet uniek te identificeren met een identificator. 
 
