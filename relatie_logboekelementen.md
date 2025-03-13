@@ -90,10 +90,10 @@ In de RDW-applicatie wordt het verstrekken van gegevens aan de gemeenteapplicati
 *	Om het geheel te koppelen over de organisaties heen, wordt bij het RDW ook een foreignOperationTraceId opgeslagen, de waarde hier van is gelijk aan de waarde van de traceId van de Operation **Controleer tenaamstelling**.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding12.png)
 ### SpanId
-In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke SpanId. <br>
-•	De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een parentSpanId met de waarde van SpanId van de **Operation Wijzig** kenteken om een relatie te leggen. <br>
-•	Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke SpanId. <br>
-•	Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een foreignSpanId moeten worden vastgelegd. De waarde van deze foreignSpanId is gelijk aan de waarde van de SpanId van de gemeente-Operation **Controleer tenaamstelling**.
+In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke SpanId.
+*	De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een parentSpanId met de waarde van SpanId van de **Operation Wijzig** kenteken om een relatie te leggen.
+*	Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke SpanId.
+*	Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een foreignSpanId moeten worden vastgelegd. De waarde van deze foreignSpanId is gelijk aan de waarde van de SpanId van de gemeente-Operation **Controleer tenaamstelling**.
 ![Alt text](./medias/relatie_logboekelementen_afbeelding13.png)
 ### Totaalbeeld
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
