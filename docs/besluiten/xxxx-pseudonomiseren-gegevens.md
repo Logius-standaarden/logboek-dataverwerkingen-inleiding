@@ -1,4 +1,4 @@
-# Pseudonimiseren gegevens
+# Pseudonimiseren data
 
 - Dit onderdeel is niet normatief. 
 - Status: final 
@@ -8,7 +8,7 @@
 
 ## Context
 
-Bij vastleggen betrokkene wordt in veel gevallen een BSN vastgelegd, of een ander nummer bijvoorbeeld vreemdelingennummer of objectnummer. Wanneer we inhoud van verwerkte data-objecten gaan vastleggen dan betreft dat ook dit soort gegevens. Uit wet en regelgeving (bijvoorbeeld AVG) volgt dat pseudonimiseren wenselijk is.
+Bij vastleggen betrokkene wordt in veel gevallen een BSN vastgelegd, of een ander nummer bijvoorbeeld vreemdelingennummer of objectnummer. Wanneer we inhoud van verwerkte data-objecten gaan vastleggen dan betreft dat ook dit soort data. Uit wet en regelgeving (bijvoorbeeld AVG) volgt dat pseudonimiseren wenselijk is.
 
 ## Vraag:
 Moeten we in de standaard beschrijven hoe men pseudonimisering moet aanpakken?
@@ -28,7 +28,7 @@ Moeten we in de standaard beschrijven hoe men pseudonimisering moet aanpakken?
 
 ## Besluit
 
-•	Juridisch is het pseudonimiseren van gegevens niet VERPLICHT. Er is een verplichting om persoonsgegevens adequaat te beveiligen. Pseudonimisering is een mogelijke maatregel. We kiezen daarom voor een AANBEVELING in plaats van een VERPLICHTING.
+•	Juridisch is het pseudonimiseren van data niet VERPLICHT. Er is een verplichting om persoonsdata adequaat te beveiligen. Pseudonimisering is een mogelijke maatregel. We kiezen daarom voor een AANBEVELING in plaats van een VERPLICHTING.
 
 •	In de standaard zetten we de aanbeveling om te standaardiseren, waarbij de implementatie aan de organisatie is ("Het is AANBEVOLEN om ...").
 
