@@ -1,12 +1,12 @@
 # Voorbeelden
 
-In dit hoofdstuk worden er voorbeelden beschreven van hoe de standaard gebruikt kan worden in verschillende scenario's om de lezer een beter beeld te geven van de standaard in zijn echte werking. Hierbij zijn er vier voorbeelden met elk een schets van de situatie, de uitgangspunten, het globale proces, de relatie tussen gegevens, de relatie met het Logboek Dataverwerkingen en het gedrag van de applicatie.
+In dit hoofdstuk worden er voorbeelden beschreven van hoe de standaard gebruikt kan worden in verschillende scenario's om de lezer een beter beeld te geven van de standaard in zijn echte werking. Hierbij zijn er vier voorbeelden met elk een schets van de situatie, de uitgangspunten, het globale proces, de relatie tussen data, de relatie met het Logboek Dataverwerkingen en het gedrag van de applicatie.
 
 ## Parkeervergunning - inzien
 
 ### Situatieschets (Parkeervergunning - inzien)
 
-Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de gegevens van deze vergunning bekijken.
+Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de data van deze vergunning bekijken.
 
 ### Uitgangspunten (Parkeervergunning - inzien)
 
@@ -14,17 +14,17 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de ge
 - Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
-- Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
+- Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
   - resource/name/version
   - receiver
   - dataSubject
 
 ### Globaal proces (Parkeervergunning - inzien)
 
-1. Een persoon vraagt in zijn ‘MijnOmgeving’ van de gemeente om de bestaande parkeervergunninggegevens.
-2. De ‘MijnOmgeving’ van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-3. Het parkeervergunningsysteem voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. Het parkeervergunningensysteem logt dat er gegevens verzonden zijn naar de gemeente.
-4. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+1. Een persoon vraagt in zijn ‘MijnOmgeving’ van de gemeente om de bestaande parkeervergunningdata.
+2. De ‘MijnOmgeving’ van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+3. Het parkeervergunningsysteem voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. Het parkeervergunningensysteem logt dat er data verzonden is naar de gemeente.
+4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -54,9 +54,9 @@ sequenceDiagram
     End
 ```
 
-### Logging van gegevens  (Parkeervergunning - inzien)
+### Logging van data  (Parkeervergunning - inzien)
 
-De volgende gegevens worden gelogd in de diverse logmomenten:
+De volgende data worden gelogd in de diverse logmomenten:
 
 **Log opvragenVergunningen (log vergunningenapplicatie):**
 
@@ -98,17 +98,17 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |attributeKey |dplCoreDataSubjectId|
 |attributeValue |rva:13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-### Relatie tussen gegevens  (Parkeervergunning - inzien)
+### Relatie tussen data  (Parkeervergunning - inzien)
 
-Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
+Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld is de data op de volgende manier gekoppeld:
 ![Alt text](./medias/6.1.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20inzien).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen  (Parkeervergunning - inzien)
 
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
-- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de betrokkene zelf die via een portaal zijn eigen gegevens kan bekijken. Deze actie is een gegevensverwerking en wordt gelogd bij zowel de gemeenteapplicatie (gegevens worden getoond aan de betrokkene) als bij de vergunningenapplicatie (verstrekking specifieke informatie aan de gemeenteapplicatie).
-- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanIdId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (vergunningenlogboek).
+- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de betrokkene zelf die via een portaal zijn eigen data kan bekijken. Deze actie is een dataverwerking en wordt gelogd bij zowel de gemeenteapplicatie (data wordt getoond aan de betrokkene) als bij de vergunningenapplicatie (verstrekking specifieke informatie aan de gemeenteapplicatie).
+- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanIdId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (vergunningenlogboek).
 - **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
 Standaard Logverwerkingen: **paragraaf 3.3.1 Gedrag**
@@ -123,7 +123,7 @@ Standaard Logverwerkingen: **paragraaf 3.3.1 Gedrag**
 
 ### Situatieschets (Parkeervergunning - wijzigen)
 
-Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de gegevens van het kenteken van deze vergunning wijzigen.
+Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de data van het kenteken van deze vergunning wijzigen.
 
 ### Uitgangspunten (Parkeervergunning - wijzigen)
 
@@ -131,28 +131,28 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de ge
 - Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
-- Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
+- Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
   - resource/name/version
   - receiver
   - dataSubject
 
 ### Globaal proces (Parkeervergunning - wijzigen)
 
-1. Een persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunninggegevens.
-2. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-3. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. De parkeervergunningapplicatie logt dat er gegevens verzonden zijn naar de gemeente.
-4. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+1. Een persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunningdata.
+2. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+3. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. De parkeervergunningapplicatie logt dat er data verzonden is naar de gemeente.
+4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 5. De persoon wijzigt het kenteken in de 'MijnOmgeving' van de gemeente.
 6. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de wijziging af te handelen.
 7. De parkeervergunningapplicatie verzoekt het RDW te controleren of het kenteken ook daadwerkelijk bij de persoon hoort.
-8. Het RDW stuurt een antwoord terug naar de parkeervergunningapplicatie en logt de gegevensverwerking.
+8. Het RDW stuurt een antwoord terug naar de parkeervergunningapplicatie en logt de dataverwerking.
 9. De parkeervergunningapplicatie logt het controleverzoek aan het RDW.
 10. De parkeervergunningapplicatie wijzigt het kenteken van de persoon en logt het wijzigingsverzoek van de persoon.
 11. Nadat de wijziging is gedaan in de parkeervergunningapplicatie, wordt het wijzigingsverzoek gelogd in de 'MijnOmgeving' van de gemeente.
-12. De persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunninggegevens.
-13. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-14. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. De parkeervergunningapplicatie logt dat er gegevens verzonden zijn naar de gemeente.
-15. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+12. De persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunningdata.
+13. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+14. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. De parkeervergunningapplicatie logt dat er data verzonden zijn naar de gemeente.
+15. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -208,9 +208,9 @@ sequenceDiagram
     end
 ```
 
-### Logging van gegevens (Parkeervergunning - wijzigen)
+### Logging van data (Parkeervergunning - wijzigen)
 
-De volgende gegevens worden gelogd in de diverse logmomenten:
+De volgende data worden gelogd in de diverse logmomenten:
 
 **1. Log opvragenVergunningen (log vergunningenapplicatie):**
 
@@ -377,18 +377,18 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |attributeKey |dplCoreDataSubjectId|
 |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-### Relatie tussen gegevens (Parkeervergunning - wijzigen)
+### Relatie tussen data (Parkeervergunning - wijzigen)
 
-Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
+Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
 ![Alt text](./medias/6.2.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20wijzigen).png)
 
 ### Relatie met de standaard Logboek Dataverwerkingen (Parkeervergunning - wijzigen)
 
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
-- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de betrokkene zelf die via een portaal zijn eigen gegevens kan bekijken en wijzigen. Deze acties zijn gegevensverwerkingen en worden gelogd bij zowel de gemeenteapplicatie (gegevens worden getoond aan de betrokkene) als bij de vergunningenapplicatie (verstrekking specifieke informatie aan de gemeenteapplicatie).
+- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de betrokkene zelf die via een portaal zijn eigen data kan bekijken en wijzigen. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de gemeenteapplicatie (data wordt getoond aan de betrokkene) als bij de vergunningenapplicatie (verstrekking specifieke informatie aan de gemeenteapplicatie).
 
-- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (vergunningenlogboek).
+- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (vergunningenlogboek).
 
 - **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
@@ -412,7 +412,7 @@ Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De besch
 - Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
-- Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
+- Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
   - resource/name/version
   - receiver
   - dataSubject
@@ -422,17 +422,17 @@ Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De besch
 Schematisch ziet dit proces er als volgt uit:
 
 1. De Baliemedewerker voert BSN van de burger in.
-2. De Browser vraagt om persoonsgegevens bij de gemeentelijke Balieapplicatie.
-3. De gemeentelijke Balieapplicatie vraag persoonsgegevens bij het BRP-systeem.
-4. Het BRP systeem stuurt gevraagde gegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-5. De gemeentelijke Balieapplicatie stuurt de gegevens naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
-6. De Baliemedewerker voert de wijziging in en de Browser verstuurt de gegevens naar de gemeentelijke Balieapplicatie.
-7. De gemeentelijke Balieapplicatie verstuurt de gegevens naar het BRP-systeem.
+2. De Browser vraagt om persoonsdata bij de gemeentelijke Balieapplicatie.
+3. De gemeentelijke Balieapplicatie vraag persoonsdata bij het BRP-systeem.
+4. Het BRP systeem stuurt gevraagde data naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+5. De gemeentelijke Balieapplicatie stuurt de data naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
+6. De Baliemedewerker voert de wijziging in en de Browser verstuurt de data naar de gemeentelijke Balieapplicatie.
+7. De gemeentelijke Balieapplicatie verstuurt de data naar het BRP-systeem.
 8. Het BRP-systeem verwerkt de wijziging, stuurt bevestiging terug naar de gemeentelijke Balieapplicatie en logt de verwerkingsactie.
-9. De Browser vraagt de actuele persoonsgegevens op de gemeentelijke Balieapplicatie.
-10. De gemeentelijke Balieapplicatie vraagt de persoonsgegevens op bij het BRP-systeem.
-11. Het BRP-systeem stuurt de persoonsgegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-12. De gemeentelijke Balieapplicatie stuurt de persoonsgegevens naar de Browser en logt de aanvraag.
+9. De Browser vraagt de actuele persoonsdata op de gemeentelijke Balieapplicatie.
+10. De gemeentelijke Balieapplicatie vraagt de persoonsdata op bij het BRP-systeem.
+11. Het BRP-systeem stuurt de persoonsdata naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+12. De gemeentelijke Balieapplicatie stuurt de persoonsdata naar de Browser en logt de aanvraag.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -479,9 +479,9 @@ sequenceDiagram
     End
 ```
 
-### Logging van gegevens (Registratie Verhuizing - Eenvoudig)
+### Logging van data (Registratie Verhuizing - Eenvoudig)
 
-De volgende gegevens worden gelogd in de diverse logmomenten:
+De volgende data worden gelogd in de diverse logmomenten:
   
 **1. Log opvragenPersoonsgegevens (log BRP):**
 
@@ -607,17 +607,17 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |`<leeg>`|
 |foreignOperation.SpanId |`<leeg>`|
 
-### Relatie tussen gegevens (Registratie Verhuizing - Eenvoudig)
+### Relatie tussen data (Registratie Verhuizing - Eenvoudig)
 
-Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
+Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld is de data op de volgende manier gekoppeld:
 ![Alt text](./medias/6.3.5%20Relatie%20tussen%20gegevens%20(Registratie%20Verhuizing%20-%20Eenvoudig).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie Verhuizing - Eenvoudig)
 
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
-- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de gegevens van een Betrokkene kan bekijken en wijzigen. Deze acties zijn gegevensverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
-- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (BRP-logboek).
+- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de data van een Betrokkene kan bekijken en wijzigen. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
+- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (BRP-logboek).
 - **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
 Standaard Logverwerkingen: **paragraaf 3.3.1 Gedrag**
@@ -640,21 +640,21 @@ Deze case beschrijft de samenstelling van een huishouding op een bepaald adres. 
 - Het proces is een ‘happy flow’, dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 - Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 - Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
-- Een aantal gegevens staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal gegevens in dit voorbeeld meegenomen. Het betreft de gegevens:
+- Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
   - resource/name/version
   - receiver
   - dataSubject
-- Het is optioneel om het BSN (dplCoreDataSubjectId) te versleutelen ten behoeve van extra gegevensbeveiliging. In dit voorbeeld wordt versleuteling van gegevens toegepast.
+- Het is optioneel om het BSN (dplCoreDataSubjectId) te versleutelen ten behoeve van extra databeveiliging. In dit voorbeeld wordt versleuteling van data toegepast.
 
 ### Globaal proces (Registratie verhuizing)
 
 Schematisch ziet dit proces er als volgt uit:
 
 1. De Baliemedewerker voert adres van de burger in.
-2. De Browser vraagt om persoonsgegevens bij de gemeentelijke Balieapplicatie.
-3. De gemeentelijke Balieapplicatie vraag persoonsgegevens bij het BRP-systeem.
-4. Het BRP systeem stuurt gevraagde gegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-5. De gemeentelijke Balieapplicatie stuurt de gegevens naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
+2. De Browser vraagt om persoonsdata bij de gemeentelijke Balieapplicatie.
+3. De gemeentelijke Balieapplicatie vraag persoonsdata bij het BRP-systeem.
+4. Het BRP systeem stuurt gevraagde data naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+5. De gemeentelijke Balieapplicatie stuurt de data naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
 
 Schematisch ziet dit proces er als volgt uit:
 
@@ -684,9 +684,9 @@ sequenceDiagram
     end
 ```
 
-### Logging van gegevens (Registratie verhuizing)
+### Logging van data (Registratie verhuizing)
 
-De volgende gegevens worden gelogd in de diverse logmomenten:
+De volgende data worden gelogd in de diverse logmomenten:
 
 **1. Log opvragenPersoonsgegevens (log BRP) persoon 1:**
 
@@ -780,18 +780,18 @@ De volgende gegevens worden gelogd in de diverse logmomenten:
 |SpanId |aef53rfa59e240ert|
 |parentSpanId |b2e339a595246e01|
 
-### Relatie tussen gegevens (Registratie verhuizing)
+### Relatie tussen data (Registratie verhuizing)
 
-Om uiteindelijk alle gegevens te kunnen rapporteren, is het van belang dat gegevens op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de gegevens op de volgende manier gekoppeld:
+Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
 ![Alt text](./medias/6.4.5%20Relatie%20tussen%20gegevens%20(Registratie%20verhuizing).drawio.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie verhuizing)
 
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
-- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de gegevens van een Betrokkene kan bekijken. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
+- **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de data van een Betrokkene kan bekijken. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
 
-- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte gegevens. Om een totaalbeeld van de gelogde gegevens te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (BRP-logboek). De aanroep van de gemeente-applicatie naar het BRP betreft één opvraag op basis van één adres, één operationId en één traceId. Het resultaat is meervoudig en moeten naar dezelfde operationId en traceId leiden van de gemeente-applicatie. Het onderscheid zit in de verschillende BSN’s van de personen die via een parentSpanId gekoppeld zijn.
+- **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het SpanId en traceId (gemeentelogboek) te linken aan het foreignSpanId en foreignTraceId (BRP-logboek). De aanroep van de gemeente-applicatie naar het BRP betreft één opvraag op basis van één adres, één operationId en één traceId. Het resultaat is meervoudig en moeten naar dezelfde operationId en traceId leiden van de gemeente-applicatie. Het onderscheid zit in de verschillende BSN’s van de personen die via een parentSpanId gekoppeld zijn.
 
 - **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
@@ -807,7 +807,7 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 ### Register van de verwerkingsactiviteiten (RvvA)
 
-Dit project biedt een overzicht van gegevensverwerkingen binnen de overheid, waaronder het Register van de verwerkingsactiviteiten (RvvA). Dit register documenteert hoe gegevens worden verwerkt, waarschijnlijk ter ondersteuning van transparantie en naleving van de Algemene Verordening Gegevensbescherming (AVG).
+Dit project biedt een overzicht van dataverwerkingen binnen de overheid, waaronder het Register van de verwerkingsactiviteiten (RvvA). Dit register documenteert hoe data worden verwerkt, waarschijnlijk ter ondersteuning van transparantie en naleving van de Algemene Verordening Gegevensbescherming (AVG).
 
 Je kunt de voorbeeldapplicatie van het logboek en de specifieke RvvA-sectie hier bekijken:
 
