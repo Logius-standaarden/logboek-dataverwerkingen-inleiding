@@ -21,10 +21,10 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 ### Globaal proces (Parkeervergunning - inzien)
 
-1. Een persoon vraagt in zijn ‘MijnOmgeving’ van de gemeente om de bestaande parkeervergunninggegevens.
-2. De ‘MijnOmgeving’ van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-3. Het parkeervergunningsysteem voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. Het parkeervergunningensysteem logt dat er gegevens verzonden zijn naar de gemeente.
-4. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+1. Een persoon vraagt in zijn ‘MijnOmgeving’ van de gemeente om de bestaande parkeervergunningdata.
+2. De ‘MijnOmgeving’ van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+3. Het parkeervergunningsysteem voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. Het parkeervergunningensysteem logt dat er data verzonden is naar de gemeente.
+4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -138,21 +138,21 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 ### Globaal proces (Parkeervergunning - wijzigen)
 
-1. Een persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunninggegevens.
-2. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-3. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. De parkeervergunningapplicatie logt dat er gegevens verzonden zijn naar de gemeente.
-4. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+1. Een persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunningdata.
+2. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+3. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. De parkeervergunningapplicatie logt dat er data verzonden is naar de gemeente.
+4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 5. De persoon wijzigt het kenteken in de 'MijnOmgeving' van de gemeente.
 6. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de wijziging af te handelen.
 7. De parkeervergunningapplicatie verzoekt het RDW te controleren of het kenteken ook daadwerkelijk bij de persoon hoort.
-8. Het RDW stuurt een antwoord terug naar de parkeervergunningapplicatie en logt de gegevensverwerking.
+8. Het RDW stuurt een antwoord terug naar de parkeervergunningapplicatie en logt de dataverwerking.
 9. De parkeervergunningapplicatie logt het controleverzoek aan het RDW.
 10. De parkeervergunningapplicatie wijzigt het kenteken van de persoon en logt het wijzigingsverzoek van de persoon.
 11. Nadat de wijziging is gedaan in de parkeervergunningapplicatie, wordt het wijzigingsverzoek gelogd in de 'MijnOmgeving' van de gemeente.
-12. De persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunninggegevens.
-13. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunninggegevens van de persoon.
-14. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde gegevens naar de gemeente. De parkeervergunningapplicatie logt dat er gegevens verzonden zijn naar de gemeente.
-15. De gemeente toont de gegevens aan de persoon en logt dat deze gegevens zijn getoond aan de persoon.
+12. De persoon vraagt in zijn 'MijnOmgeving' van de gemeente om de bestaande parkeervergunningdata.
+13. De 'MijnOmgeving' van de gemeente verzoekt de parkeervergunningapplicatie om de actuele parkeervergunningdata van de persoon.
+14. De parkeervergunningapplicatie voert dit verzoek uit. Daarna verzendt de parkeervergunningapplicatie de gevraagde data naar de gemeente. De parkeervergunningapplicatie logt dat er data verzonden zijn naar de gemeente.
+15. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -422,17 +422,17 @@ Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De besch
 Schematisch ziet dit proces er als volgt uit:
 
 1. De Baliemedewerker voert BSN van de burger in.
-2. De Browser vraagt om persoonsgegevens bij de gemeentelijke Balieapplicatie.
-3. De gemeentelijke Balieapplicatie vraag persoonsgegevens bij het BRP-systeem.
-4. Het BRP systeem stuurt gevraagde gegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-5. De gemeentelijke Balieapplicatie stuurt de gegevens naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
-6. De Baliemedewerker voert de wijziging in en de Browser verstuurt de gegevens naar de gemeentelijke Balieapplicatie.
-7. De gemeentelijke Balieapplicatie verstuurt de gegevens naar het BRP-systeem.
+2. De Browser vraagt om persoonsdata bij de gemeentelijke Balieapplicatie.
+3. De gemeentelijke Balieapplicatie vraag persoonsdata bij het BRP-systeem.
+4. Het BRP systeem stuurt gevraagde data naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+5. De gemeentelijke Balieapplicatie stuurt de data naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
+6. De Baliemedewerker voert de wijziging in en de Browser verstuurt de data naar de gemeentelijke Balieapplicatie.
+7. De gemeentelijke Balieapplicatie verstuurt de data naar het BRP-systeem.
 8. Het BRP-systeem verwerkt de wijziging, stuurt bevestiging terug naar de gemeentelijke Balieapplicatie en logt de verwerkingsactie.
-9. De Browser vraagt de actuele persoonsgegevens op de gemeentelijke Balieapplicatie.
-10. De gemeentelijke Balieapplicatie vraagt de persoonsgegevens op bij het BRP-systeem.
-11. Het BRP-systeem stuurt de persoonsgegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-12. De gemeentelijke Balieapplicatie stuurt de persoonsgegevens naar de Browser en logt de aanvraag.
+9. De Browser vraagt de actuele persoonsdata op de gemeentelijke Balieapplicatie.
+10. De gemeentelijke Balieapplicatie vraagt de persoonsdata op bij het BRP-systeem.
+11. Het BRP-systeem stuurt de persoonsdata naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+12. De gemeentelijke Balieapplicatie stuurt de persoonsdata naar de Browser en logt de aanvraag.
 
 Schematisch ziet dit proces er als volgt uit:
 ```mermaid
@@ -651,10 +651,10 @@ Deze case beschrijft de samenstelling van een huishouding op een bepaald adres. 
 Schematisch ziet dit proces er als volgt uit:
 
 1. De Baliemedewerker voert adres van de burger in.
-2. De Browser vraagt om persoonsgegevens bij de gemeentelijke Balieapplicatie.
-3. De gemeentelijke Balieapplicatie vraag persoonsgegevens bij het BRP-systeem.
-4. Het BRP systeem stuurt gevraagde gegevens naar de gemeentelijke Balieapplicatie en logt de aanvraag.
-5. De gemeentelijke Balieapplicatie stuurt de gegevens naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
+2. De Browser vraagt om persoonsdata bij de gemeentelijke Balieapplicatie.
+3. De gemeentelijke Balieapplicatie vraag persoonsdata bij het BRP-systeem.
+4. Het BRP systeem stuurt gevraagde data naar de gemeentelijke Balieapplicatie en logt de aanvraag.
+5. De gemeentelijke Balieapplicatie stuurt de data naar de Browser en worden getoond aan de Baliemedewerker. De aanvraag wordt gelogd door de Balieapplicatie.
 
 Schematisch ziet dit proces er als volgt uit:
 
