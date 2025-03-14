@@ -1,4 +1,4 @@
-# Geen gegevens over gebruikers in logregels
+# Geen data over gebruikers in logregels
 
 - Status: draft
 - Datum: 2024-05-23
@@ -24,14 +24,14 @@ Het is daarom zuiverder om een andere oplossing te kiezen, namelijk:
 
 - Betrokkenheid van gebruiker wordt vastgelegd in een Audit Log (buiten scope van deze standaard)
 - In het Audit Log kan eventueel een relatie worden gelegd met het Processing ID dat ook in het Logboek Dataverwerkingen wordt gebruikt
-- Iedere keer dat in het Audit Log gegevens over een gebruiker worden vastgelegd, moet tevens een Dataverwerking worden gelogd in het Logboek Dataverwerkingen.
+- Iedere keer dat in het Audit Log data over een gebruiker worden vastgelegd, moet tevens een Dataverwerking worden gelogd in het Logboek Dataverwerkingen.
 
 Let wel, deze Dataverwerking is een *andere Dataverwerking* dan de Dataverwerking die op dat moment wordt uitgevoerd door de Gebruiker, heeft een eigen Trace Context, en wordt gerelateerd aan een andere Verwerkingsactiviteit.
 
 
 ## Besluit
 
-In logregels worden geen identificerende gegevens over gebruikers van de Applicaties vastgelegd.
+In logregels worden geen identificerende data over gebruikers van de Applicaties vastgelegd.
 
 
 ## Gevolgen
