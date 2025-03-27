@@ -5,6 +5,7 @@
 - De laatste versie van de standaard online lezen - [ReSpec publicatie](https://logius-standaarden.github.io/logboek-dataverwerkingen/)
 - Meedoen aan de discussie en ontwikkeling kan via - [Mattermost Digilab omgeving](https://digilab.overheid.nl/chat/verwerkingenlogging)
 - vragen kunnen worden gemailed aan api@logius.nl of als issue worden ingebracht [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen/issues)
+- Een roadmap / planning voor 2025 &2026 is beschikbaar [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding/blob/develop/LDV%20Planning%202025.md)
 
 ## Inleiding
 
