@@ -27,8 +27,8 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
-```mermaid
-
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -52,7 +52,9 @@ sequenceDiagram
     MO-->>B: tonenVergunningenAntwoord
     MO->>L1: Log gegevensverwerking (tonenVergunningen)
     End
-```
+  </pre>
+  <figcaption>Schematische weergave parkeervergunning inzien</figcaption>
+</figure>
 
 ### Logging van data  (Parkeervergunning - inzien)
 
@@ -155,7 +157,8 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 15. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -206,7 +209,9 @@ sequenceDiagram
     MO-->>B: tonenVergunningenAntwoord
     MO->>L1: Log gegevensverwerking (tonenVergunningen)
     end
-```
+  </pre>
+  <figcaption>Schematische weergave parkeervergunning wijzigen</figcaption>
+</figure>
 
 ### Logging van data (Parkeervergunning - wijzigen)
 
@@ -435,7 +440,8 @@ Schematisch ziet dit proces er als volgt uit:
 12. De gemeentelijke Balieapplicatie stuurt de persoonsdata naar de Browser en logt de aanvraag.
 
 Schematisch ziet dit proces er als volgt uit:
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -477,7 +483,9 @@ sequenceDiagram
     BA-->>B: tonenNAWGegevensAntwoord
     BA->>L1: Loggen gegevensverwerking (tonenNAWGegevens)
     End
-```
+  </pre>
+  <figcaption>Schematische weergave registratie verhuizing</figcaption>
+</figure>
 
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
@@ -658,7 +666,8 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -682,7 +691,9 @@ sequenceDiagram
     BA-->>B: tonenNAWGegevensAntwoord
     BA->>L1: Log gegevensverwerking (tonenNAWGegegevens)
     end
-```
+  </pre>
+  <figcaption>Schematische weergave registratie verhuizing</figcaption>
+</figure>
 
 ### Logging van data (Registratie verhuizing)
 

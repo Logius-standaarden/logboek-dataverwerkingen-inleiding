@@ -188,7 +188,8 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 5. *Als een applicatie aangeroepen kan worden vanuit een andere applicatie MOET de applicatie Trace Context metadata accepteren bij een dergelijke aanroepen deze metadata kunnen omzetten naar een foreign_operation bericht.* Bij een externe verwerking (bijvoorbeeld opvragenPersoonsgegevens) geeft de Balieapplicatie de traceId en OperationId mee aan het BRP-systeem. Het BRP-systeem registreert de traceId en operationId beide als ‘foreignOperation’.
 
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -230,4 +231,6 @@ sequenceDiagram
     BA-->>B: tonenNAWGegevensAntwoord
     BA->>L1: Loggen gegevensverwerking (tonenNAWGegevens)
     End
-```
+  </pre>
+  <figcaption>Schematische weergave registratie verhuizing</figcaption>
+</figure>

@@ -42,7 +42,8 @@ Met de volgende sequentie diagrammen wordt in beeld gebracht wat de gevolgen zij
 
 Het wegschrijven van een verwerking in de log-API is uiterst simpel:
 
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     participant A as Applicatie
     participant L as Logboek
@@ -57,7 +58,8 @@ Deze transactie is geoptimaliseerd op eenvoud en snelheid, want deze heeft recht
 
 Om verwerkingen op een significante manier te tonen aan bijvoorbeeld een Betrokkene, is het noodzakelijk om data op te vragen uit zowel de logs als het RvVA. Deze flow mag wat complexer zijn, omdat deze niet voor alle vastgelegde data wordt uitgevoerd en het belang van de bevraging rechtvaardigt dat een bevraging wat langer kan duren.
 
-```mermaid
+<figure>
+  <pre class="nohighlight diagram mermaid">
 sequenceDiagram
     participant F as Inzage App
     participant L as Logboek
