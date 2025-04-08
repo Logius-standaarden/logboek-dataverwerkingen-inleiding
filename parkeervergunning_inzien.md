@@ -98,7 +98,7 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 5. *Als een applicatie aangeroepen kan worden vanuit een andere applicatie MOET de applicatie Trace Context metadata accepteren bij een dergelijke aanroepen deze metadata kunnen omzetten naar een foreign_operation bericht.* Bij een externe verwerking (bijvoorbeeld opvragenVergunningen) geeft de ‘MijnOmgeving’ de traceId en OperationId mee aan de Vergunningenapplicatie. De vergunningenapplicatie registreert de traceId en operationId beide als ‘foreignOperation’.
 
-<pre class="nohighlight mermaid">
+<pre class="nohighlight diagram mermaid">
 
 sequenceDiagram
     box ivory Burger
