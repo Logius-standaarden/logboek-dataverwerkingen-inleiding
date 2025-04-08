@@ -28,7 +28,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight mermaid">
+<pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -156,7 +156,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight mermaid">
+<pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -437,7 +437,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight mermaid">
+<pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -660,7 +660,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight mermaid">
+<pre class="nohighlight diagram mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
