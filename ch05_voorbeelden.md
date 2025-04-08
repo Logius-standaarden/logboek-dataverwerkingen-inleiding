@@ -28,8 +28,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<figure>
-  <pre class="nohighlight diagram mermaid">
+<pre class="nohighlight mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -53,9 +52,7 @@ sequenceDiagram
     MO-->>B: tonenVergunningenAntwoord
     MO->>L1: Log gegevensverwerking (tonenVergunningen)
     End
-  </pre>
-  <figcaption>Schematische weergave parkeervergunning inzien</figcaption>
-</figure>
+</pre>
 
 ### Logging van data  (Parkeervergunning - inzien)
 
@@ -159,8 +156,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<figure>
-  <pre class="nohighlight diagram mermaid">
+<pre class="nohighlight mermaid">
 sequenceDiagram
     box ivory Burger
       participant B as Browser
@@ -211,9 +207,7 @@ sequenceDiagram
     MO-->>B: tonenVergunningenAntwoord
     MO->>L1: Log gegevensverwerking (tonenVergunningen)
     end
-  </pre>
-  <figcaption>Schematische weergave parkeervergunning wijzigen</figcaption>
-</figure>
+```
 
 ### Logging van data (Parkeervergunning - wijzigen)
 
@@ -443,8 +437,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<figure>
-  <pre class="nohighlight diagram mermaid">
+<pre class="nohighlight mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -486,9 +479,7 @@ sequenceDiagram
     BA-->>B: tonenNAWGegevensAntwoord
     BA->>L1: Loggen gegevensverwerking (tonenNAWGegevens)
     End
-  </pre>
-  <figcaption>Schematische weergave registratie verhuizing</figcaption>
-</figure>
+```
 
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
@@ -669,8 +660,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<figure>
-  <pre class="nohighlight diagram mermaid">
+<pre class="nohighlight mermaid">
 sequenceDiagram
     box ivory Baliemedewerker
       participant B as Browser
@@ -694,9 +684,7 @@ sequenceDiagram
     BA-->>B: tonenNAWGegevensAntwoord
     BA->>L1: Log gegevensverwerking (tonenNAWGegegevens)
     end
-  </pre>
-  <figcaption>Schematische weergave registratie verhuizing</figcaption>
-</figure>
+```
 
 ### Logging van data (Registratie verhuizing)
 

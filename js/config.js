@@ -8,6 +8,7 @@ var respecConfig = {
   shortName: "logboek_algemeen",
   publishDate: "2024-10-23",
   publishVersion: "0.1.0",
+  previousPublishVersion: "0.0.1",
   title: "Algemene inleiding - Logboek dataverwerkingen",
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/",
@@ -55,5 +56,5 @@ var respecConfig = {
           uri: "Algemene_inleiding-Logboek_Dataverwerking.pdf",
       },
   ],
-  preProcess: [window.respecMermaid.createFigures]
+  postProcess: [window.respecMermaid.createFigures]
 };
