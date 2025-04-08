@@ -28,31 +28,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight diagram mermaid">
-sequenceDiagram
-    box ivory Burger
-      participant B as Browser
-    end
- 
-    box ivory Gemeente 
-      participant MO as MijnOmgeving
-      participant L1 as Log Gemeente
-    end 
-
-    box ivory Vergunningsoftware BV
-      participant V as Parkeeradmin
-      participant L2 as Log Vergunning
-    end 
-
-    rect lavender
-    B->>+MO: tonenVergunningenVraag
-    MO->>V: opvragenVergunningenVraag
-    V-->>MO: opvragenVergunningenAntwoord
-    V->>L2: Log gegevensverwerking (opvragenVergunningen)
-    MO-->>B: tonenVergunningenAntwoord
-    MO->>L1: Log gegevensverwerking (tonenVergunningen)
-    End
-</pre>
+<img src="medias/parkeervergunning-inzien.svg" />
 
 ### Logging van data  (Parkeervergunning - inzien)
 
@@ -156,58 +132,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight diagram mermaid">
-sequenceDiagram
-    box ivory Burger
-      participant B as Browser
-    end
- 
-    box ivory Gemeente 
-      participant MO as MijnOmgeving
-      participant L1 as Log Gemeente
-    end 
-
-    box ivory Vergunningsoftware BV
-      participant V as Parkeeradmin
-      participant L2 as Log Vergunning
-    end 
-
-    box ivory RDW
-      participant BR as BRV
-      participant L3 as Log BRV
-    end 
-
-    rect lavender
-    B->>+MO: tonenVergunningenVraag
-    MO->>V: opvragenVergunningenVraag
-    V-->>MO: opvragenVergunningenAntwoord
-    V->>L2: Log gegevensverwerking (opvragenVergunningen)
-    MO-->>B: tonenVergunningenAntwoord
-    MO->>L1: Log gegevensverwerking (tonenVergunningen)
-    end
-
-    rect lavender
-    B->>+MO: wijzigenKentekenVraag
-    MO->>V: wijzigenKentekenVraag
-    V->>BR: controlerenKentekenVraag
-    BR-->>V: controlerenKentekenAntwoord
-    BR->>L3: Log gegevensverwerking (controlerenKenteken)
-    V->>L2: Log gegevensverwerking (controlerenKenteken)
-    V->>V: wijzigenKenteken
-    V-->>MO: wijzigenKentekenAntwoord
-    V->>L2: Log gegevensverwerking (wijzigenKenteken)
-    MO->>L1: Log gegevensverwerking (wijzigenKenteken)
-    end
-
-    rect lavender
-    B->>+MO: tonenVergunningenVraag
-    MO->>V: opvragenVergunningenVraag
-    V-->>MO: opvragenVergunningenAntwoord
-    V->>L2: Log gegevensverwerking (opvragenVergunningen)
-    MO-->>B: tonenVergunningenAntwoord
-    MO->>L1: Log gegevensverwerking (tonenVergunningen)
-    end
-```
+<img src="medias/parkeervergunning-wijzigen.svg" />
 
 ### Logging van data (Parkeervergunning - wijzigen)
 
@@ -437,49 +362,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight diagram mermaid">
-sequenceDiagram
-    box ivory Baliemedewerker
-      participant B as Browser
-    end
- 
-    box ivory Gemeente 
-      participant BA as Balieapplicatie
-      participant L1 as Log Gemeente
-    end 
-
-    box ivory BRP Registratie
-      participant BR as BRP
-      participant L2 as Log BRP
-    end 
-
-    rect lavender
-    B->>+BA: tonenNAWGegevensVraag
-    BA->>BR: opvragenPersoonsgegevensVraag
-    BR-->>BA: opvragenPersoonsgegevensAntwoord
-    BR->>L2: Log gegevensverwerking (opvragenPersoonsgegevens)
-    BA-->>B: tonenNAWGegevensAntwoord
-    BA->>L1: Log gegevensverwerking (tonenNAWGegegevens)
-    end
-
-    rect lavender
-    B->>BA: wijzigenNAWGegevensVraag
-    BA->>BR : wijzigenPersoonsgegevensVraag
-    BR-->>BR : wijzigenPersoonsgegevens
-    BR-->>BA: wijzigenPersoonsgegevensAntwoord
-    BR->>L2: Loggen verwerking (wijzigenPersoonsgegevens)
-    BA->>L1: Loggen verwerking (wijzigenPersoonsgegevens)
-    end
-
-    rect lavender
-    B->>BA: tonenNAWGegevensVraag
-    BA->>BR: opvragenPersoonsgegevensVraag
-    BR-->>BA: opvragenPersoonsgegevensAntwoord
-    BR->>L2: Loggen gegevensverwerking (opvragenPersoonsgegevens)
-    BA-->>B: tonenNAWGegevensAntwoord
-    BA->>L1: Loggen gegevensverwerking (tonenNAWGegevens)
-    End
-```
+<img src="medias/verhuizing-eenvoudig.svg" />
 
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
@@ -660,31 +543,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<pre class="nohighlight diagram mermaid">
-sequenceDiagram
-    box ivory Baliemedewerker
-      participant B as Browser
-    end
- 
-    box ivory Gemeente 
-      participant BA as Balieapplicatie
-      participant L1 as Log Gemeente
-    end 
-
-    box ivory BRP Registratie
-      participant BR as BRP
-      participant L2 as Log BRP
-    end 
-
-    rect lavender
-    B->>+BA: tonenNAWGegevensVraag
-    BA->>BR: opvragenPersoonsgegevensVraag
-    BR-->>BA: opvragenPersoonsgegevensAntwoord
-    BR->>L2: Log gegevensverwerking (opvragenPersoonsgegevens)
-    BA-->>B: tonenNAWGegevensAntwoord
-    BA->>L1: Log gegevensverwerking (tonenNAWGegegevens)
-    end
-```
+<img src="medias/verhuizing-registratie.svg" />
 
 ### Logging van data (Registratie verhuizing)
 

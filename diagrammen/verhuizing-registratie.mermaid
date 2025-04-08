@@ -1,0 +1,23 @@
+sequenceDiagram
+    box ivory Baliemedewerker
+      participant B as Browser
+    end
+ 
+    box ivory Gemeente 
+      participant BA as Balieapplicatie
+      participant L1 as Log Gemeente
+    end 
+
+    box ivory BRP Registratie
+      participant BR as BRP
+      participant L2 as Log BRP
+    end 
+
+    rect lavender
+    B->>+BA: tonenNAWGegevensVraag
+    BA->>BR: opvragenPersoonsgegevensVraag
+    BR-->>BA: opvragenPersoonsgegevensAntwoord
+    BR->>L2: Log gegevensverwerking (opvragenPersoonsgegevens)
+    BA-->>B: tonenNAWGegevensAntwoord
+    BA->>L1: Log gegevensverwerking (tonenNAWGegegevens)
+    end

@@ -2,7 +2,7 @@
 
 De Logboek Data Verwerkingen standaard bevind zich in een afrondende faseen we willen graag transparant en open zijn over de komende mijlpalen en ontwikkelingen. Vandaar dat we deze planning publiceren als onderdeel van de inleidende documentatie. Uiteraard is dit een momentopname van maart 2025 en nieuwe inzichten gaan leiden tot aanpassingen in de planning.
 
-<pre class="nohighlight diagram mermaid">
+```mermaid
 %% Logboek Data Verwerkingen (LDV)
 gantt
     title Logboek Data Verwerkingen (LDV)
@@ -23,7 +23,11 @@ gantt
         Adoptie en implementatie ondersteuning : 01-06-2025, 365d
     section Fase 4 - implementatie en groei. 
     		Start reguliere doorontwikkeling en beheer : 01-06-2026,  
-</pre>
+  
+
+
+  
+```
 
 
 
