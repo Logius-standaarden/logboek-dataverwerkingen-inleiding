@@ -55,5 +55,5 @@ var respecConfig = {
           uri: "Algemene_inleiding-Logboek_Dataverwerking.pdf",
       },
   ],
-  postProcess: [window.respecMermaid.createFigures]
+  preProcess: [window.respecMermaid.createFigures]
 };
