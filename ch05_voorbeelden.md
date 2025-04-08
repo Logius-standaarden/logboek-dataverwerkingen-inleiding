@@ -27,6 +27,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 4. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
+
 <figure>
   <pre class="nohighlight diagram mermaid">
 sequenceDiagram
@@ -157,6 +158,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 15. De gemeente toont de data aan de persoon en logt dat deze data is getoond aan de persoon.
 
 Schematisch ziet dit proces er als volgt uit:
+
 <figure>
   <pre class="nohighlight diagram mermaid">
 sequenceDiagram
@@ -440,6 +442,7 @@ Schematisch ziet dit proces er als volgt uit:
 12. De gemeentelijke Balieapplicatie stuurt de persoonsdata naar de Browser en logt de aanvraag.
 
 Schematisch ziet dit proces er als volgt uit:
+
 <figure>
   <pre class="nohighlight diagram mermaid">
 sequenceDiagram
