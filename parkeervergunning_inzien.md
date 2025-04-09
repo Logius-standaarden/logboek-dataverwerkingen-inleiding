@@ -98,29 +98,4 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 5. *Als een applicatie aangeroepen kan worden vanuit een andere applicatie MOET de applicatie Trace Context metadata accepteren bij een dergelijke aanroepen deze metadata kunnen omzetten naar een foreign_operation bericht.* Bij een externe verwerking (bijvoorbeeld opvragenVergunningen) geeft de ‘MijnOmgeving’ de traceId en OperationId mee aan de Vergunningenapplicatie. De vergunningenapplicatie registreert de traceId en operationId beide als ‘foreignOperation’.
 
-```mermaid
-
-sequenceDiagram
-    box ivory Burger
-      participant B as Browser
-    end
- 
-    box ivory Gemeente 
-      participant MO as MijnOmgeving
-      participant L1 as Log Gemeente
-    end 
-
-    box ivory Vergunningsoftware BV
-      participant V as Parkeeradmin
-      participant L2 as Log Vergunning
-    end 
-
-    rect lavender
-    B->>+MO: tonenVergunningenVraag
-    MO->>V: opvragenVergunningenVraag
-    V-->>MO: opvragenVergunningenAntwoord
-    V->>L2: Log gegevensverwerking (opvragenVergunningen)
-    MO-->>B: tonenVergunningenAntwoord
-    MO->>L1: Log gegevensverwerking (tonenVergunningen)
-    End
-```
+<img src="medias/parkeervergunning-inzien.svg" />
