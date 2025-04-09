@@ -4,11 +4,10 @@ var respecConfig = {
   maxTocLevel: 2,
   specStatus: "WV",
   specType: "PR",
-  pubDomain: "api",
-  shortName: "logboek_algemeen",
+  pubDomain: "logboek",
+  shortName: "inleiding",
   publishDate: "2024-10-23",
   publishVersion: "0.1.0",
-  previousPublishVersion: "(none)",
   title: "Algemene inleiding - Logboek dataverwerkingen",
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/",
@@ -31,12 +30,17 @@ var respecConfig = {
       {
         name: "Nil Barua",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
       },
       {
         name: "Martin van der Plas",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
+      },
+      {
+        name: "Tim van der Lippe",
+        company: "Logius",
+        companyURL: "https://logius.nl",
       },
       {
         name: "Jeroen Mulder",
