@@ -77,7 +77,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data  (Parkeervergunning - inzien)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld is de data op de volgende manier gekoppeld:
-![Alt text](./medias/6.1.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20inzien).drawio.png)
+![Alt text](./medias/relatie-tussen-gegevens-parkeervergunning-inzien.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen  (Parkeervergunning - inzien)
 
@@ -306,7 +306,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Parkeervergunning - wijzigen)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
-![Alt text](./medias/6.2.5%20Relatie%20tussen%20gegevens%20(Parkeervergunning%20-%20wijzigen).png)
+![Alt text](./medias/relatie-tussen-gegevens-parkeervergunning-wijzigen.png)
 
 ### Relatie met de standaard Logboek Dataverwerkingen (Parkeervergunning - wijzigen)
 
@@ -495,7 +495,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Registratie Verhuizing - Eenvoudig)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld is de data op de volgende manier gekoppeld:
-![Alt text](./medias/6.3.5%20Relatie%20tussen%20gegevens%20(Registratie%20Verhuizing%20-%20Eenvoudig).drawio.png)
+![Alt text](./medias/relatie-tussen-gegevens-registratie-verhuizing-eenvoudig.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie Verhuizing - Eenvoudig)
 
@@ -644,7 +644,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Registratie verhuizing)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
-![Alt text](./medias/6.4.5%20Relatie%20tussen%20gegevens%20(Registratie%20verhuizing).drawio.png)
+![Alt text](./medias/relatie-tussen-gegevens-registratie-verhuizing.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie verhuizing)
 
