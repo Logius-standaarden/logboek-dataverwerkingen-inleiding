@@ -92,7 +92,7 @@ De norm beschrijft alle verschillende aspecten van gezondheidsinformatie die bij
 Hierbij legt de norm niet het formaat van logging vast, enkel de vereiste informatie.
 Deze standaard is daarom inzetbaar in combinatie met de NEN7513 norm, door vast te leggen in welk formaat dat past.
 
-Hiervoor is, als onderdeel van de totstandkoming van deze standaard, allereerst een modelanalyse van de norm gemaakt in relatie tot welke informatie de core standaard bevat.
+Hiervoor is, als onderdeel van de totstandkoming van deze standaard, allereerst [een modelanalyse van de norm](./medias/modelanalyse-nen-7513-extensie.pdf) gemaakt in relatie tot welke informatie de core standaard bevat.
 Alle missende informatie is beschreven in [een potentiële extensie](https://logius-standaarden.github.io/logboek-extensie-nen7513/), om na te gaan of dit een haalbare aanpak is.
 Deze extensie zal niet worden vastgesteld en is enkel bedoeld als proof-of-concept tijdens de totstandkoming.
 Mocht in de toekomst er interesse zijn om de NEN7513 norm te implementeren op basis van deze standaard, dan kan deze extensie als startpunt van het traject gebruikt worden.
