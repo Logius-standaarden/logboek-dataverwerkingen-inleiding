@@ -15,9 +15,9 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 * Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 * Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 * Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
-  - resource/name/version
-  - receiver
-  - dataSubject
+  * resource/name/version
+  * receiver
+  * dataSubject
 
 ### Globaal proces (Parkeervergunning - inzien)
 
@@ -108,9 +108,9 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 * Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 * Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 * Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
-  - resource/name/version
-  - receiver
-  - dataSubject
+  * resource/name/version
+  * receiver
+  * dataSubject
 
 ### Globaal proces (Parkeervergunning - wijzigen)
 
@@ -339,9 +339,9 @@ Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De besch
 * Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 * Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 * Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
-  - resource/name/version
-  - receiver
-  - dataSubject
+  * resource/name/version
+  * receiver
+  * dataSubject
 
 ### Globaal proces (Registratie Verhuizing - Eenvoudig)
 
@@ -526,9 +526,9 @@ Deze case beschrijft de samenstelling van een huishouding op een bepaald adres. 
 * Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 * Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
 * Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
-  - resource/name/version
-  - receiver
-  - dataSubject
+  * resource/name/version
+  * receiver
+  * dataSubject
 * Het is optioneel om het BSN (dplCoreDataSubjectId) te versleutelen ten behoeve van extra databeveiliging. In dit voorbeeld wordt versleuteling van data toegepast.
 
 ### Globaal proces (Registratie verhuizing)
