@@ -34,45 +34,45 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenVergunningen (log vergunningenapplicatie):
+* **Log opvragenVergunningen (log vergunningenapplicatie)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |8451dcd9ede037cb|
-|operationName |opvragenVergunningen|
-|parentSpanId |`<leeg>`|
-|traceId |ccf5064a324163ed939bfa09c2bcb210|
-|startTime |2024-05-30 08:40:37.000|
-|endTime |2024-05-30 08:40:37.000|
-|statusCode |OK|
-|resource.name |Parkeeradmin|
-|resource.version |2.1.6|
-|receiver| `<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |rva:12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|attributeKey |`<leeg>`|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |c7a26dcd0bee0c8900e2174c43c3393c|
-|foreignOperation.SpanId| 9f8971bfd093637d|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |8451dcd9ede037cb|
+  |operationName |opvragenVergunningen|
+  |parentSpanId |`<leeg>`|
+  |traceId |ccf5064a324163ed939bfa09c2bcb210|
+  |startTime |2024-05-30 08:40:37.000|
+  |endTime |2024-05-30 08:40:37.000|
+  |statusCode |OK|
+  |resource.name |Parkeeradmin|
+  |resource.version |2.1.6|
+  |receiver| `<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |rva:12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  |attributeKey |`<leeg>`|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |c7a26dcd0bee0c8900e2174c43c3393c|
+  |foreignOperation.SpanId| 9f8971bfd093637d|
 
-#### Log opvragenVergunningen (log gemeente)
+* **Log opvragenVergunningen (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |9f8971bfd093637d|
-|operationName |tonenVergunningen|
-|parentSpanId| `<leeg>`|
-|traceId |c7a26dcd0bee0c8900e2174c43c3393c|
-|startTime |2024-05-30 10:40:37.821|
-|endTime |2024-05-30 10:40:37.845|
-|statusCode |OK|
-|resource.name |MijnOmgeving|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |rva:11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |rva:13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |9f8971bfd093637d|
+  |operationName |tonenVergunningen|
+  |parentSpanId| `<leeg>`|
+  |traceId |c7a26dcd0bee0c8900e2174c43c3393c|
+  |startTime |2024-05-30 10:40:37.821|
+  |endTime |2024-05-30 10:40:37.845|
+  |statusCode |OK|
+  |resource.name |MijnOmgeving|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |rva:11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |rva:13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
 ### Relatie tussen data  (Parkeervergunning - inzien)
 
@@ -138,169 +138,169 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenVergunningen (log vergunningenapplicatie)
+* **Log opvragenVergunningen (log vergunningenapplicatie)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId | 8ee7b01aca8d01d9 |
-| operationName|  opvragenVergunningen|
-| parentSpanId | `<leeg>`|
-| traceId | c6adf4df949d03c662b53e95debdc411|
-| startTime | 2024-07-29 08:16:49.000|
-| endTime | 2024-07-29 08:16:49.000|
-| statusCode | OK|
-| resource.name | Parkeeradmin|
-| resource.version | 2.1.6|
-| receiver | `<leeg>` |
-| attributeKey | dplCoreProcessingActivityId|
-| attributeValue | 12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-| attributeKey    | `<leeg>` |
-| attributeValue  | `<leeg>` |
-| foreignOperation.traceId | bc9126aaae813fd491ee10bf870db292|
-| foreignOperation.SpanId | b2e339a595246e01|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId | 8ee7b01aca8d01d9 |
+  | operationName|  opvragenVergunningen|
+  | parentSpanId | `<leeg>`|
+  | traceId | c6adf4df949d03c662b53e95debdc411|
+  | startTime | 2024-07-29 08:16:49.000|
+  | endTime | 2024-07-29 08:16:49.000|
+  | statusCode | OK|
+  | resource.name | Parkeeradmin|
+  | resource.version | 2.1.6|
+  | receiver | `<leeg>` |
+  | attributeKey | dplCoreProcessingActivityId|
+  | attributeValue | 12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  | attributeKey    | `<leeg>` |
+  | attributeValue  | `<leeg>` |
+  | foreignOperation.traceId | bc9126aaae813fd491ee10bf870db292|
+  | foreignOperation.SpanId | b2e339a595246e01|
 
-#### Log tonenVergunningen (log gemeente)
+* **Log tonenVergunningen (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId| b2e339a595246e01|
-| operationName | tonenVergunningen|
-| parentSpanId | `<leeg>`|
-| traceId | bc9126aaae813fd491ee10bf870db292|
-| startTime | 2024-07-29 10:16:49.690|
-| endTime | 2024-07-29 10:16:49.723|
-| statusCode | OK|
-| resource.name | MijnOmgeving|
-| resource.version | 1.0.5|
-| receiver | 27fdey98605etc48|
-| attributeKey | dplCoreProcessingActivityId|
-| attributeValue | 11x2ec2a-0774-3541-9b16-21ba179fcf15|
-| attributeKey | dplCoreDataSubjectId|
-| attributeValue | 13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId| b2e339a595246e01|
+  | operationName | tonenVergunningen|
+  | parentSpanId | `<leeg>`|
+  | traceId | bc9126aaae813fd491ee10bf870db292|
+  | startTime | 2024-07-29 10:16:49.690|
+  | endTime | 2024-07-29 10:16:49.723|
+  | statusCode | OK|
+  | resource.name | MijnOmgeving|
+  | resource.version | 1.0.5|
+  | receiver | 27fdey98605etc48|
+  | attributeKey | dplCoreProcessingActivityId|
+  | attributeValue | 11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  | attributeKey | dplCoreDataSubjectId|
+  | attributeValue | 13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-#### Log controlerenKenteken (log RDW)
+* **Log controlerenKenteken (log RDW)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |433f276975204ccf|
-|operationName |controlerenKenteken|
-|parentSpanIdcontrolerenKenteken|`<leeg>`|
-|traceId |8ccfd3c567c51d68937c263e00a352be|
-|startTime |2024-07-29 08:17:02|
-|endTime |2024-07-29 08:17:02|
-|statusCode |OK|
-|resource.name |BRV|
-|resource.version |2.0|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |8c714e4a-a538-36f7-8b1f-37a6884cc68c|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
-|foreignOperation.SpanId |414514cf1d40d6b2|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |433f276975204ccf|
+  |operationName |controlerenKenteken|
+  |parentSpanIdcontrolerenKenteken|`<leeg>`|
+  |traceId |8ccfd3c567c51d68937c263e00a352be|
+  |startTime |2024-07-29 08:17:02|
+  |endTime |2024-07-29 08:17:02|
+  |statusCode |OK|
+  |resource.name |BRV|
+  |resource.version |2.0|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |8c714e4a-a538-36f7-8b1f-37a6884cc68c|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |foreignOperation.SpanId |414514cf1d40d6b2|
 
-#### Log controlerenKenteken (log vergunningenapplicatie)
+* **Log controlerenKenteken (log vergunningenapplicatie)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |414514cf1d40d6b2|
-|operationName |controlerenKenteken|
-|parentSpanId |7a95b6989d2b28c7|
-|traceId |f176a58de7fe249ea37ed4f5979da02b|
-|startTime |2024-07-29 08:17:02.000|
-|endTime |2024-07-29 08:17:02.000|
-|statusCode |OK|
-|resource.name |Parkeeradmin|
-|resource.version |2.1.6|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |19u2dd2a-0cb7-3541-9ae6-217a178fc9e6|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
-|foreignOperation.SpanId |ba7cac7ca0489e42|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |414514cf1d40d6b2|
+  |operationName |controlerenKenteken|
+  |parentSpanId |7a95b6989d2b28c7|
+  |traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |startTime |2024-07-29 08:17:02.000|
+  |endTime |2024-07-29 08:17:02.000|
+  |statusCode |OK|
+  |resource.name |Parkeeradmin|
+  |resource.version |2.1.6|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |19u2dd2a-0cb7-3541-9ae6-217a178fc9e6|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
+  |foreignOperation.SpanId |ba7cac7ca0489e42|
 
-#### Log wijzigenKenteken (log vergunningenapplicatie)
+* **Log wijzigenKenteken (log vergunningenapplicatie)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |7a95b6989d2b28c7|
-|operationName |wijzigenKenteken|
-|parentSpanId |`<leeg>`|
-|traceId |f176a58de7fe249ea37ed4f5979da02b|
-|startTime |2024-07-29 08:17:02.000|
-|endTime |2024-07-29 08:17:02.000|
-|statusCode |OK|
-|resource.name |Parkeeradmin|
-|resource.version |2.1.6|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |0b1ff20a-3ecb-34bf-8cf5-e4cbacb046ab|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
-|foreignOperation.SpanId |df524ee2a3fd5ddf|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |7a95b6989d2b28c7|
+  |operationName |wijzigenKenteken|
+  |parentSpanId |`<leeg>`|
+  |traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |startTime |2024-07-29 08:17:02.000|
+  |endTime |2024-07-29 08:17:02.000|
+  |statusCode |OK|
+  |resource.name |Parkeeradmin|
+  |resource.version |2.1.6|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |0b1ff20a-3ecb-34bf-8cf5-e4cbacb046ab|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
+  |foreignOperation.SpanId |df524ee2a3fd5ddf|
 
-#### Log wijzigenKenteken (log gemeente)
+* **Log wijzigenKenteken (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |df524ee2a3fd5ddf|
-|operationName |wijzigenKenteken|
-|parentSpanId |`<leeg>`|
-|traceId |c0a7a38d56f3f16a2163ca0071d3779a|
-|startTime |2024-07-29 10:17:02.010|
-|endTime |2024-07-29 10:17:02.039|
-|statusCode |OK|
-|resource.name |MijnOmgeving|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |12c21c2a-0875-3543-9b16-21ja179fcf16|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
-|foreignOperation.traceId |`<leeg>`|
-|foreignOperation.SpanId |`<leeg>`|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |df524ee2a3fd5ddf|
+  |operationName |wijzigenKenteken|
+  |parentSpanId |`<leeg>`|
+  |traceId |c0a7a38d56f3f16a2163ca0071d3779a|
+  |startTime |2024-07-29 10:17:02.010|
+  |endTime |2024-07-29 10:17:02.039|
+  |statusCode |OK|
+  |resource.name |MijnOmgeving|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |12c21c2a-0875-3543-9b16-21ja179fcf16|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  |foreignOperation.traceId |`<leeg>`|
+  |foreignOperation.SpanId |`<leeg>`|
 
-#### Log opvragenVergunningen (log vergunningenapplicatie)
+* **Log opvragenVergunningen (log vergunningenapplicatie)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |6042d706f53fec76|
-|operationName |opvragenVergunningen|
-|parentSpanId |`<leeg>`|
-|traceId |c6c2d53a5762d47779c57057d7983311|
-|startTime |2024-07-29 08:17:02.000|
-|endTime |2024-07-29 08:17:02.000|
-|statusCode |OK|
-|resource.name |Parkeeradmin|
-|resource.version |2.1.6|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|attributeKey |`<leeg>`|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
-|foreignOperation.SpanId |ba7cac7ca0489e42|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |6042d706f53fec76|
+  |operationName |opvragenVergunningen|
+  |parentSpanId |`<leeg>`|
+  |traceId |c6c2d53a5762d47779c57057d7983311|
+  |startTime |2024-07-29 08:17:02.000|
+  |endTime |2024-07-29 08:17:02.000|
+  |statusCode |OK|
+  |resource.name |Parkeeradmin|
+  |resource.version |2.1.6|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  |attributeKey |`<leeg>`|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
+  |foreignOperation.SpanId |ba7cac7ca0489e42|
 
-#### Log tonenVergunningen (log gemeente)
+* **Log tonenVergunningen (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |ba7cac7ca0489e42|
-|operationName |tonenVergunningen|
-|parentSpanId |`<leeg>`|
-|traceId |8a1325a32aef8de4ffba7d7c931eeaec|
-|startTime |2024-07-29 10:17:02.274|
-|endTime |2024-07-29 10:17:02.291|
-|statusCode |OK|
-|resource.name |MijnOmgeving|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |ba7cac7ca0489e42|
+  |operationName |tonenVergunningen|
+  |parentSpanId |`<leeg>`|
+  |traceId |8a1325a32aef8de4ffba7d7c931eeaec|
+  |startTime |2024-07-29 10:17:02.274|
+  |endTime |2024-07-29 10:17:02.291|
+  |statusCode |OK|
+  |resource.name |MijnOmgeving|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
 ### Relatie tussen data (Parkeervergunning - wijzigen)
 
@@ -367,129 +367,129 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenPersoonsgegevens (log BRP)
+* **Log opvragenPersoonsgegevens (log BRP)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-| SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
-|operationName |opvragenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |c6adf4df949d03c662b53e95debdc411|
-|startTime |2024-07-29 08:16:49.000|
-|endTime |2024-07-29 08:16:49.000|
-|statusCode |OK|
-|resource.name |BRP|
-|resource.version| 2.0|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|attributeKey |`<leeg>`|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
-|foreignOperation.SpanId |b2e339a595246e01|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  | SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
+  |operationName |opvragenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |c6adf4df949d03c662b53e95debdc411|
+  |startTime |2024-07-29 08:16:49.000|
+  |endTime |2024-07-29 08:16:49.000|
+  |statusCode |OK|
+  |resource.name |BRP|
+  |resource.version| 2.0|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  |attributeKey |`<leeg>`|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
+  |foreignOperation.SpanId |b2e339a595246e01|
 
-#### Log tonenNAWGegevens (log gemeente)
+* **Log tonenNAWGegevens (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |b2e339a595246e01|
-|operationName |tonenNAWGegevens|
-|parentSpanId |`<leeg>`|
-|traceId |bc9126aaae813fd491ee10bf870db292|
-|startTime |2024-07-29 10:16:49.690|
-|endTime |2024-07-29 10:16:49.723|
-|statusCode |OK|
-|resource.name |Balieapp|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |b2e339a595246e01|
+  |operationName |tonenNAWGegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |bc9126aaae813fd491ee10bf870db292|
+  |startTime |2024-07-29 10:16:49.690|
+  |endTime |2024-07-29 10:16:49.723|
+  |statusCode |OK|
+  |resource.name |Balieapp|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-#### Log wijzigenPersoonsgegevens (log BRP)
+* **Log wijzigenPersoonsgegevens (log BRP)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |433f276975204ccf|
-|operationName |wijzigenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |8ccfd3c567c51d68937c263e00a352be|
-|startTime |2024-07-29 08:17:02|
-|endTime |2024-07-29 08:17:02|
-|statusCode |OK|
-|resource.name |BRP|
-|resource.version |2.0|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |8c714e4a-a538-36f7-8b1f-37a6884cc68c|
-|attributeKey |`<leeg>`|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
-|foreignOperation.SpanId| 414514cf1d40d6b2|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |433f276975204ccf|
+  |operationName |wijzigenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |8ccfd3c567c51d68937c263e00a352be|
+  |startTime |2024-07-29 08:17:02|
+  |endTime |2024-07-29 08:17:02|
+  |statusCode |OK|
+  |resource.name |BRP|
+  |resource.version |2.0|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |8c714e4a-a538-36f7-8b1f-37a6884cc68c|
+  |attributeKey |`<leeg>`|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |foreignOperation.SpanId| 414514cf1d40d6b2|
 
-#### Log wijzigenPersoonsgegevens (log gemeente)
+* **Log wijzigenPersoonsgegevens (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |414514cf1d40d6b2|
-|operationName |wijzigenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |f176a58de7fe249ea37ed4f5979da02b|
-|startTime |2024-07-29 08:17:02.000|
-|endTime |2024-07-29 08:17:02.000|
-|statusCode |OK|
-|resource.name |Balieapp|
-|resource.version |1.0.5|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |19u2dd2a-0cb7-3541-9ae6-217a178fc9e6|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
-|foreignOperation.traceId |`<leeg>`|
-|foreignOperation.SpanId |`<leeg>`|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |414514cf1d40d6b2|
+  |operationName |wijzigenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |startTime |2024-07-29 08:17:02.000|
+  |endTime |2024-07-29 08:17:02.000|
+  |statusCode |OK|
+  |resource.name |Balieapp|
+  |resource.version |1.0.5|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |19u2dd2a-0cb7-3541-9ae6-217a178fc9e6|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  |foreignOperation.traceId |`<leeg>`|
+  |foreignOperation.SpanId |`<leeg>`|
 
-#### Log opvragenPersoonsgegevens (log BRP)
+* **Log opvragenPersoonsgegevens (log BRP)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |7a95b6989d2b28c7|
-|operationName |opvragenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |f176a58de7fe249ea37ed4f5979da02b|
-|startTime |2024-07-29 08:17:02.000|
-|endTime |2024-07-29 08:17:02.000|
-|statusCode |OK|
-|resource.name |BRP|
-|resource.version |2.0|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |0b1ff20a-3ecb-34bf-8cf5-e4cbacb046ab|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |`<leeg>`|
-|foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
-|foreignOperation.SpanId |df524ee2a3fd5ddf|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |7a95b6989d2b28c7|
+  |operationName |opvragenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |f176a58de7fe249ea37ed4f5979da02b|
+  |startTime |2024-07-29 08:17:02.000|
+  |endTime |2024-07-29 08:17:02.000|
+  |statusCode |OK|
+  |resource.name |BRP|
+  |resource.version |2.0|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |0b1ff20a-3ecb-34bf-8cf5-e4cbacb046ab|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |`<leeg>`|
+  |foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
+  |foreignOperation.SpanId |df524ee2a3fd5ddf|
 
-#### Log tonenNAWGegevens (log gemeente)
+* **Log tonenNAWGegevens (log gemeente)**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |df524ee2a3fd5ddf|
-|operationName |tonenNAWGegevens|
-|parentSpanId |`<leeg>`|
-|traceId |c0a7a38d56f3f16a2163ca0071d3779a|
-|startTime |2024-07-29 10:17:02.010|
-|endTime |2024-07-29 10:17:02.039|
-|statusCode| OK|
-|resource.name |Balieapp|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |12c21c2a-0875-3543-9b16-21ja179fcf16|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
-|foreignOperation.traceId |`<leeg>`|
-|foreignOperation.SpanId |`<leeg>`|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |df524ee2a3fd5ddf|
+  |operationName |tonenNAWGegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |c0a7a38d56f3f16a2163ca0071d3779a|
+  |startTime |2024-07-29 10:17:02.010|
+  |endTime |2024-07-29 10:17:02.039|
+  |statusCode| OK|
+  |resource.name |Balieapp|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |12c21c2a-0875-3543-9b16-21ja179fcf16|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  |foreignOperation.traceId |`<leeg>`|
+  |foreignOperation.SpanId |`<leeg>`|
 
 ### Relatie tussen data (Registratie Verhuizing - Eenvoudig)
 
@@ -548,97 +548,97 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenPersoonsgegevens (log BRP) persoon 1
+* **Log opvragenPersoonsgegevens (log BRP) persoon 1**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
-|operationName |opvragenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |c6adf4df949d03c662b53e95debdc411|
-|startTime |2024-07-29 08:16:49.000|
-|endTime |2024-07-29 08:16:49.000|
-|statusCode |OK|
-|resource.name |BRP|
-|resource.version| 2.0|
-|receiver |`<leeg>`|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
-|foreignOperation.SpanId |b2e339a595246e01|
-|<u>BSN 1</u>|`<leeg>`|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |ddj2ey299-0cf4-3541-9ar6-21ia178fcfrr|
-|SpanId |r2e3229059BG246e01|
-|parentSpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
+  |operationName |opvragenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |c6adf4df949d03c662b53e95debdc411|
+  |startTime |2024-07-29 08:16:49.000|
+  |endTime |2024-07-29 08:16:49.000|
+  |statusCode |OK|
+  |resource.name |BRP|
+  |resource.version| 2.0|
+  |receiver |`<leeg>`|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
+  |foreignOperation.SpanId |b2e339a595246e01|
+  |<u>BSN 1</u>|`<leeg>`|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |ddj2ey299-0cf4-3541-9ar6-21ia178fcfrr|
+  |SpanId |r2e3229059BG246e01|
+  |parentSpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
 
-#### Log opvragenPersoonsgegevens (log BRP) persoon 2
+* **Log opvragenPersoonsgegevens (log BRP) persoon 2**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
-|operationName |opvragenPersoonsgegevens|
-|parentSpanId |`<leeg>`|
-|traceId |c6adf4df949d03c662b53e95debdc411|
-|startTime |2024-07-29 08:16:49.000|
-|endTime |2024-07-29 08:16:49.000|
-|statusCode |OK|
-|resource.name |BRP|
-|resource.version |2.0|
-|receiver |`<leeg>`|
-|attributeKey| dplCoreProcessingActivityId|
-|attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-|foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
-|foreignOperation.SpanId |b2e339a595246e01|
-|<u>BSN 2</u> |`<leeg>`|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |f4j2ey299-3er4-3aa41-9ar6-21ia178fc3tyy|
-|SpanId|9as5y3t-3ca7-463f-wwt9a5-54ab0402rft|
-|parentSpanId|7a22eb38-bca6-463f-9955-54ab040287cb|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
+  |operationName |opvragenPersoonsgegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |c6adf4df949d03c662b53e95debdc411|
+  |startTime |2024-07-29 08:16:49.000|
+  |endTime |2024-07-29 08:16:49.000|
+  |statusCode |OK|
+  |resource.name |BRP|
+  |resource.version |2.0|
+  |receiver |`<leeg>`|
+  |attributeKey| dplCoreProcessingActivityId|
+  |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
+  |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
+  |foreignOperation.SpanId |b2e339a595246e01|
+  |<u>BSN 2</u> |`<leeg>`|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |f4j2ey299-3er4-3aa41-9ar6-21ia178fc3tyy|
+  |SpanId|9as5y3t-3ca7-463f-wwt9a5-54ab0402rft|
+  |parentSpanId|7a22eb38-bca6-463f-9955-54ab040287cb|
 
-#### Log tonenNAWGegevens (log gemeente) persoon 1
+* **Log tonenNAWGegevens (log gemeente) persoon 1**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |b2e339a595246e01|
-|operationName |tonenNAWGegevens|
-|parentSpanId |`<leeg>`|
-|traceId |bc9126aaae813fd491ee10bf870db292|
-|startTime |2024-07-29 10:16:49.690|
-|endTime |2024-07-29 10:16:49.723|
-|statusCode |OK|
-|resource.name |Balieapp|
-|resource.version |1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|<u>BSN 1</u>|`<leeg>`|
-|attributeKey| dplCoreDataSubjectId|
-|attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
-|SpanId|42f33gfa595246ert|
-|parentSpanId|b2e339a595246e01|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |b2e339a595246e01|
+  |operationName |tonenNAWGegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |bc9126aaae813fd491ee10bf870db292|
+  |startTime |2024-07-29 10:16:49.690|
+  |endTime |2024-07-29 10:16:49.723|
+  |statusCode |OK|
+  |resource.name |Balieapp|
+  |resource.version |1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  |<u>BSN 1</u>|`<leeg>`|
+  |attributeKey| dplCoreDataSubjectId|
+  |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
+  |SpanId|42f33gfa595246ert|
+  |parentSpanId|b2e339a595246e01|
 
-#### Log tonenNAWGegevens (log gemeente) persoon 2
+* **Log tonenNAWGegevens (log gemeente) persoon 2**
 
-| Attribuut   | Waarde   |
-|-------------|----------|
-|SpanId |b2e339a595246e01|
-|operationName |tonenNAWGegevens|
-|parentSpanId |`<leeg>`|
-|traceId |bc9126aaae813fd491ee10bf870db292|
-|startTime |2024-07-29 10:16:49.690|
-|endTime |2024-07-29 10:16:49.723|
-|statusCode |OK|
-|resource.name |Balieapp|
-|resource.version| 1.0.5|
-|receiver |27fdey98605etc48|
-|attributeKey |dplCoreProcessingActivityId|
-|attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
-|<u>BSN 2</u>|`<leeg>`|
-|attributeKey |dplCoreDataSubjectId|
-|attributeValue |342ec27-aa41-dav6-219a178f5ty6|
-|SpanId |aef53rfa59e240ert|
-|parentSpanId |b2e339a595246e01|
+  | Attribuut   | Waarde   |
+  |-------------|----------|
+  |SpanId |b2e339a595246e01|
+  |operationName |tonenNAWGegevens|
+  |parentSpanId |`<leeg>`|
+  |traceId |bc9126aaae813fd491ee10bf870db292|
+  |startTime |2024-07-29 10:16:49.690|
+  |endTime |2024-07-29 10:16:49.723|
+  |statusCode |OK|
+  |resource.name |Balieapp|
+  |resource.version| 1.0.5|
+  |receiver |27fdey98605etc48|
+  |attributeKey |dplCoreProcessingActivityId|
+  |attributeValue |11x2ec2a-0774-3541-9b16-21ba179fcf15|
+  |<u>BSN 2</u>|`<leeg>`|
+  |attributeKey |dplCoreDataSubjectId|
+  |attributeValue |342ec27-aa41-dav6-219a178f5ty6|
+  |SpanId |aef53rfa59e240ert|
+  |parentSpanId |b2e339a595246e01|
 
 ### Relatie tussen data (Registratie verhuizing)
 
