@@ -138,7 +138,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-**1. Log opvragenVergunningen (log vergunningenapplicatie):**
+#### Log opvragenVergunningen (log vergunningenapplicatie):
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -159,7 +159,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 | foreignOperation.traceId | bc9126aaae813fd491ee10bf870db292|
 | foreignOperation.SpanId | b2e339a595246e01|
 
-**2. Log tonenVergunningen (log gemeente)**
+#### Log tonenVergunningen (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -178,7 +178,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 | attributeKey | dplCoreDataSubjectId|
 | attributeValue | 13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-**3. Log controlerenKenteken (log RDW)**
+#### Log controlerenKenteken (log RDW)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -199,7 +199,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
 |foreignOperation.SpanId |414514cf1d40d6b2|
 
-**4. Log controlerenKenteken (log vergunningenapplicatie)**
+#### Log controlerenKenteken (log vergunningenapplicatie)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -220,7 +220,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
 |foreignOperation.SpanId |ba7cac7ca0489e42|
 
-**5. Log wijzigenKenteken (log vergunningenapplicatie)**
+#### Log wijzigenKenteken (log vergunningenapplicatie)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -241,8 +241,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
 |foreignOperation.SpanId |df524ee2a3fd5ddf|
 
-
-**6. Log wijzigenKenteken (log gemeente)**
+#### Log wijzigenKenteken (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -263,7 +262,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |`<leeg>`|
 |foreignOperation.SpanId |`<leeg>`|
 
-**7. Log opvragenVergunningen (log vergunningenapplicatie)**
+#### Log opvragenVergunningen (log vergunningenapplicatie)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -284,7 +283,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |8a1325a32aef8de4ffba7d7c931eeaec|
 |foreignOperation.SpanId |ba7cac7ca0489e42|
 
-**8. Log tonenVergunningen (log gemeente)**
+#### Log tonenVergunningen (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -367,8 +366,8 @@ Schematisch ziet dit proces er als volgt uit:
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
 De volgende data worden gelogd in de diverse logmomenten:
-  
-**1. Log opvragenPersoonsgegevens (log BRP):**
+
+#### Log opvragenPersoonsgegevens (log BRP):
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -389,7 +388,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |bc9126aaae813fd491ee10bf870db292|
 |foreignOperation.SpanId |b2e339a595246e01|
 
-**2. Log tonenNAWGegevens (log gemeente)**
+#### Log tonenNAWGegevens (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -408,7 +407,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |attributeKey |dplCoreDataSubjectId|
 |attributeValue |13j2ec27-0cc4-3541-9av6-219a178fcfe5|
 
-**3. Log wijzigenPersoonsgegevens (log BRP)**
+#### Log wijzigenPersoonsgegevens (log BRP)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -429,7 +428,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |f176a58de7fe249ea37ed4f5979da02b|
 |foreignOperation.SpanId| 414514cf1d40d6b2|
 
-**4. Log wijzigenPersoonsgegevens (log gemeente)**
+#### Log wijzigenPersoonsgegevens (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -450,7 +449,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |`<leeg>`|
 |foreignOperation.SpanId |`<leeg>`|
 
-**5. Log opvragenPersoonsgegevens (log BRP)**
+#### Log opvragenPersoonsgegevens (log BRP)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -471,7 +470,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |c0a7a38d56f3f16a2163ca0071d3779a|
 |foreignOperation.SpanId |df524ee2a3fd5ddf|
 
-**6. Log tonenNAWGegevens (log gemeente)**
+#### Log tonenNAWGegevens (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -549,7 +548,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-**1. Log opvragenPersoonsgegevens (log BRP) persoon 1:**
+#### Log opvragenPersoonsgegevens (log BRP) persoon 1:
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -573,7 +572,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId |r2e3229059BG246e01|
 |parentSpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
 
-**2. Log opvragenPersoonsgegevens (log BRP) persoon 2:**
+#### Log opvragenPersoonsgegevens (log BRP) persoon 2:
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -597,7 +596,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId|9as5y3t-3ca7-463f-wwt9a5-54ab0402rft|
 |parentSpanId|7a22eb38-bca6-463f-9955-54ab040287cb|
 
-**3. Log tonenNAWGegevens (log gemeente) persoon 1:**
+#### Log tonenNAWGegevens (log gemeente) persoon 1:
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -619,7 +618,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId|42f33gfa595246ert|
 |parentSpanId|b2e339a595246e01|
 
-**4. Log tonenNAWGegevens (log gemeente) persoon 2:**
+#### Log tonenNAWGegevens (log gemeente) persoon 2:
 
 | Attribuut   | Waarde   |
 |-------------|----------|
