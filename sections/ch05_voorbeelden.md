@@ -28,13 +28,13 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/parkeervergunning-inzien.svg" />
+<img src="medias/parkeervergunning-inzien.svg" alt="Schematische weergave parkeervergunning inzien" />
 
 ### Logging van data  (Parkeervergunning - inzien)
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-**Log opvragenVergunningen (log vergunningenapplicatie):**
+#### Log opvragenVergunningen (log vergunningenapplicatie):
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -55,7 +55,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |foreignOperation.traceId |c7a26dcd0bee0c8900e2174c43c3393c|
 |foreignOperation.SpanId| 9f8971bfd093637d|
 
-**Log opvragenVergunningen (log gemeente)**
+#### Log opvragenVergunningen (log gemeente)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -132,13 +132,13 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/parkeervergunning-wijzigen.svg" />
+<img src="medias/parkeervergunning-wijzigen.svg" alt="Schematische weergave parkeervergunning wijzigen" />
 
 ### Logging van data (Parkeervergunning - wijzigen)
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenVergunningen (log vergunningenapplicatie):
+#### Log opvragenVergunningen (log vergunningenapplicatie)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -317,7 +317,7 @@ De relatie met de doelstellingen die gesteld zijn in de standaard Logboek datave
 
 * **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het ProcessingActivityId (register) te koppelen aan dplCoreProcessingActivityId (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
-#### Standaard Logverwerkingen: paragraaf 3.3.1 Gedrag
+#### Standaard Logverwerkingen paragraaf 3.3.1 Gedrag
 
 1. *De applicatie MOET een Trace starten voor iedere Dataverwerking waarvan nog geen Trace bekend is.* Bij elke start van een verwerking wordt een traceId aangemaakt. Bijvoorbeeld: in het voorbeeld komt er een bericht binnen bij de ‘MijnOmgeving’ van de gemeente (opvragenVergunningenVraag). Er wordt direct een traceId aangemaakt.
 2. *De applicatie MOET voor iedere Dataverwerking een logregel wegschrijven in een Logboek. Log Sampling is niet toegestaan. Een dataverwerking wordt opgeslagen als deze volledig is afgerond.* In het voorbeeld is te zien dat een logregel wordt geschreven op het moment dat de vraag- en het antwoordbericht zijn afgerond.
@@ -361,13 +361,13 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/verhuizing-eenvoudig.svg" />
+<img src="medias/verhuizing-eenvoudig.svg" alt="Schematische weergave verhuizing" />
 
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenPersoonsgegevens (log BRP):
+#### Log opvragenPersoonsgegevens (log BRP)
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -542,13 +542,13 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/verhuizing-registratie.svg" />
+<img src="medias/verhuizing-registratie.svg" alt="Schematische weergave verhuizing registeren" />
 
 ### Logging van data (Registratie verhuizing)
 
 De volgende data worden gelogd in de diverse logmomenten:
 
-#### Log opvragenPersoonsgegevens (log BRP) persoon 1:
+#### Log opvragenPersoonsgegevens (log BRP) persoon 1
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -572,7 +572,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId |r2e3229059BG246e01|
 |parentSpanId |7a22eb38-bca6-463f-9955-54ab040287cb|
 
-#### Log opvragenPersoonsgegevens (log BRP) persoon 2:
+#### Log opvragenPersoonsgegevens (log BRP) persoon 2
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -596,7 +596,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId|9as5y3t-3ca7-463f-wwt9a5-54ab0402rft|
 |parentSpanId|7a22eb38-bca6-463f-9955-54ab040287cb|
 
-#### Log tonenNAWGegevens (log gemeente) persoon 1:
+#### Log tonenNAWGegevens (log gemeente) persoon 1
 
 | Attribuut   | Waarde   |
 |-------------|----------|
@@ -618,7 +618,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 |SpanId|42f33gfa595246ert|
 |parentSpanId|b2e339a595246e01|
 
-#### Log tonenNAWGegevens (log gemeente) persoon 2:
+#### Log tonenNAWGegevens (log gemeente) persoon 2
 
 | Attribuut   | Waarde   |
 |-------------|----------|
