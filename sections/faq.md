@@ -65,7 +65,7 @@ Het is van belang dat, als de  RvvA wordt aangepast,de wijzigingen toevoegd word
 
 Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de RvvA is uiteraard wel verplicht in het geval van persoonsdataverwerking. Voor de implementatie van de Logboek Dataverwerkingen is het van belang dat iedere verwerkingsactiviteit te identificeren is met een unieke identificator.
 
-Stel de RvvA is  uitgewerkt in een MS-Exceldocument en het systeem heeft daar geen API-toegang toe Daarnaast zijn de dataverwerkingenin de RvvA niet uniek te identificeren met een identificator. 
+Stel de RvvA is  uitgewerkt in een MS-Exceldocument en het systeem heeft daar geen API-toegang toe Daarnaast zijn de dataverwerkingenin de RvvA niet uniek te identificeren met een identificator.
 
 In dat geval zal er een kolom moeten worden toegevoegd aan het MS-Exceldocument waariedere dataverwerkingeen unieke identificator krijgt.  Deze identificatoren van de dataverwerkingen in uw RvvA zullen dan ‘hardcoded’ moeten worden toegevoegd in de logging. Bij inzage zullen de data uit de RvvA, die horen bij een dataverwerking, handmatig moeten worden opgezocht.
 
@@ -87,7 +87,7 @@ Door OpenTelemetry aan te bevelen als een eenvoudige implementatie houdt men de 
 
 ## Hoe verhoudt de standaard zich tot andere logging standaarden zoals NEN7513?
 
-De [NEN7513 norm](https://www.nen.nl/nen-7513-2024-nl-329182) legt vast welke data moet worden gelogd van acties op persoonlijke gezondheidsinformatie. 
+De [NEN7513 norm](https://www.nen.nl/nen-7513-2024-nl-329182) legt vast welke data moet worden gelogd van acties op persoonlijke gezondheidsinformatie.
 De norm beschrijft alle verschillende aspecten van gezondheidsinformatie die bij verschillende soorten activiteiten moet worden vastgelegd en verduidelijkt wat deze aspecten inhouden.
 Hierbij legt de norm niet het formaat van logging vast, enkel de vereiste informatie.
 Deze standaard is daarom inzetbaar in combinatie met de NEN7513 norm, door vast te leggen in welk formaat dat past.

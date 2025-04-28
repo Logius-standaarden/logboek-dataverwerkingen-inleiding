@@ -1,4 +1,0 @@
-# Besluiten
-
-@@@ todo besluiten overnemen
-
