@@ -28,7 +28,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/parkeervergunning-inzien.svg" alt="Schematische weergave parkeervergunning inzien" />
+<img src="media/parkeervergunning-inzien.svg" alt="Schematische weergave parkeervergunning inzien" />
 
 ### Logging van data  (Parkeervergunning - inzien)
 
@@ -77,7 +77,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data  (Parkeervergunning - inzien)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld is de data op de volgende manier gekoppeld:
-![Alt text](./medias/relatie-tussen-gegevens-parkeervergunning-inzien.png)
+![Alt text](./media/relatie-tussen-gegevens-parkeervergunning-inzien.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen  (Parkeervergunning - inzien)
 
@@ -132,7 +132,7 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/parkeervergunning-wijzigen.svg" alt="Schematische weergave parkeervergunning wijzigen" />
+<img src="media/parkeervergunning-wijzigen.svg" alt="Schematische weergave parkeervergunning wijzigen" />
 
 ### Logging van data (Parkeervergunning - wijzigen)
 
@@ -305,7 +305,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Parkeervergunning - wijzigen)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld is. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
-![Alt text](./medias/relatie-tussen-gegevens-parkeervergunning-wijzigen.png)
+![Alt text](./media/relatie-tussen-gegevens-parkeervergunning-wijzigen.png)
 
 ### Relatie met de standaard Logboek Dataverwerkingen (Parkeervergunning - wijzigen)
 
@@ -361,7 +361,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/verhuizing-eenvoudig.svg" alt="Schematische weergave verhuizing" />
+<img src="media/verhuizing-eenvoudig.svg" alt="Schematische weergave verhuizing" />
 
 ### Logging van data (Registratie Verhuizing - Eenvoudig)
 
@@ -494,7 +494,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Registratie Verhuizing - Eenvoudig)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld is de data op de volgende manier gekoppeld:
-![Alt text](./medias/relatie-tussen-gegevens-registratie-verhuizing-eenvoudig.png)
+![Alt text](./media/relatie-tussen-gegevens-registratie-verhuizing-eenvoudig.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie Verhuizing - Eenvoudig)
 
@@ -542,7 +542,7 @@ Schematisch ziet dit proces er als volgt uit:
 
 Schematisch ziet dit proces er als volgt uit:
 
-<img src="medias/verhuizing-registratie.svg" alt="Schematische weergave verhuizing registeren" />
+<img src="media/verhuizing-registratie.svg" alt="Schematische weergave verhuizing registeren" />
 
 ### Logging van data (Registratie verhuizing)
 
@@ -643,7 +643,7 @@ De volgende data worden gelogd in de diverse logmomenten:
 ### Relatie tussen data (Registratie verhuizing)
 
 Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op een bepaalde manier aan elkaar gekoppeld zijn. In dit voorbeeld zijn de data op de volgende manier gekoppeld:
-![Alt text](./medias/relatie-tussen-gegevens-registratie-verhuizing.png)
+![Alt text](./media/relatie-tussen-gegevens-registratie-verhuizing.png)
 
 ### Relatie met de standaard Logboek dataverwerkingen (Registratie verhuizing)
 

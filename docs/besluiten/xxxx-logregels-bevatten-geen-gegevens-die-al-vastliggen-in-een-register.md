@@ -42,7 +42,7 @@ Met de volgende sequentie diagrammen wordt in beeld gebracht wat de gevolgen zij
 
 Het wegschrijven van een verwerking in de log-API is uiterst simpel:
 
-<img src="medias/verwerking-loggen.svg" />
+<img src="media/verwerking-loggen.svg" />
 
 Deze transactie is geoptimaliseerd op eenvoud en snelheid, want deze heeft rechtstreeks invloed op de snelheid van verwerkingen. Deze transactie moet schaalbaar zijn naar bijv. tienduizenden transacties per seconde.
 
@@ -50,4 +50,4 @@ Deze transactie is geoptimaliseerd op eenvoud en snelheid, want deze heeft recht
 
 Om verwerkingen op een significante manier te tonen aan bijvoorbeeld een Betrokkene, is het noodzakelijk om data op te vragen uit zowel de logs als het RvVA. Deze flow mag wat complexer zijn, omdat deze niet voor alle vastgelegde data wordt uitgevoerd en het belang van de bevraging rechtvaardigt dat een bevraging wat langer kan duren.
 
-<img src="medias/verwerking-tonen.svg" />
+<img src="media/verwerking-tonen.svg" />
