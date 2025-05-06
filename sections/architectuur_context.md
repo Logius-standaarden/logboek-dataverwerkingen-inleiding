@@ -17,12 +17,12 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 
 ### Informatie­architectuur (Information systems architecture)
 
-* *Api’s / Services*
-  * Naast richtlijnen voor de inrichting en het gedrag van het Logboek dataverwerkingen, biedt deze standaard ook een aantal voorbeeld API’s:
+* *Api's / Services*
+  * Naast richtlijnen voor de inrichting en het gedrag van het Logboek dataverwerkingen, biedt deze standaard ook een aantal voorbeeld API's:
   * **Inzicht API:** deze service geeft de mogelijkheid een query uit te voeren op loggings van dataverwerkingen (nog niet beschikbaar).
   * **Register van de Verwerkingsactiviteiten:** deze service geeft de mogelijkheid de data van een Register van Verwerkingsactiviteiten te bekijken (nog niet beschikbaar).
 
-> De API’s zijn ontworpen en ontwikkeld volgens de standaard [Rest-API Design Rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules).
+> De API's zijn ontworpen en ontwikkeld volgens de standaard [Rest-API Design Rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules).
 
 * *Applicaties*
   * De standaard biedt geen applicatie aan, wel biedt het richtlijnen ten aanzien van het gedrag en invulling van het Logboek dataverwerkingen. Hiermee geeft de standaard de vrijheid aan organisaties om zelf op basis van de specifieke implementatie van een dataverwerkende Applicatie een Logboek te ontwikkelen wat qua gedrag en (meta)data gelijkvormig is over alle (overheids)organisaties heen.
@@ -31,7 +31,7 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
   * Het berichten verkeer met betrekking tot het Logboek dataverwerkingen heeft geen directe connectie met de burger. Wel is het van belang bij opvraag van data bij andere organisaties traceringsdata worden verstuurd en opgeslagen in het Logboek zodat altijd duidelijk wat de bron is van data die verwerkt zijn. Deze standaard biedt een traceringsmethodiek aan zodat de datauitwisseling tussen organisaties *vastgelegd en verantwoord* kan worden.
 
 * *Data*
-  * De Nederlandse Basisregistraties vervullen een essentiële rol in het vastleggen en gecontroleerd beheren van data. Organisaties kunnen aan elkaar data ter beschikking te stellen vanuit ‘kernregistraties’. De standaard Logboek dataverwerkingen biedt een richtlijn voor het loggen van verwerkte data van al deze basisregistraties.
+  * De Nederlandse Basisregistraties vervullen een essentiële rol in het vastleggen en gecontroleerd beheren van data. Organisaties kunnen aan elkaar data ter beschikking te stellen vanuit 'kernregistraties'. De standaard Logboek dataverwerkingen biedt een richtlijn voor het loggen van verwerkte data van al deze basisregistraties.
 
 Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aanbieders en afnemers van data.
 
@@ -39,7 +39,7 @@ Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aan
 
 *[bron: Architectuur Digitale Overheid 2030]*
 
-Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat ‘[GDI-Gegevensuitwisseling’](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
+Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat [GDI-Gegevensuitwisseling](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
 
 ![Bedrijfsobjectenmodel](./media/metadatamodel.png)
 
@@ -84,8 +84,8 @@ De standaard Logboek dataverwerkingen gaat er vanuit dat de het Logboekcomponent
 
 | **Architectuurprincipe**                                     | **Relatie met de standaard**                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1.1. Data die kunnen worden gedeeld zijn vindbaar, toegankelijk,  interoperabel en herbruikbaar | - Logregels  zijn voorzien van metadata ten aanzien van tracering zodat gerelateerde  Logregels altijd gevonden kunnen worden.<br> - Identificatoren  worden aangemaakt zodat deze over de gehele wereld uniek zijn.<br> - Het processingActivityId is gerelateerd aan het  Register van Verwerkingsactiviteiten zodat per Logregel altijd verwezen kan  worden naar een activiteit van een (overheids)organisatie en daarmee de  context direct duidelijk wordt. |
-| 1.2. Datauitwisseling is gebaseerd op open standaarden   | - API’s  gerelateerd aan deze standaard moeten worden ontworpen en gebouwd volgens de  standaarden [REST-API   Design Rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules), [OpenAPI](https://www.openapis.org/) en [DigiKoppeling](https://www.logius.nl/domeinen/gegevensuitwisseling/digikoppeling).<br> - Het  metadatamodel van deze standaard is gebaseerd op [OpenTelemetry](https://opentelemetry.io/). Dit is een internationale  standaard voor het genereren, verzamelen en exporteren van telemetrie  data (metrieken, logging en tracering). |
+| 1.1. Data die kunnen worden gedeeld zijn vindbaar, toegankelijk,  interoperabel en herbruikbaar | - Logregels  zijn voorzien van metadata ten aanzien van tracering zodat gerelateerde  Logregels altijd gevonden kunnen worden.<br> - Identificatoren  worden aangemaakt zodat deze over de gehele wereld uniek zijn.<br> - Het `processing_activity_id` is gerelateerd aan het  Register van Verwerkingsactiviteiten zodat per Logregel altijd verwezen kan  worden naar een activiteit van een (overheids)organisatie en daarmee de  context direct duidelijk wordt. |
+| 1.2. Datauitwisseling is gebaseerd op open standaarden   | - API's  gerelateerd aan deze standaard moeten worden ontworpen en gebouwd volgens de  standaarden [REST-API   Design Rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules), [OpenAPI](https://www.openapis.org/) en [DigiKoppeling](https://www.logius.nl/domeinen/gegevensuitwisseling/digikoppeling).<br> - Het  metadatamodel van deze standaard is gebaseerd op [OpenTelemetry](https://opentelemetry.io/). Dit is een internationale  standaard voor het genereren, verzamelen en exporteren van telemetrie  data (metrieken, logging en tracering). |
 | 1.3 De kwaliteit van data is afgestemd op het gebruik    | - Door de  registratie van verwerkte data in een Logboek kan er op een later moment  inzicht gegeven worden aan andere (overheids)organisaties en burgers.  Eventuele foutieve data komen dan direct aan het licht en kunnen hersteld  worden. |
 | 1.4. Datadiensten zijn afgestemd op de behoeften van afnemers | - Data  die gelogd worden bij een dataverwerking zijn afgestemd op het doel  waarvoor er gelogd moet worden (bijvoorbeeld de data die gevraagd worden  op basis van de AVG-wetgeving). Er wordt niet minder opgeslagen, meer zeker  niet meer dan nodig is.<br> - Het ontwerp  van het datamodel van deze standaard is gebaseerd op OpenTelemetry,  vertaling van data is dus niet nodig. |
 | 1.5. De bron van de data is leidend                      | - Overheidsapplicaties  moeten rekening houden met de onderhoud van data bij de [bron](https://www.digitaleoverheid.nl/data-bij-de-bron/). Dit  betekent dat data niet zonder meer gekopieerd opgeslagen mogen worden.  Bij sommige dataverwerkingen zijn data nodig van andere databronnen (in de  eigen organisatie of bij een andere organisatie). De standaard Logboek  Dataverwerkingen schrijft een traceringsmechanisme voor zodat kopiëren van  specifieke data naar het Logboek niet nodig is, er kan altijd nagegaan worden  waar data vandaan kwamen en welke data er gebruikt werden.<br> - De  standaard verwijst zo veel mogelijk naar bestaande databronnen elders in  plaats van de data te dupliceren (zie besluit [4.2](#logregels-bevatten-geen-gegevens-die-al-vastliggen-in-een-register)  en [4.4](#geen-data-over-gebruikers-in-logregels)) |

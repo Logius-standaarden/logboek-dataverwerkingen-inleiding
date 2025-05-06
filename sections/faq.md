@@ -29,7 +29,7 @@ Er zijn momenteel geen verplichtingen voor gebruik van de standaard. Indien de s
 ## Wat is de relatie van Audit Log met de standaard Logboek Dataverwerking?
 
 In de standaard Logboek Dataverwerking wordt geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). We gaan ervan uit dat daar in de organisatie een Audit log voor is ingericht, aangezien dat verplicht is vanuit BIO.
-Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard Logboek Dataverwerking door te verwijzen naar de SpanId die de verwerking identificeert.
+Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard Logboek Dataverwerking door te verwijzen naar de `span_id` die de verwerking identificeert.
 
 Voor redenatie hierachter, zie [besluit 4.4](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#geen-gegevens-over-gebruikers-in-logregels)
 
@@ -37,7 +37,7 @@ Daarnaast is het van belang om te beseffen dat het vastleggen van data over een 
 
 ## Zijn er dingen die je moet aanpassen aan je Audit Log als je de standaard Logboek Dataverwerking implementeert?
 
-In de logging worden geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de SpanId die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
+In de logging worden geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). Om de link tussen een gebruiker en de standaard Logboek Dataverwerking te maken, kan de Audit Log worden aangepast door te verwijzen naar de `span_id` die de dataverwerking identificeert die door de gebruiker is uitgevoerd.
 
 ## Kan je de standaard Logboek Dataverwerking implementeren als je een cloud (SaaS) applicatie gebruikt?
 
@@ -67,7 +67,7 @@ Ja, dat kan nog steeds. Het is niet verplicht een RvvA API te implementeren, de 
 
 Stel de RvvA is  uitgewerkt in een MS-Exceldocument en het systeem heeft daar geen API-toegang toe Daarnaast zijn de dataverwerkingenin de RvvA niet uniek te identificeren met een identificator.
 
-In dat geval zal er een kolom moeten worden toegevoegd aan het MS-Exceldocument waariedere dataverwerkingeen unieke identificator krijgt.  Deze identificatoren van de dataverwerkingen in uw RvvA zullen dan ‘hardcoded’ moeten worden toegevoegd in de logging. Bij inzage zullen de data uit de RvvA, die horen bij een dataverwerking, handmatig moeten worden opgezocht.
+In dat geval zal er een kolom moeten worden toegevoegd aan het MS-Exceldocument waariedere dataverwerkingeen unieke identificator krijgt.  Deze identificatoren van de dataverwerkingen in uw RvvA zullen dan 'hardcoded' moeten worden toegevoegd in de logging. Bij inzage zullen de data uit de RvvA, die horen bij een dataverwerking, handmatig moeten worden opgezocht.
 
 ## Hoe gedetailleerd moet mijn RvvA zijn om de standaard Logboek Dataverwerking te implementeren? / Heeft de detailniveau van mijn RvvA invloed op de werking van deze standaard?
 
