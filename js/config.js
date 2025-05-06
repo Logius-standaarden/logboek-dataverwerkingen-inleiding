@@ -51,7 +51,7 @@ var respecConfig = {
       },
     ],
 
-  github: "https://github.com/Logius-standaarden/logboek-dataverwerkingen",
+  github: "https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding/",
  
   // Create PDF and link to file in header (optional):
   alternateFormats: [
