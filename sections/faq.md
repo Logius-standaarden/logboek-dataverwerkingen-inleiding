@@ -97,6 +97,6 @@ Alle missende informatie is beschreven in [een potentiële extensie](https://log
 Deze extensie zal niet worden vastgesteld en is enkel bedoeld als proof-of-concept tijdens de totstandkoming.
 Mocht in de toekomst er interesse zijn om de NEN7513 norm te implementeren op basis van deze standaard, dan kan deze extensie als startpunt van het traject gebruikt worden.
 
-## Als mijn organisatie besluit de Logboek Dataverwerkingen-standaard te implementeren, moeten wij dan onze bestaande systemen of historische logregels aanpassen?
+## Als mijn organisatie besluit de Logboek Dataverwerkingen-standaard te implementeren, moeten wij dan historische logregels aanpassen?
 
-Nee, organisaties hoeven hun bestaande systemen of historische logregels niet aan te passen wanneer zij starten met het implementeren van deze standaard. De standaard is ontworpen zonder verplichting tot het herstructureren van bestaande data of architecturen.
+Nee, organisaties hoeven historische logregels niet aan te passen wanneer zij starten met het implementeren van deze standaard. De standaard is ontworpen zonder verplichting tot het herstructureren van bestaande data.
