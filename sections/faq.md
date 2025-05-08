@@ -96,3 +96,7 @@ Hiervoor is, als onderdeel van de totstandkoming van deze standaard, allereerst 
 Alle missende informatie is beschreven in [een potentiële extensie](https://logius-standaarden.github.io/logboek-extensie-nen7513/), om na te gaan of dit een haalbare aanpak is.
 Deze extensie zal niet worden vastgesteld en is enkel bedoeld als proof-of-concept tijdens de totstandkoming.
 Mocht in de toekomst er interesse zijn om de NEN7513 norm te implementeren op basis van deze standaard, dan kan deze extensie als startpunt van het traject gebruikt worden.
+
+## Als mijn organisatie besluit de Logboek Dataverwerkingen-standaard te implementeren, moeten wij dan historische logregels aanpassen?
+
+Nee, organisaties hoeven historische logregels niet aan te passen wanneer zij starten met het implementeren van deze standaard. De standaard is ontworpen zonder verplichting tot het herstructureren van bestaande data.
