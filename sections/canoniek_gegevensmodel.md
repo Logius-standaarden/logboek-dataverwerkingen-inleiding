@@ -18,11 +18,11 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | -                                                            |
 
-### dplCoreDataSubjectId
+### dpl.core.data_subject_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `dplCoreDataSubjectId`                                       |
+| **Attribuutnaam**            | `dpl.core.data_subject_id`                                       |
 | **Definitie Engels**         | Refers to any individual person who can be identified, directly or indirectly, via an identifier such as a name, an ID number, location data, or via factors specific to the person's physical, physiological, genetic, mental, economic, cultural or social identity. |
 | **Attribuutnaam Nederlands** | dplCorebetrokkeneId                                          |
 | **Definitie Nederlands**     | De geïdentificeerde of identificeerbare natuurlijk persoon op wie de verwerkte en/of de te verwerken persoonsdata betrekking hebben. |
@@ -50,11 +50,11 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Register                                                     |
 | **Enumeratiewaarden**        | Afhankelijk van het type systeem en betrokken actoren. Er kunnen meerdere categorieën van toepassing zijn. |
 
-### dplCoreProcessingActivityId
+### dpl.core.processing_activity_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `dplCoreProcessingActivityId`                                |
+| **Attribuutnaam**            | `dpl.core.processing_activity_id`                                |
 | **Definitie Engels**         | Reference to Register with more information about the processing activity. |
 | **Attribuutnaam Nederlands** | dplCoreVerwerkingsactiviteitId                               |
 | **Definitie Nederlands**     | Verwijzing naar Register met meer informatie over de verwerkingsactiviteit. |
@@ -66,11 +66,11 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Register en Logboek                                          |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### endTime
+### end_time
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `endTime`                                                    |
+| **Attribuutnaam**            | `end_time`                                                    |
 | **Definitie Engels**         | Timestamp representing the end of a data processing logging action. |
 | **Attribuutnaam Nederlands** | eindTijd                                                     |
 | **Definitie Nederlands**     | Tijdstempel die het einde van een logboekactie voor dataverwerking vertegenwoordigt. |
@@ -98,11 +98,11 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Register                                                     |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### foreignOperation.entity
+### foreign_operation.entity
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `foreignOperation.entity`                                    |
+| **Attribuutnaam**            | `foreign_operation.entity`                                    |
 | **Definitie Engels**         | Reference to external entity.                                |
 | **Attribuutnaam Nederlands** | entiteit                                                     |
 | **Definitie Nederlands**     | Verwijzing naar externe entiteit.                            |
@@ -114,16 +114,16 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### foreignOperation.SpanId
+### foreign_operation.span_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `foreignOperation.SpanId`                               |
+| **Attribuutnaam**            | `foreign_operation.span_id`                               |
 | **Definitie Engels**         | Unique name given to a foreign processing operation.         |
 | **Attribuutnaam Nederlands** | externeActie.actieId                                         |
 | **Definitie Nederlands**     | Identificator die de externe verwerkingsactie uniek identificeert. |
-| **Toelichting**              | Externe verwerkingsacties kunnen een onderdeel zijn van de totale verwerkingsactie. SpanId is in dit geval een attribuutsoort van het objecttype foreignOperation. |
-| **Noodzakelijkheid**         | Indien het noodzakelijk is ook dataverwerkingsacties van een externe databron te gebruiken, dan wordt een unieke referentie naar deze externe dataverwerkingsactie geregistreerd in het logboek. Het foreignOperation.SpanId refereert naar één specifieke dataverwerkingsactie door de externe databron.  Door alleen te verwijzen naar de externe dataverwerkingsactie, kan voorkomen worden dat data gedupliceerd worden opgeslagen in het logboek. |
+| **Toelichting**              | Externe verwerkingsacties kunnen een onderdeel zijn van de totale verwerkingsactie. `span_id` is in dit geval een attribuutsoort van het objecttype `foreign_operation`. |
+| **Noodzakelijkheid**         | Indien het noodzakelijk is ook dataverwerkingsacties van een externe databron te gebruiken, dan wordt een unieke referentie naar deze externe dataverwerkingsactie geregistreerd in het logboek. Het `foreign_operation.span_id` refereert naar één specifieke dataverwerkingsactie door de externe databron.  Door alleen te verwijzen naar de externe dataverwerkingsactie, kan voorkomen worden dat data gedupliceerd worden opgeslagen in het logboek. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Nee                                                          |
@@ -185,32 +185,32 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Register                                                     |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### SpanId
+### span_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `SpanId`                                                |
+| **Attribuutnaam**            | `span_id`                                                |
 | **Definitie Engels**         | Unique name given to a processing operation.                 |
 | **Attribuutnaam Nederlands** | actieId                                                      |
 | **Definitie Nederlands**     | Identificator die de dataverwerkingsactie uniek identificeert. |
 | **Toelichting**              | Het iD is betekenisloos, kent geen volgorde en is uniek over alle systemen in de wereld. |
-| **Noodzakelijkheid**         | Elke dataverwerkingsactie wordt uniek opgeslagen in het logboek. Indien een rapportage moet worden gemaakt voor de betrokkene, moet de unieke dataverwerkingsactie opgehaald kunnen worden uit het logboek. Het ophalen van de data gaat op basis van het SpanId, dus zonder dit gegeven is het aanmaken van een rapportage niet mogelijk. |
+| **Noodzakelijkheid**         | Elke dataverwerkingsactie wordt uniek opgeslagen in het logboek. Indien een rapportage moet worden gemaakt voor de betrokkene, moet de unieke dataverwerkingsactie opgehaald kunnen worden uit het logboek. Het ophalen van de data gaat op basis van het `span_id`, dus zonder dit gegeven is het aanmaken van een rapportage niet mogelijk. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Ja                                                           |
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### operationName
+### name
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `operationName`                                              |
+| **Attribuutnaam**            | `name`                                              |
 | **Definitie Engels**         | Specific operation addressed or referred to.                 |
 | **Attribuutnaam Nederlands** | actieNaam                                                    |
 | **Definitie Nederlands**     | Naam van een specifieke dataverwerkingsactie.            |
 | **Toelichting**              | Aanbevolen wordt om alle dataverwerkingsacties te beschrijven als een werkwoord (in de infinitief) gevolgd door een zelfstandig naamwoord. |
-| **Noodzakelijkheid**         | Om duidelijk te maken aan de betrokkene (bij een verzoek om datainzage) wat er concreet is gebeurd bij een dataverwerkingsactie, wordt een operationName gedefinieerd. Zie ook artikel 4 van de AVG, waarin de definitie van ‘verwerking’ wordt genoemd: |
+| **Noodzakelijkheid**         | Om duidelijk te maken aan de betrokkene (bij een verzoek om datainzage) wat er concreet is gebeurd bij een dataverwerkingsactie, wordt een `name` gedefinieerd. Zie ook artikel 4 van de AVG, waarin de definitie van 'verwerking' wordt genoemd: |
 |                              | *een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens.* |
 | **Datatype**                 | CharacterString                                              |
 | **Voorbeeld**                | Opslaan persoonsdata                                     |
@@ -218,32 +218,16 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### parentDplCoreProcessingActivityId
+### parent_span_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `parentDplCoreProcessingActivityId`                          |
-| **Definitie Engels**         | A parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class. The parentId refers to the parent class. |
-| **Attribuutnaam Nederlands** | parentDplCoreVerwerkingsactiviteitId                         |
-| **Definitie Nederlands**     | Een parent is één klasse, en een child is een andere klasse die alle attributen en functies overerft die aan de bovenliggende klasse zijn toegewezen. De parentId verwijst naar de bovenliggende klasse. |
-| **Toelichting**              | Een verwerkingsactiviteit kan onderdeel zijn een andere verwerkingsactiviteit. Op deze manier ontstaat er een hiërarchie van verwerkingsactiviteiten. |
-| **Noodzakelijkheid**         | Een bepaalde verwerkingsactiviteit kan een onderdeel zijn van een andere verwerkingsactiviteit. Door gebruik te maken van een ‘parent/child’-structuur, hoeven er geen nieuwe attributen gedefinieerd te worden om een hiërarchie van verwerkingsactiviteiten te creëren. |
-| **Datatype**                 | URI                                                          |
-| **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
-| **Verplicht**                | Ja                                                           |
-| **Gebruikt in**              | Register en Logboek                                          |
-| **Enumeratiewaarden**        | Niet van toepassing                                          |
-
-### parentSpanId
-
-| **Attribuut**                | **Beschrijving**                                             |
-| ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `parentSpanId`                                          |
+| **Attribuutnaam**            | `parent_span_id`                                          |
 | **Definitie Engels**         | A parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class. The parentId refers to the parent class. |
 | **Attribuutnaam Nederlands** | parentActieId                                                |
 | **Definitie Nederlands**     | Een parent is één klasse, en een child is een andere klasse die alle attributen en functies overerft die aan de bovenliggende klasse zijn toegewezen. De parentId verwijst naar de bovenliggende klasse. |
 | **Toelichting**              | Een dataverwerkingsactie kan onderdeel zijn een andere verwerkingsactie. Op deze manier ontstaat er een hiërarchie van dataverwerkingsacties. |
-| **Noodzakelijkheid**         | Een bepaalde verwerkingsactie kan een onderdeel zijn van een andere verwerkingsactie. Door gebruik te maken van een ‘parent/child’-structuur, hoeven er geen nieuwe attributen gedefinieerd te worden om een hiërarchie van dataverwerkingsacties te creëren. |
+| **Noodzakelijkheid**         | Een bepaalde verwerkingsactie kan een onderdeel zijn van een andere verwerkingsactie. Door gebruik te maken van een 'parent/child'-structuur, hoeven er geen nieuwe attributen gedefinieerd te worden om een hiërarchie van dataverwerkingsacties te creëren. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Ja                                                           |
@@ -255,7 +239,7 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
 | **Attribuutnaam**            | `personalDataCategories`                                     |
-| **Definitie Engels**         | Category of information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. |
+| **Definitie Engels**         | Category of information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. |
 | **Attribuutnaam Nederlands** | categorieënPersoonsdata                                  |
 | **Definitie Nederlands**     | Categorieën van Persoonsdata zijn alle data die betrekking hebben op een geïdentificeerde of identificeerbare levende natuurlijke persoon. Losse data die samengevoegd kunnen leiden tot de identificatie van een bepaalde persoon vormen ook persoonsdata. |
 | **Toelichting**              | Verwerking van persoonsdata waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische data, biometrische data met het oog op de unieke identificatie van een persoon, of data over gezondheid, of data met betrekking tot iemands seksueel gedrag of seksuele gerichtheid zijn verboden. |
@@ -346,11 +330,11 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### startTime
+### start_time
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `startTime`                                                  |
+| **Attribuutnaam**            | `start_time`                                                  |
 | **Definitie Engels**         | Timestamp representing the start of a data processing logging action. |
 | **Attribuutnaam Nederlands** | startTijd                                                    |
 | **Definitie Nederlands**     | Tijdstempel die het begin van een logboekactie voor dataverwerking vertegenwoordigt. |
@@ -362,32 +346,32 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### statusCode
+### status_code
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `statusCode`                                                 |
+| **Attribuutnaam**            | `status_code`                                                 |
 | **Definitie Engels**         | Indicates whether a request has been processed successfully or not by the server. |
-| **Attribuutnaam Nederlands** | statusCode                                                   |
+| **Attribuutnaam Nederlands** | `status_code`                                                   |
 | **Definitie Nederlands**     | Geeft aan of een verzoek al dan niet met succes door de server is verwerkt. |
-| **Toelichting**              | Als een geautomatiseerd verzoek correct wordt afgehandeld, dan zal de status 'OK' zijn. Bij een foutmelding (ongeacht het type foutmelding) zal de statusCode 'NOK' zijn. |
-| **Noodzakelijkheid**         | Indien een dataverwerkingactie heeft plaatsgevonden, is het van belang te weten of deze verwerkingsactie gelukt is of niet. Zonder de statuscode kan er niet worden gerapporteerd aan een betrokkene of een wijziging daadwerkelijk heeft plaatsgevonden. |
+| **Toelichting**              | Als een geautomatiseerd verzoek correct wordt afgehandeld, dan zal de status 'OK' zijn. Bij een foutmelding (ongeacht het type foutmelding) zal de `status_code` 'NOK' zijn. |
+| **Noodzakelijkheid**         | Indien een dataverwerkingactie heeft plaatsgevonden, is het van belang te weten of deze verwerkingsactie gelukt is of niet. Zonder de `status_code` kan er niet worden gerapporteerd aan een betrokkene of een wijziging daadwerkelijk heeft plaatsgevonden. |
 | **Datatype**                 | Enumwaarde                                                   |
 | **Voorbeeld**                | OK                                                           |
 | **Verplicht**                | Ja                                                           |
 | **Gebruikt in**              | Logboek                                                      |
 | **Enumeratiewaarden**        | 0: Unknown<br>1: OK<br>2: NOK                                |
 
-### traceId
+### trace_id
 
 | **Attribuut**                | **Beschrijving**                                             |
 | ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `traceId`                                                    |
+| **Attribuutnaam**            | `trace_id`                                                    |
 | **Definitie Engels**         | Unique identifier of the request in the system, which adds the possibility of tracing the history of the request in detail. |
 | **Attribuutnaam Nederlands** | traceerId                                                    |
 | **Definitie Nederlands**     | Unieke identificatie van een bericht in het systeem, waarmee de mogelijkheid ontstaat om de geschiedenis van het bericht in detail te volgen. |
 | **Toelichting**              | Een trace is het proces waarbij informatie wordt vastgelegd over de stroom van transacties of verzoeken van een applicatie of systeem. Logboekregistratie is doorgaans breder van opzet en legt een breder scala aan gebeurtenissen vast, terwijl tracering meer specifieke informatie biedt over het uitvoeringspad van individuele verzoeken. |
-| **Noodzakelijkheid**         | De traceId is de unieke factor die alle (sub)datawerkingsacties die betrekking hebben op een (hoofd)dataverwerkingactie aan elkaar verbindt. Zonder de traceId kan een totaal aan elkaar gelieerde dataverwerkingsacties niet worden gerapporteerd. |
+| **Noodzakelijkheid**         | De `trace_id` is de unieke factor die alle (sub)datawerkingsacties die betrekking hebben op een (hoofd)dataverwerkingactie aan elkaar verbindt. Zonder de `trace_id` kan een totaal aan elkaar gelieerde dataverwerkingsacties niet worden gerapporteerd. |
 | **Datatype**                 | URI                                                          |
 | **Voorbeeld**                | 6e8bc430-9c3a-11d9-9669-0800200c9a66                         |
 | **Verplicht**                | Ja                                                           |

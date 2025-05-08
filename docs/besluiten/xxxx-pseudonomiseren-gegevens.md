@@ -15,7 +15,7 @@ Moeten we in de standaard beschrijven hoe men pseudonimisering moet aanpakken?
 
 ## Overwegingen:
 
-•	Pseudonimisering en het weer ‘ont-pseudonimiseren’ is iets wat binnen de organisatie relevant is, om onder andere de inzage-API te kunnen laten functioneren.
+•	Pseudonimisering en het weer 'ont-pseudonimiseren' is iets wat binnen de organisatie relevant is, om onder andere de inzage-API te kunnen laten functioneren.
 
 •	Het is niet nodig om pseudoniemen buiten de grenzen van de organisatie uit te wisselen.
 
