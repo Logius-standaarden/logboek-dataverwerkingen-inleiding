@@ -117,6 +117,6 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 ### Totaalbeeld
 
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
-![Alt text](./media/relatie_logboekelementen_afbeelding14.png)
+![Alt text](../media/relatie_logboekelementen_afbeelding14.svg)
 
 Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding/blob/main/ch05_voorbeelden.md) van de standaard logboek dataverwerkingen.
