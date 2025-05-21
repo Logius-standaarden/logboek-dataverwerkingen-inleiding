@@ -100,3 +100,10 @@ Mocht in de toekomst er interesse zijn om de NEN7513 norm te implementeren op ba
 ## Als mijn organisatie besluit de Logboek Dataverwerkingen-standaard te implementeren, moeten wij dan historische logregels aanpassen?
 
 Nee, organisaties hoeven historische logregels niet aan te passen wanneer zij starten met het implementeren van deze standaard. De standaard is ontworpen zonder verplichting tot het herstructureren van bestaande data.
+
+## Is er een risicoanalyse beschikbaar voor deze standaard?
+
+Ja, deze is beschikbaar:
+
+* [De tekstuele beschrijving](./media/risicoanalyse-logboek-dataverwerkingen.pdf)
+* [De bijbehorende tabel met dreigingen en classificaties](./media/risicoanalyse-logboek-dataverwerkingen.xlsx)
