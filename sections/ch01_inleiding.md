@@ -36,8 +36,8 @@ De volgende zaken worden **niet** behandeld in deze standaard:
 * **Beveiligingsincidenten**: Specifieke logs voor incidenten die de beveiliging kunnen beïnvloeden, zoals malware-detectie, aanvallen of misbruik. Dit soort logging is van groot belang voor het identificeren van bedreigingen en het kunnen reageren op incidenten.
 * **Technische en Systeemlogs**: Logging van systeemfouten, configuratiewijzigingen en technische problemen. Deze logs helpen bij het waarborgen van de stabiliteit en betrouwbaarheid van IT-systemen en ondersteunen het oplossen van technische problemen.
 * **Logging ten behoeve van motivatie totstandkoming besluitvorming**: anders dan uitgevoerde  dataverwerkingen (niet: beslisregels, algoritmes, etcetera).
-* **Correcties op- en verwijdering van verwerkte data**: dit wordt gezien als verwerking en volgt de gewone route van datalogging. Voor meer informatie zie [besluit 4.5](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#standaard-beschrijft-geen-interface-voor-verwijderen-van-logs).
-* **Beperkingen op informatieplichten (bijvoorbeeld indien er een strafrechtelijk onderzoek plaatsvindt)**: het is aan de organisatie zelf om procedures te implementeren om beperking van inzage uit te voeren. Voor meer informatie zie [besluit 4.6](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#vertrouwelijkheid-wordt-vastgelegd-per-verwerkingsactiviteit).
+* **Correcties op- en verwijdering van verwerkte data**: dit wordt gezien als verwerking en volgt de gewone route van datalogging. Voor meer informatie zie [besluit 4.5](https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/#standaard-beschrijft-geen-interface-voor-verwijderen-van-logs).
+* **Beperkingen op informatieplichten (bijvoorbeeld indien er een strafrechtelijk onderzoek plaatsvindt)**: het is aan de organisatie zelf om procedures te implementeren om beperking van inzage uit te voeren. Voor meer informatie zie [besluit 4.6](https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/#vertrouwelijkheid-wordt-vastgelegd-per-verwerkingsactiviteit).
 
 ## Totstandkoming van de standaard
 
