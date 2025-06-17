@@ -31,7 +31,7 @@ Er zijn momenteel geen verplichtingen voor gebruik van de standaard. Indien de s
 In de standaard Logboek Dataverwerking wordt geen identificerende data opgeslagen over gebruiker van het systeem (bijv. de ambtenaar die het systeem gebruikt). We gaan ervan uit dat daar in de organisatie een Audit log voor is ingericht, aangezien dat verplicht is vanuit BIO.
 Vanuit Audit Log kan wel een relatie gelegd worden met een verwerking in de standaard Logboek Dataverwerking door te verwijzen naar de `span_id` die de verwerking identificeert.
 
-Voor redenatie hierachter, zie [besluit 4.4](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/#geen-gegevens-over-gebruikers-in-logregels)
+Voor redenatie hierachter, zie [besluit 4.4](https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/#geen-gegevens-over-gebruikers-in-logregels)
 
 Daarnaast is het van belang om te beseffen dat het vastleggen van data over een gebruiker in de Audit Log, ook een dataverwerking is. Immers, de data van de gebruiker (bijv. de ambtenaar die het systeem heeft gebruikt) worden daarbij opgeslagen (verwerkt). Dat is dus een eigen, aparte, dataverwerking die gelogd dient te worden in de Logboek Dataverwerkingen van de verwerker.
 
