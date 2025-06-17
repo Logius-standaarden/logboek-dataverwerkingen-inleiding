@@ -5,7 +5,7 @@
 - De laatste versie van de standaard online lezen - [ReSpec publicatie](https://logius-standaarden.github.io/logboek-dataverwerkingen/)
 - Meedoen aan de discussie en ontwikkeling kan via - [Mattermost Digilab omgeving](https://digilab.overheid.nl/chat/verwerkingenlogging)
 - vragen kunnen worden gemailed aan api@logius.nl of als issue worden ingebracht [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen/issues)
-- Een roadmap / planning voor 2025 &2026 is beschikbaar [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding/blob/develop/LDV%20Planning%202025.md)
+- Een roadmap / planning voor 2025 &2026 is beschikbaar [via deze link](https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding/blob/develop/LDV%20Planning%202025.md)
 
 ## Inleiding
 
@@ -30,6 +30,6 @@ De Logboek Dataverwerkingen (LDV) standaard bestaat uit de volgende vier documen
 | Beschrijving van het document           | Gepubliceerde versie                  | Werk versie                             | Repository                                                   |
 | --------------------------------------- | ------------------------------------- | --------------------------------------- | ------------------------------------------------------------ |
 | 1. De LDV Normatieve Standaard | - | [Logboek dataverwerkingen (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen/) | [logboek-dataverwerkingen](https://github.com/Logius-standaarden/logboek-dataverwerkingen) |
-| 2. De Algemene Inleiding | - | [De Algemene Inleiding (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen_Inleiding/)|[logboek-dataverwerkingen_Inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Inleiding)|
-| 3. het Juridische Beleidskader | - |[Juridisch Beleidskader (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen_Juridisch-beleidskader/)|[logboek-dataverwerkingen_Juridisch-beleidskader](https://github.com/Logius-standaarden/logboek-dataverwerkingen_Juridisch-beleidskader/)|
+| 2. De Algemene Inleiding | - | [De Algemene Inleiding (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/)|[logboek-dataverwerkingen-inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding)|
+| 3. het Juridische Beleidskader | - |[Juridisch Beleidskader (werkversie)](https://logius-standaarden.github.io/logboek-dataverwerkingen-juridisch-beleidskader/)|[logboek-dataverwerkingen-juridisch-beleidskader](https://github.com/Logius-standaarden/logboek-dataverwerkingen-juridisch-beleidskader/)|
 | 4. LDV Extensie voor objecten | - |[Onderzoek logboek dataverwerkingen voor (geo) objecten](https://geonovum.github.io/logboek-dataverwerkingen-voor-objecten/)|[logboek-dataverwerkingen-voor-objecten](https://github.com/geonovum/logboek-dataverwerkingen-voor-objecten/)|
