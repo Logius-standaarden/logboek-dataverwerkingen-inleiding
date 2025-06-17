@@ -10,7 +10,7 @@ var respecConfig = {
   publishVersion: "0.1.0",
   // TODO: verwijder voor publicatie
   latestVersion: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
-  title: "Algemene inleiding - Logboek dataverwerkingen",
+  prevVersion: [],
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
 
