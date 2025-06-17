@@ -456,7 +456,7 @@ De volgende data worden gelogd in de diverse logmomenten:
   | `span_id` |7a95b6989d2b28c7|
   | `name` |opvragenPersoonsgegevens|
   | `parent_span_id` | `<leeg>` |
-  | `trace_id` |f176a58de7fe249ea37ed4f5979da02b|
+  | `trace_id` |f176a58de7fe249ea37ed4f5979da03c|
   | `start_time` |2024-07-29 08:17:02.000|
   | `end_time` |2024-07-29 08:17:02.000|
   | `status_code` |OK|
