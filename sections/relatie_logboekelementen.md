@@ -143,7 +143,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 
 - Gebruik zoveel mogelijk de standaardfoutmethodes van de gebruikte ontwikkeltaal.  
   Bijvoorbeeld:  
-  - De Java SDK van OpenTelemetry gebruikt [RecordException]([https://opentelemetry.io/docs/instrumentation/java/manual/#recording-exceptions](https://github.com/open-telemetry/opentelemetry-java/blob/cc2844d86745544f5076db72800f411fc4ee4fb0/api/all/src/main/java/io/opentelemetry/api/trace/Span.java#L338)) als methode.
+  - De Java SDK van OpenTelemetry gebruikt [RecordException](https://github.com/open-telemetry/opentelemetry-java/blob/cc2844d86745544f5076db72800f411fc4ee4fb0/api/all/src/main/java/io/opentelemetry/api/trace/Span.java#L338)
 
 - Foutdata moeten worden gerelateerd aan een `trace_id` en `span_id`.
 
@@ -165,3 +165,24 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 - De software moet voorbereid zijn op fouten in binnenkomende berichten waarbij velden niet leeg mogen zijn.  
   Er moet een mechanisme zijn om de lege velden te vullen en een ‘crash’ te voorkomen.
 
+#### Header
+
+Als een fout gerelateerd aan een Span wordt geregistreerd, dan moet er in de Header de volgende zaken worden opgeslagen:
+
+- name = ‘exception’
+
+- status_code = ‘error’
+
+De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerking.
+
+#### Attributes
+Specifieke foutdata worden opgeslagen als key-value pairs in Attributes:
+
+| **Veld**              | **Type** | **Optioneel**                             | **Omschrijving**                                              | **Voorbeeld**                                             |
+|-----------------------|----------|-------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
+| exception.message     | String   | Verplicht als `exception.type` leeg is.   | Foutmelding                                                     | Division by zero                                           |
+| exception.type        | String   | Verplicht als `exception.message` leeg is.| Type foutmelding (idealiter een dynamische foutmelding)        | java.net.ConnectException                                 |
+| exception.stacktrace  | String   | Optioneel (gebruik is aan te raden)       | Volledige stacktrace (afhankelijk van programmeertaal)         | Exception in thread "main" java.lang.RuntimeException...  |
+
+#### Datamodel in het geval van een fout
+In geval van een fout gerelateerd aan een Span, ziet het datamodel er als volgt uit:
