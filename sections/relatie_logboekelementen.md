@@ -181,9 +181,9 @@ Specifieke foutdata worden opgeslagen als key-value pairs in Attributes:
 
 | **Veld**              | **Type** | **Optioneel**                             | **Omschrijving**                                              | **Voorbeeld**                                             |
 |-----------------------|----------|-------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
-| exception.message     | String   | Verplicht als `exception.type` leeg is.   | Foutmelding                                                     | Division by zero                                           |
-| exception.type        | String   | Verplicht als `exception.message` leeg is.| Type foutmelding (idealiter een dynamische foutmelding)        | java.net.ConnectException                                 |
-| exception.stacktrace  | String   | Optioneel (gebruik is aan te raden)       | Volledige stacktrace (afhankelijk van programmeertaal)         | Exception in thread "main" java.lang.RuntimeException...  |
+| exception.message     | String   | Verplicht als `exception.type` leeg is.   | Foutmelding                                                     | `Division by zero`|
+| exception.type        | String   | Verplicht als `exception.message` leeg is.| Type foutmelding (idealiter een dynamische foutmelding)        | `java.net.ConnectException`|
+| exception.stacktrace  | String   | Optioneel (gebruik is aan te raden)       | Volledige stacktrace (afhankelijk van programmeertaal)         |`Exception in thread "main" java.lang.RuntimeException...`|
 
 #### Datamodel in het geval van een fout
 
