@@ -208,4 +208,4 @@ Op basis van het bovenstaande datamodel, kan een foutregistratie er als volgt ui
     "exception.stacktrace": "TimeoutException: Database connection failed"
   }
 }
-```json
+```
