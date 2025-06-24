@@ -141,9 +141,7 @@ Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen o
 
 De volgende punten zijn belangrijk in het ontwerpen en implementeren van de registratie van foutsituaties in relatie tot het Logboek Dataverwerkingen:
 
-* Gebruik zoveel mogelijk de standaardfoutmethodes van de gebruikte ontwikkeltaal.  
-  Bijvoorbeeld:  
-  * De Java SDK van OpenTelemetry gebruikt [RecordException](https://github.com/open-telemetry/opentelemetry-java/blob/cc2844d86745544f5076db72800f411fc4ee4fb0/api/all/src/main/java/io/opentelemetry/api/trace/Span.java#L338)
+* Gebruik zoveel mogelijk de standaardfoutmethodes van de gebruikte ontwikkeltaal. Bijvoorbeeld de Java SDK van OpenTelemetry gebruikt [RecordException](https://github.com/open-telemetry/opentelemetry-java/blob/cc2844d86745544f5076db72800f411fc4ee4fb0/api/all/src/main/java/io/opentelemetry/api/trace/Span.java#L338)
 
 * Foutdata moeten worden gerelateerd aan een `trace_id` en `span_id`.
 
