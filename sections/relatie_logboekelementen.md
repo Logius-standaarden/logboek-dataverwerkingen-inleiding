@@ -135,7 +135,7 @@ Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://githu
 
 ### Foutafhandeling in het Logboek Dataverwerkingen
 
-Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Dit document geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
+Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Deze sectie geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
 
 #### Uitgangspunten registratie foutsituaties
 
