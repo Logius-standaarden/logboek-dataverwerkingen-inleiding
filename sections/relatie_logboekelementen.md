@@ -159,7 +159,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 
 * Als er een foutsituatie optreedt, moeten de foutdata worden geregistreerd als een transactie als er voor gekozen wordt dat een foutsituatie in het Logboek Dataverwerkingen wordt opgeslagen.
 
-* De software van de applicatie die de registratie van de logdata registreert, moet er voor zorgen dat er geen fout optreedt in ‘run-time’.  Bijvoorbeeld als `name` leeg is, moet deze automatisch worden gevuld met een waarde zodat er in ieder geval op dit punt geen fout kan optreden.
+* De software van de applicatie die de registratie van de logdata registreert, moet er voor zorgen dat er geen fout optreedt in 'run-time'.  Bijvoorbeeld als `name` leeg is, moet deze automatisch worden gevuld met een waarde zodat er in ieder geval op dit punt geen fout kan optreden.
 
 * De software moet voorbereid zijn op fouten in binnenkomende berichten waarbij velden niet leeg mogen zijn.  Er moet een mechanisme zijn om de lege velden te vullen en een ‘crash’ te voorkomen.
 
