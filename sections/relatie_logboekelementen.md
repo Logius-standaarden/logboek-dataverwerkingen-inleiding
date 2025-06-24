@@ -132,3 +132,11 @@ Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 ![Afbeelding Voorbeeld met alle span, trace en processing elementen](./media/relatie_logboekelementen_afbeelding14.svg)
 
 Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding/blob/main/ch05_voorbeelden.md) van de standaard logboek dataverwerkingen.
+
+### Foutafhandeling in het Logboek Dataverwerkingen
+
+Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Dit document geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
+
+#### Uitgangspunten registratie foutsituaties
+
+De volgende punten zijn belangrijk in het ontwerpen en implementeren van de registratie van foutsituaties in relatie tot het Logboek Dataverwerkingen:
