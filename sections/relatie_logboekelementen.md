@@ -155,7 +155,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
     
   - **Buiten het Logboek Dataverwerkingen**:  
     **Voordeel:** Alle foutsituaties staan gecentraliseerd opgeslagen waardoor monitoring eenvoudiger is.  
-    **Nadeel:** Foutsituaties moeten worden gekoppeld aan `trace_id` en `span_id`, dit betekent een extra inspanning om de foutsituatie te registreren.
+    **Nadeel:** Foutsituaties moeten worden gekoppeld aan `trace_id` en `span_id`. Dit betekent een extra inspanning om de foutsituatie te registreren.
 
 - Als er een foutsituatie optreedt, moeten de foutdata worden geregistreerd als een transactie als er voor gekozen wordt dat een foutsituatie in het Logboek Dataverwerkingen wordt opgeslagen.
 
@@ -169,9 +169,9 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 
 Als een fout gerelateerd aan een Span wordt geregistreerd, dan moet er in de Header de volgende zaken worden opgeslagen:
 
-- name = ‘exception’
+- `name` = ‘exception’
 
-- status_code = ‘error’
+- `status_code` = ‘error’
 
 De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerking.
 
@@ -186,3 +186,26 @@ Specifieke foutdata worden opgeslagen als key-value pairs in Attributes:
 
 #### Datamodel in het geval van een fout
 In geval van een fout gerelateerd aan een Span, ziet het datamodel er als volgt uit:
+
+![Datamodel bij een foutgeval](./media/Datamodel_foutgeval.PNG)
+
+#### Voorbeeld registratie foutsituatie
+
+Op basis van het bovenstaande datamodel, kan een foutregistratie er als volgt uitzien (in JSON):
+
+```json
+{
+  "trace_id": "7bba9f33312b3dabc8f8e90c7c61f194",
+  "span_id": "2a3f5c8d1e6b4a09",
+  "status_code": "error",
+  "name": "exception",
+  "start_time": "2025-03-09T20:21:00Z",
+  "end_time": "2025-03-09T20:23:00Z",
+  "parent_span_id": "",
+  "attributes": {
+    "exception.type": "ValueError",
+    "exception.message": "HTTP 500 error processing /api/v1/orders",
+    "exception.stacktrace": "TimeoutException: Database connection failed"
+  }
+}
+```json
