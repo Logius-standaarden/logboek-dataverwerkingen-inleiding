@@ -174,7 +174,7 @@ De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerk
 
 #### Attributes
 
-Specifieke foutdata worden opgeslagen als key-value pairs in Attributes:
+Specifieke foutdata worden opgeslagen als velden in [`attributes`](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface):
 
 | **Veld**              | **Type** | **Optioneel**                             | **Omschrijving**                                              | **Voorbeeld**                                             |
 |-----------------------|----------|-------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
