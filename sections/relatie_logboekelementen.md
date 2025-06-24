@@ -165,10 +165,9 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 
 Als een fout gerelateerd aan een Span wordt geregistreerd, dan moet er in de Header de volgende zaken worden opgeslagen:
 
-```
-name = "exception"
+<pre class="nohighlight"><code>name = "exception"
 status_code = "error"
-```
+</code></pre>
 
 De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerking.
 
