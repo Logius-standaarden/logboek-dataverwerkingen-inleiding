@@ -133,11 +133,11 @@ Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 
 Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding/blob/main/ch05_voorbeelden.md) van de standaard logboek dataverwerkingen.
 
-### Foutafhandeling in het Logboek Dataverwerkingen
+## Foutafhandeling in het Logboek Dataverwerkingen
 
 Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Deze sectie geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
 
-#### Uitgangspunten registratie foutsituaties
+### Uitgangspunten registratie foutsituaties
 
 De volgende punten zijn belangrijk in het ontwerpen en implementeren van de registratie van foutsituaties in relatie tot het Logboek Dataverwerkingen:
 
@@ -161,7 +161,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 
 * De software moet voorbereid zijn op fouten in binnenkomende berichten waarbij velden niet leeg mogen zijn.  Er moet een mechanisme zijn om de lege velden te vullen en een 'crash' te voorkomen.
 
-#### Header
+### Header
 
 Als een fout gerelateerd aan een Span wordt geregistreerd, dan moet er in de Header de volgende zaken worden opgeslagen:
 
@@ -172,7 +172,7 @@ status_code = "error"
 
 De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerking.
 
-#### Attributes
+### Attributes
 
 Specifieke foutdata worden opgeslagen als velden in [`attributes`](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface):
 
@@ -182,13 +182,13 @@ Specifieke foutdata worden opgeslagen als velden in [`attributes`](https://logiu
 | exception.type        | String   | Verplicht als `exception.message` leeg is.| Type foutmelding (idealiter een dynamische foutmelding)        | `java.net.ConnectException`|
 | exception.stacktrace  | String   | Optioneel (gebruik is aan te raden)       | Volledige stacktrace (afhankelijk van programmeertaal)         |`Exception in thread "main" java.lang.RuntimeException...`|
 
-#### Datamodel in het geval van een fout
+### Datamodel in het geval van een fout
 
 In geval van een fout gerelateerd aan een Span, ziet het datamodel er als volgt uit:
 
 ![Datamodel bij een foutgeval](./media/Datamodel_foutgeval.PNG)
 
-#### Voorbeeld registratie foutsituatie
+### Voorbeeld registratie foutsituatie
 
 Op basis van het bovenstaande datamodel, kan een foutregistratie er als volgt uitzien (in JSON):
 
