@@ -1,4 +1,4 @@
-### De relatie tussen logboekelementen, waarom eigenlijk?
+## De relatie tussen logboekelementen, waarom eigenlijk?
 
 Logging van dataverwerkingen kunnen vaak en veelvuldig plaatsvinden. Het geheel kan groot en complex worden want sommige Logregels zijn aan elkaar gerelateerd. Deze relaties kunnen gelegd worden met Logregels met andere applicaties binnen dezelfde organisatie of met logregels van applicaties van andere organisaties.
 
