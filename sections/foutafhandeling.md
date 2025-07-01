@@ -1,11 +1,5 @@
 ## Foutafhandeling in het Logboek Dataverwerkingen
 
-<div class="note">
-
-Let op: wanneer een gebruiker een verwerking bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook kan worden gelogd. In zulke gevallen krijgt de verwerking statuscode `STATUS_CODE_OK`, omdat er sprake is van een bewuste en correcte actie van de gebruiker. Meer informatie over status codes staat in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface).
-
-</div>
-
 Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Deze sectie geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
 
 ### Uitgangspunten registratie foutsituaties
@@ -78,3 +72,9 @@ Op basis van het bovenstaande datamodel, kan een foutregistratie er als volgt ui
   }
 }
 ```
+
+<div class="note">
+
+Let op: wanneer een gebruiker een verwerking bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook kan worden gelogd. In zulke gevallen krijgt de verwerking statuscode `STATUS_CODE_OK`, omdat er sprake is van een bewuste en correcte actie van de gebruiker. Meer informatie over status codes staat in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface).
+
+</div>
