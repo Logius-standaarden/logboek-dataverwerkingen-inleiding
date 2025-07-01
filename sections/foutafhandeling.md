@@ -2,7 +2,7 @@
 
 <div class="note">
 
-Let op: Wanneer een gebruiker een proces bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook expliciet kan worden gelogd. In zulke gevallen wijs je, conform de standaard, de statuscode `STATUS_CODE_OK` toe. Meer informatie over status codes vindt u in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface).
+Let op: Wanneer een gebruiker een proces bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook expliciet kan worden gelogd. In zulke gevallen wijst u conform de standaard de statuscode `STATUS_CODE_OK` toe, omdat dit nu een expliciete actie is. Meer informatie over status codes vindt u in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface).
 
 </div>
 
