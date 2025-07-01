@@ -1,5 +1,9 @@
 ## Foutafhandeling in het Logboek Dataverwerkingen
 
+<div class="note" title="Het bewust afbreken van een proces">
+  <p>Let op: Het afbreken van een proces door een gebruiker wordt **niet** als fout gezien als dit bewust is gedaan. Er wordt aangeraden om dit een expliciete stap te maken in het proces, zodat dit ook expliciet gelogd kan worden conform deze standaard wijs je dus `STATUS_CODE_OK` toe. Meer informatie over status codes.</p>
+</div>
+
 Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen ontstaan door bijvoorbeeld verkeerde invoer door de gebruiker, een fout in de software van de applicatie of een connectie met een andere applicatie die niet werkt. Deze sectie geeft een handreiking ten aanzien van de afhandeling van foutsituaties met betrekking tot het gebruik van het Logboek Dataverwerkingen.
 
 ### Uitgangspunten registratie foutsituaties
