@@ -4,7 +4,7 @@ Zelfs in de meest eenvoudige applicaties kunnen fouten optreden. Fouten kunnen o
 
 <div class="note">
 
-Let op: wanneer een gebruiker een verwerking bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook kan worden gelogd. In zulke gevallen krijgt de verwerking statuscode `STATUS_CODE_OK`, omdat er sprake is van een bewuste en correcte actie van de gebruiker. Meer informatie over status codes staat in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#interface).
+Let op: wanneer een gebruiker een verwerking bewust afbreekt, wordt dit niet als een fout beschouwd. Het is aan te raden om dit als een expliciete stap in het proces op te nemen, zodat deze handeling ook kan worden gelogd. In zulke gevallen krijgt de verwerking statuscode `STATUS_CODE_OK`, omdat er sprake is van een bewuste en correcte actie van de gebruiker. Meer informatie over status codes staat in het [normatief document](https://logius-standaarden.github.io/logboek-dataverwerkingen/#status_code).
 
 </div>
 
