@@ -1,4 +1,6 @@
-var respecConfig = {
+import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
+
+loadRespecWithConfiguration({
   useLogo: true,
   useLabel: true,
   maxTocLevel: 2,
@@ -52,12 +54,12 @@ var respecConfig = {
     ],
 
   github: "https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding/",
- 
+
   // Create PDF and link to file in header (optional):
   alternateFormats: [
-      {
-          label: "pdf",
-          uri: "Algemene_inleiding-Logboek_Dataverwerking.pdf",
-      },
+    {
+      label: "pdf",
+      uri: "Algemene_inleiding-Logboek_Dataverwerking.pdf",
+    },
   ],
-};
+});
