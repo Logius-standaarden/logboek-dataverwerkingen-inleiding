@@ -716,8 +716,8 @@ De batch moet nu op basis van `dpl.core.processing_activity_id` de `envisedTimeL
 <div class="note">
 
 Let op:
-* De standaard Logboek Dataverwerkingen schrijft niet voor hoe het mechanisme van het verwijderen van logregels zou moeten werken. Het ontwerp en de architectuur moeten door de organisatie zelf bepaald worden.  
-* De standaard Logboek Dataverwerkingen schrijft niet voor wat de retentietijd is voor activiteiten. Het is de taak van de organisatie om te bepalen (op basis van de wettelijke basis) wat de bewaartijd is van een logregel.  
+* De standaard Logboek Dataverwerkingen schrijft **niet** voor hoe het mechanisme van het verwijderen van logregels zou moeten werken. Het ontwerp en de architectuur moeten door de organisatie zelf bepaald worden.  
+* De standaard Logboek Dataverwerkingen schrijft **niet** voor wat de retentietijd is voor activiteiten. Het is de taak van de organisatie om te bepalen (op basis van de wettelijke basis) wat de bewaartijd is van een logregel.  
 * Het veld `envisedTimeLimit` in het Register van Verwerkingsactiviteiten moet altijd worden ingevuld, ook al is de bewaartijd voor alle activiteiten hetzelfde.
 
 </div>
