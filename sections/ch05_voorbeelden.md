@@ -676,3 +676,39 @@ Je kunt de voorbeeldapplicatie van het logboek en de specifieke RvvA-sectie hier
 
 ## Use Cases
 Dit hoofdstuk bevat voorbeelden van use cases, gebaseerd op praktijkscenario's uit workshops. Ze illustreren hoe de standaard Logboek Dataverwerkingen kan worden toegepast in samenwerkingen tussen organisaties. De voorbeelden zijn niet-normatief en dienen ter verduidelijking voor organisaties met vergelijkbare processen.
+
+## Use Case 01: Moet de retentieperiode (bewaartermijn) van de logging in de logregel staan?
+
+In **AVG artikel 30-1f** wordt de volgende maatregel benoemd:
+*Elke verantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verantwoordelijke houdt een register van de verwerkingsactiviteiten die onder hun verantwoordelijkheid plaatsvinden. Dat register bevat alle volgende gegevens: indien mogelijk, de beoogde termijnen waarbinnen de verschillende categorieën van gegevens moeten worden gewist.*
+
+De concrete datum waarop een dataverwerking moet worden gewist uit het logboek, kan bepaald worden door middel van het bewaartermijn in het register en de eindtijd waarop een dataverwerking is gelogd in het logboek. Daardoor is het onnodig om de concrete verwijderdatum van een dataverwerking te registreren in het logboek.
+
+Wanneer een logregel verwijderd moet worden, is afhankelijk van de situatie van een organisatie en het beleid van bewaarperiodes:
+
+- **Gelijke bewaartermijn:** Als het beleid is dat alle logregels dezelfde bewaartijd hebben, kan er bijvoorbeeld elke dag een batch draaien die kijkt naar de eindtijd van een logregel en berekent of deze verwijderd kan worden.
+- **Verschillende bewaartermijnen:** Als er per activiteit een andere bewaartermijn geldt, moet dat duidelijk worden aangegeven in het *Register van Verwerkingsactiviteiten* per activiteit in het veld `envisagedTimeLimit`.
+
+**Voorbeelden van waarden van het veld `envisagedTimeLimit`**:
+- **Datum (Date) of Datum/Tijd (DateTime):** `2025-02-23T00:00:00`
+- **Geheel getal (Integer):** `15` (dagen/maanden/jaren)
+- **Tekst (String):** `"20 jaar na onherroepelijk worden besluit"`
+
+Het belangrijkste is dat de organisatie duidelijk kan aantonen (*verantwoordingsplicht*) waarom een bepaalde bewaartermijn is gekozen en dat deze termijn in lijn is met de AVG. Dit betekent dat de keuze van het datatype minder cruciaal is dan de heldere vastlegging en naleving van de bewaartermijn zelf.
+
+Concreet zou de logverwijderingssituatie er als volgt uit kunnen zien:
+VOEG AFBEELDING TOE
+
+**Scenario 1**
+Als het is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan zou deze kunnen worden vastgelegd in de `envisedTimeLimit` in een profiel. Dagelijks wordt een batch gedraaid om te bepalen of een logregel mag worden verwijderd. Als `Huidige datum – envisedTimeLimit < end_time` dan mag de logregel worden verwijderd.
+
+**Voorbeeld:**
+- Huidige datum: 1-8-2025
+- envisedTimeLimit: 6 maanden
+- end_time: 1-1-2025
+
+`1-8-2025 – 6 maanden = 1-2-2025`, de logregel mag dus verwijderd worden.
+
+**Scenario 2**
+Als het **niet** is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan moet deze worden vastgelegd in de `envisedTimeLimit` in het *Register van Verwerkingsactiviteiten* per activiteit.
+De batch moet nu op basis van `dpl.core.processing_activity_id` de `envisedTimeLimit` opzoeken in het *Register van Verwerkingsactiviteiten* en bepalen of de logregel verwijderd mag worden.
