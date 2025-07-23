@@ -699,7 +699,7 @@ Het belangrijkste is dat de organisatie duidelijk kan aantonen (*verantwoordings
 Concreet zou de logverwijderingssituatie er als volgt uit kunnen zien:
 ![logverwijderingssituatie Use Case 01](./media/UseCase01_afbeelding1.png)
 
-**Scenario 1**
+**Scenario 1:**
 Als het is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan zou deze kunnen worden vastgelegd in de `envisedTimeLimit` in een profiel. Dagelijks wordt een batch gedraaid om te bepalen of een logregel mag worden verwijderd. Als `Huidige datum – envisedTimeLimit < end_time` dan mag de logregel worden verwijderd.
 
 **Voorbeeld:**
@@ -709,6 +709,15 @@ Als het is toegestaan om een vaste retentieperiode voor alle logregels te hanter
 
 `1-8-2025 – 6 maanden = 1-2-2025`, de logregel mag dus verwijderd worden.
 
-**Scenario 2**
+**Scenario 2:**
 Als het **niet** is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan moet deze worden vastgelegd in de `envisedTimeLimit` in het *Register van Verwerkingsactiviteiten* per activiteit.
 De batch moet nu op basis van `dpl.core.processing_activity_id` de `envisedTimeLimit` opzoeken in het *Register van Verwerkingsactiviteiten* en bepalen of de logregel verwijderd mag worden.
+
+<div class="note">
+
+Let op:
+* De standaard Logboek Dataverwerkingen schrijft niet voor hoe het mechanisme van het verwijderen van logregels zou moeten werken. Het ontwerp en de architectuur moeten door de organisatie zelf bepaald worden.  
+* De standaard Logboek Dataverwerkingen schrijft niet voor wat de retentietijd is voor activiteiten. Het is de taak van de organisatie om te bepalen (op basis van de wettelijke basis) wat de bewaartijd is van een logregel.  
+* Het veld `envisedTimeLimit` in het Register van Verwerkingsactiviteiten moet altijd worden ingevuld, ook al is de bewaartijd voor alle activiteiten hetzelfde.
+
+</div>
