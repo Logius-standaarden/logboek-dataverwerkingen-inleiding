@@ -673,3 +673,6 @@ Je kunt de voorbeeldapplicatie van het logboek en de specifieke RvvA-sectie hier
 
 * [gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen/rva](https://gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen/rva)
 * [gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen](https://gitlab.com/digilab.overheid.nl/ecosystem/logboek-dataverwerkingen)
+
+## Use Cases
+Dit hoofdstuk bevat voorbeelden van use cases, gebaseerd op praktijkscenario's uit workshops. Ze illustreren hoe de standaard Logboek Dataverwerkingen kan worden toegepast in samenwerkingen tussen organisaties. De voorbeelden zijn niet-normatief en dienen ter verduidelijking voor organisaties met vergelijkbare processen.
