@@ -709,7 +709,7 @@ Als het is toegestaan om een vaste retentieperiode voor alle logregels te hanter
 * envisedTimeLimit: 6 maanden
 * end_time: 1-1-2025
 
-`1-8-2025 – 6 maanden = 1-2-2025`, de logregel mag dus verwijderd worden.
+1-8-2025 – 6 maanden = 1-2-2025, de logregel mag dus verwijderd worden.
 
 **Scenario 2:**
 Als het **niet** is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan moet deze worden vastgelegd in de `envisedTimeLimit` in het *Register van Verwerkingsactiviteiten* per activiteit.
