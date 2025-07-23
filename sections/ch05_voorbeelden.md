@@ -721,3 +721,7 @@ Let op:
 * Het veld `envisedTimeLimit` in het Register van Verwerkingsactiviteiten moet altijd worden ingevuld, ook al is de bewaartijd voor alle activiteiten hetzelfde.
 
 </div>
+
+## Use Case 02: Wordt er een vlag gelogd in de logregel, zodat ik weet dat de gegevens in deze logregel niet getoond mogen worden in het geval van inzageverzoek?
+
+Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan worden gezien dat de gegevens niet getoond mogen worden aan een burger. Het is aan de organisatie om procedures op te stellen om te regelen dat in specifieke gevallen data niet getoond mag worden aan een burger.
