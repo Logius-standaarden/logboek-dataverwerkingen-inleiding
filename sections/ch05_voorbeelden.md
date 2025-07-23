@@ -705,11 +705,12 @@ Concreet zou de logverwijderingssituatie er als volgt uit kunnen zien:
 Als het is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan zou deze kunnen worden vastgelegd in de `envisedTimeLimit` in een profiel. Dagelijks wordt een batch gedraaid om te bepalen of een logregel mag worden verwijderd. Als `Huidige datum – envisedTimeLimit < end_time` dan mag de logregel worden verwijderd.
 
 **Voorbeeld:**
+
 * Huidige datum: 1-8-2025
 * envisedTimeLimit: 6 maanden
 * end_time: 1-1-2025
 
-1-8-2025 – 6 maanden = 1-2-2025, de logregel mag dus verwijderd worden.
+`1-8-2025 – 6 maanden = 1-2-2025`, de logregel mag dus verwijderd worden.
 
 **Scenario 2:**
 Als het **niet** is toegestaan om een vaste retentieperiode voor alle logregels te hanteren, dan moet deze worden vastgelegd in de `envisedTimeLimit` in het *Register van Verwerkingsactiviteiten* per activiteit.
