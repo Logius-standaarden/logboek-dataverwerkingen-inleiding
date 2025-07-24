@@ -14,10 +14,6 @@ Een persoon heeft bij een gemeente een parkeervergunning in gebruik en wil de da
 * Het proces is een 'happy flow', dit betekent dat validaties en eventuele foutsituaties in dit voorbeeld niet in ogenschouw worden genomen.
 * Autorisatieprocessen zijn in dit voorbeeld niet meegenomen.
 * Een Loggingsregel wordt toegevoegd aan het logboek per **geheel** afgeronde transactie. Er wordt dus **geen** aparte logregel aangemaakt per ontvangen of verstuurd bericht.
-* Een aantal data staan nog ter discussie (vanuit juridisch oogpunt). Voor de volledigheid worden een aantal data in dit voorbeeld meegenomen. Het betreft de data:
-  * resource/name/version
-  * receiver
-  * dataSubject
 
 ### Globaal proces (Parkeervergunning - inzien)
 
