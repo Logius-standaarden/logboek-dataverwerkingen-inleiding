@@ -461,7 +461,7 @@ Om uiteindelijk alle data te kunnen rapporteren, is het van belang dat data op e
 De relatie met de doelstellingen die gesteld zijn in de standaard Logboek dataverwerkingen worden, op basis van dit voorbeeld, als volgt concreet gerealiseerd:
 
 * **het wegschrijven van logs van dataverwerkingen:** In dit voorbeeld is het de Baliemedewerker die via een Balieapplicatie de data van een Betrokkene kan bekijken en wijzigen. Deze acties zijn dataverwerkingen en worden gelogd bij zowel de Balieapplicatie  als bij het BRP-systeem.
-* **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het `span_id` en `trace_id` (gemeentelogboek) te linken aan het `foreign_operation.span_id` en `foreign_operation.trace_id` (BRP-logboek).
+* **het aan elkaar relateren van logs van dataverwerkingen:** Er zijn in dit voorbeeld twee applicaties nodig om het totaal aan gevraagde informatie te kunnen tonen aan de betrokkene. Beide applicaties hebben een logboek voor verwerkte data. Om een totaalbeeld van de gelogde data te kunnen construeren, is een relatie tussen de logs nodig. In dit voorbeeld wordt de koppeling gelegd door het `span_id` en `trace_id` (gemeentelogboek) te linken aan het `foreign_operation.span_id` (BRP-logboek).
 * **het aan elkaar relateren van dataverwerkingen over de grenzen van systemen:** Naast het koppelen van logs van diverse applicaties, wordt ook een koppeling gelegd met het Register van verwerkingsactiviteiten. Dit gebeurt per applicatie op basis van het `processing_activity_id` (register) te koppelen aan `dpl.core.processing_activity_id` (logboek). De diverse registers hebben **geen** directe koppeling met elkaar.
 
 Standaard Logverwerkingen: **paragraaf 3.3.1 Gedrag**
@@ -519,7 +519,6 @@ De volgende data worden gelogd in de diverse logmomenten:
   |resource.version| 2.0|
   |attributeKey | `dpl.core.processing_activity_id` |
   |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-  | `foreign_operation.trace_id` |bc9126aaae813fd491ee10bf870db292|
   | `foreign_operation.span_id` |b2e339a595246e01|
   |<u>BSN 1</u>| `<leeg>` |
   |attributeKey | `dpl.core.data_subject_id` |
