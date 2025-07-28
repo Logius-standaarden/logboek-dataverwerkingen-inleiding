@@ -541,7 +541,6 @@ De volgende data worden gelogd in de diverse logmomenten:
   |resource.version |2.0|
   |attributeKey| `dpl.core.processing_activity_id` |
   |attributeValue |12f2ec2a-0cc4-3541-9ae6-219a178fcfe4|
-  | `foreign_operation.trace_id` | |
   | `foreign_operation.span_id` |b2e339a595246e01|
   |<u>BSN 2</u> | `<leeg>` |
   |attributeKey | `dpl.core.data_subject_id` |
