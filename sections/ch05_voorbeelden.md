@@ -729,3 +729,39 @@ Let op:
 ## Use Case 02: Wordt er een vlag gelogd in de logregel, zodat ik weet dat de gegevens in deze logregel niet getoond mogen worden in het geval van inzageverzoek?
 
 Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan worden gezien dat de gegevens niet getoond mogen worden aan een burger. Het is aan de organisatie om procedures op te stellen om te regelen dat in specifieke gevallen data niet getoond mag worden aan een burger.
+
+## Use Case 03: Berichten naar de burger vanuit een uitkeringsinstantie
+
+### Proces
+
+1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele bestanden van. De individuele bestanden worden verstuurd naar een portaaldienst.
+3. De portaaldienst verstuurt het individueel bestand naar de juiste dienstverlener.
+
+### Logging:
+
+1. Voor zowel de verwerking van de batch als het verzenden van de (individuele) berichten wordt een logregel aangemaakt (in beide gevallen komt een BSN ‘tevoorschijn’).
+2. De `trace_id` wordt aangeleverd door de uitkeringsinstantie, er wordt door de centrale verwerkingsdienst geen aparte `trace_id` aangemaakt noch wordt er een `foreign_trace_id` gelogd.
+3. De centrale verwerkingsdienst heeft een eigen Register van Verwerkingsactiviteiten (via `dpl.core.processing_activity_id`).
+4. De allereerste logregel geldt als ‘kapstok’, alle logregels daarna refereren naar de `span_id` van deze allereerste logregel via `parent_span_id`.
+5. Elk individueel BSN krijgt een eigen logregel.
+
+| Veld                     | Logregel 1                                      | Logregel 2                                      |
+|--------------------------|------------------------------------------------|------------------------------------------------|
+| trace_id                | bc9126aaae813fd491ee10bf870db292               | bc9126aaae813fd491ee10bf870db292               |
+| span_id                 | b2e339a595246e01                                | 414514cf1d40d6b2                                |
+| parent_span_id          | NA                                             | b2e339a595246e01                                |
+| name                    | VerwerkBatch                                   | VerzendBericht                                 |
+| start_time              | 2024-07-29 10:16:49.690                        | 2024-07-29 10:16:49.690                        |
+| end_time                | 2024-07-29 10:16:49.723                        | 2024-07-29 10:16:49.723                        |
+| status_code             | OK                                             | OK                                             |
+| resource.name           | BatchVerwerking                                | ZendDienst                                     |
+| resource.version        | 1.0                                            | 2.1                                            |
+| attributeKey1           | dpl.core.processing_activity_id                | dpl.core.processing_activity_id                |
+| attributeValue1         | 11x2ec2a-0774-3541-9b16                         | 12f2ec2a-0cc4-3541-9ae6                         |
+| attributeKey2           | dpl.core.data_subject_id                       | dpl.core.data_subject_id                       |
+| attributeValue2         | 13j2ec27-0cc4-3541-9av6                         | 19u2dd2a-0cb7-3541-9ae6-217                     |
+| attributeKey3           | dpl.core.data_subject_id_type                  | dpl.core.data_subject_id_type                  |
+| attributeValue3         | BSN                                    | BSN                                  |
+| attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
+| attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
