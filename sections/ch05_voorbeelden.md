@@ -730,19 +730,19 @@ Let op:
 
 Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan worden gezien dat de gegevens niet getoond mogen worden aan een burger. Het is aan de organisatie om procedures op te stellen om te regelen dat in specifieke gevallen data niet getoond mag worden aan een burger.
 
-## Use Case 03: Berichten naar de burger vanuit een overheidsinstantie via een intermediar organisatie
+## Use Case 03: Berichten naar de burger vanuit een overheidsinstantie via een intermediair organisatie
 
 ### Proces
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
-2. De centrale verwerkingsdienst (intermediar) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar een Logius.
+2. De centrale verwerkingsdienst (intermediair) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar een Logius.
 3. Logius verstuurt het individueel bestand naar de juiste inbox van de burger in MijnOverheid.
 
 ### Logging:
 
 1. Voor zowel de verwerking van de batch als het verzenden van de (individuele) berichten wordt een logregel aangemaakt (in beide gevallen komt een BSN ‘tevoorschijn’).
-2. De `trace_id` wordt aangeleverd door de overheidsinstantie, er wordt door de centrale verwerkingsdienst (intermediar) geen aparte `trace_id` aangemaakt noch wordt er een `foreign_trace_id` gelogd.
-3. De centrale verwerkingsdienst (intermediar) heeft een eigen Register van Verwerkingsactiviteiten (via `dpl.core.processing_activity_id`).
+2. De `trace_id` wordt aangeleverd door de overheidsinstantie, er wordt door de centrale verwerkingsdienst (intermediair) geen aparte `trace_id` aangemaakt noch wordt er een `foreign_trace_id` gelogd.
+3. De centrale verwerkingsdienst (intermediair) heeft een eigen Register van Verwerkingsactiviteiten (via `dpl.core.processing_activity_id`).
 4. De allereerste logregel geldt als ‘kapstok’, alle logregels daarna refereren naar de `span_id` van deze allereerste logregel via `parent_span_id`.
 5. Elk individueel BSN krijgt een eigen logregel.
 
@@ -766,4 +766,4 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 | attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
 | attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
 
-![Intermediarsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
+![intermediairsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
