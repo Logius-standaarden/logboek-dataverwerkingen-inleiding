@@ -730,13 +730,15 @@ Let op:
 
 Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan worden gezien dat de gegevens niet getoond mogen worden aan een burger. Het is aan de organisatie om procedures op te stellen om te regelen dat in specifieke gevallen data niet getoond mag worden aan een burger.
 
-## Use Case 03: Berichten naar de burger vanuit een overheidsinstantie via een intermediair organisatie
+## Use Case 03: Berichten versturen naar de burger vanuit een overheidsinstantie via een intermediaire organisatie
 
 ### Proces
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
-2. De centrale verwerkingsdienst (intermediair) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar een Logius.
+2. De centrale verwerkingsdienst (intermediair) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar Logius.
 3. Logius verstuurt het individueel bestand naar de juiste inbox van de burger in MijnOverheid.
+
+![intermediairsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
 
 ### Logging:
 
@@ -766,4 +768,10 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 | attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
 | attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
 
-![intermediairsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
+## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener
+
+1.Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst.
+3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
+
+![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
