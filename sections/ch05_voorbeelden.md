@@ -771,7 +771,7 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 ## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
-2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. MijnOverheid of Digipoort).
+2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. Digipoort).
 3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
 
 ![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
