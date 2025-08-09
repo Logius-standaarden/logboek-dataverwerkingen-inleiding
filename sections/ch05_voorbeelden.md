@@ -768,6 +768,10 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 | attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
 | attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
 
+### Opmerkingen Use Case 03
+
+Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volstaan (geen persoonsgegevens zichtbaar).
+
 ## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener via een intermediair
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
@@ -775,6 +779,10 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
 
 ![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
+
+### Opmerkingen Use Case 04
+
+Als er geen HTTP protocol wordt gebruikt, moet er  op een bepaalde manier toch headerinformatie worden verzonden.
 
 ## Use Case 05: Persoonsgebeurtenisberichten via een intermediair
 
@@ -792,6 +800,13 @@ Het proces kan ook andersom:
 2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
 3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
 
+### Opmerkingen Use Case 05
+
+*	De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
+*	De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
+*	Niet elke organisatie geeft een acknowledgement terug.
+
+
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
 ### Proces
@@ -801,3 +816,17 @@ Het proces kan ook andersom:
 3. De RVIG voert aanpassing uit in de RNI.
 
 ![intermediairsituatie_UseCase06](./media/UseCase06_afbeelding1.png)
+
+## Use Case 07: Statistische Informatie
+
+### Proces
+
+1. Een werkgeversdienst verstuurt statistische informatie over burgers bedoeld voor zowel een overheidsinstantie als het CBS (twee aparte berichten) in batch via een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst verwerkt de batch en stuurt individuele berichten naar zowel de overheidsinstantie als het CBS.
+3. Het CBS anonimiseert de aangeleverde data.
+
+![intermediairsituatie_UseCase07](./media/UseCase07_afbeelding1.png)
+
+### Opmerkingen Use Case 07
+
+Het CBS moet de verwerking loggen van verwerkingen persoonsgegevens om persoonsgegevens te anonimiseren.
