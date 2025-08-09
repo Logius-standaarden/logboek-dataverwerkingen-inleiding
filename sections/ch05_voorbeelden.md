@@ -768,10 +768,26 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 | attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
 | attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
 
-## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener
+## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener via een intermediair
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. Digipoort).
 3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
 
 ![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
+
+## Use Case 05: Persoonsgebeurtenisberichten via een intermediair
+
+### Proces
+
+1. Een werkgeversdienst zendt individuele berichten naar een overheidsinstantie met betrekking tot personen met een werkverleden.
+2. De overheidsinstantie bundelt persoonsgebeurtenisberichten in een batch en zendt deze naar een centrale verwerkingsdienst.
+3. De centrale verwerkingsdienst verwerkt de batch en maakt hier individuele files van en zendt deze naar het juiste EU-land.
+
+![intermediairsituatie_UseCase05](./media/UseCase05_afbeelding1.png)
+
+Het proces kan ook andersom:
+
+1. EU-land komt een persoonsgebeurtenisbericht (bijvoorbeeld van een persoon in het buitenland) en zendt deze naar de centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
+3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
