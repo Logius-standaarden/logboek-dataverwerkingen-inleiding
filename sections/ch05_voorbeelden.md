@@ -771,9 +771,8 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 <div class="note">
 
 Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volstaan (geen persoonsgegevens zichtbaar).
- 
-</div>
 
+</div>
 
 ## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener via een intermediair
 
