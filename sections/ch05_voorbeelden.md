@@ -732,7 +732,7 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 
 ## Use Case 03: Berichten versturen naar de burger vanuit een overheidsinstantie via een intermediaire organisatie
 
-### Proces
+### Procesbeschrijving Use Case 03
 
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst (intermediair) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar Logius.
@@ -740,7 +740,7 @@ Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan 
 
 ![intermediairsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
 
-### Logging:
+### Logging
 
 1. Voor zowel de verwerking van de batch als het verzenden van de (individuele) berichten wordt een logregel aangemaakt (in beide gevallen komt een BSN ‘tevoorschijn’).
 2. De `trace_id` wordt aangeleverd door de overheidsinstantie, er wordt door de centrale verwerkingsdienst (intermediair) geen aparte `trace_id` aangemaakt noch wordt er een `foreign_trace_id` gelogd.
@@ -774,6 +774,8 @@ Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volsta
 
 ## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener via een intermediair
 
+### Procesbeschrijving Use Case 04
+
 1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. Digipoort).
 3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
@@ -786,7 +788,7 @@ Als er geen HTTP protocol wordt gebruikt, moet er  op een bepaalde manier toch h
 
 ## Use Case 05: Persoonsgebeurtenisberichten via een intermediair
 
-### Proces
+### Procesbeschrijving Use Case 05
 
 1. Een werkgeversdienst zendt individuele berichten naar een overheidsinstantie met betrekking tot personen met een werkverleden.
 2. De overheidsinstantie bundelt persoonsgebeurtenisberichten in een batch en zendt deze naar een centrale verwerkingsdienst.
@@ -806,10 +808,9 @@ Het proces kan ook andersom:
 *	De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
 *	Niet elke organisatie geeft een acknowledgement terug.
 
-
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
-### Proces
+### Procesbeschrijving Use Case 06
 
 1. Een overheidsinstantie/werkgeversdienst/uitkeringsinstantie/zorginstantie stuurt aanpassing ten aanzien van RNI naar een centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst stuurt aanpassing naar het RVIG (Rijksdienst voor identiteitsgegevens). In dit voorbeeld maakt de centrale verwerkingsdienst alleen individuele berichten indien aanpassingen in batchvorm zijn aangeleverd.
@@ -819,7 +820,7 @@ Het proces kan ook andersom:
 
 ## Use Case 07: Statistische Informatie
 
-### Proces
+### Procesbeschrijving Use Case 07
 
 1. Een werkgeversdienst verstuurt statistische informatie over burgers bedoeld voor zowel een overheidsinstantie als het CBS (twee aparte berichten) in batch via een centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst verwerkt de batch en stuurt individuele berichten naar zowel de overheidsinstantie als het CBS.
