@@ -802,6 +802,11 @@ Het proces kan ook andersom:
 2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
 3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
 
+### Opmerkingen Use Case 05
+* De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
+* De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
+* Niet elke organisatie geeft een acknowledgement terug.
+
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
 ### Procesbeschrijving Use Case 06
