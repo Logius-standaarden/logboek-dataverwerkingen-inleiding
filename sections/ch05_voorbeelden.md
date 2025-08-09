@@ -804,9 +804,9 @@ Het proces kan ook andersom:
 
 ### Opmerkingen Use Case 05
 
-* De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
-* De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
-* Niet elke organisatie geeft een acknowledgement terug.
+1. De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
+2. De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
+3. Niet elke organisatie geeft een acknowledgement terug.
 
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
