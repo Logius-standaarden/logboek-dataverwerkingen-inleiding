@@ -784,9 +784,11 @@ Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volsta
 
 ![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
 
-### Opmerkingen Use Case 04
+<div class="note">
 
 Als er geen HTTP protocol wordt gebruikt, moet er  op een bepaalde manier toch headerinformatie worden verzonden.
+
+</div>
 
 ## Use Case 05: Persoonsgebeurtenisberichten via een intermediair
 
@@ -804,11 +806,13 @@ Het proces kan ook andersom:
 2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
 3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
 
-### Opmerkingen Use Case 05
+<div class="note">
 
 * De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
 * De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
 * Niet elke organisatie geeft een acknowledgement terug.
+
+</div>
 
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
@@ -830,6 +834,8 @@ Het proces kan ook andersom:
 
 ![intermediairsituatie_UseCase07](./media/UseCase07_afbeelding1.png)
 
-### Opmerkingen Use Case 07
+<div class="note">
 
 Het CBS moet de verwerking loggen van verwerkingen persoonsgegevens om persoonsgegevens te anonimiseren.
+
+</div>
