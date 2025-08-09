@@ -729,3 +729,113 @@ Let op:
 ## Use Case 02: Wordt er een vlag gelogd in de logregel, zodat ik weet dat de gegevens in deze logregel niet getoond mogen worden in het geval van inzageverzoek?
 
 Nee, in het Logboek Verwerkingsgegevens worden geen vlaggen gelogd waardoor kan worden gezien dat de gegevens niet getoond mogen worden aan een burger. Het is aan de organisatie om procedures op te stellen om te regelen dat in specifieke gevallen data niet getoond mag worden aan een burger.
+
+## Use Case 03: Berichten versturen naar de burger vanuit een overheidsinstantie via een intermediaire organisatie
+
+### Procesbeschrijving Use Case 03
+
+1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst (intermediair) verwerkt de batch en maakt hier individuele bestanden van. Deze individuele bestanden worden verstuurd naar Logius.
+3. Logius verstuurt het individueel bestand naar de juiste inbox van de burger in MijnOverheid.
+
+![intermediairsituatie_UseCase03](./media/UseCase03_afbeelding1.png)
+
+### Logging
+
+1. Voor zowel de verwerking van de batch als het verzenden van de (individuele) berichten wordt een logregel aangemaakt (in beide gevallen komt een BSN ‘tevoorschijn’).
+2. De `trace_id` wordt aangeleverd door de overheidsinstantie, er wordt door de centrale verwerkingsdienst (intermediair) geen aparte `trace_id` aangemaakt noch wordt er een `foreign_trace_id` gelogd.
+3. De centrale verwerkingsdienst (intermediair) heeft een eigen Register van Verwerkingsactiviteiten (via `dpl.core.processing_activity_id`).
+4. De allereerste logregel geldt als ‘kapstok’, alle logregels daarna refereren naar de `span_id` van deze allereerste logregel via `parent_span_id`.
+5. Elk individueel BSN krijgt een eigen logregel.
+
+| Veld                     | Logregel 1                                      | Logregel 2                                      |
+|--------------------------|------------------------------------------------|------------------------------------------------|
+| trace_id                | bc9126aaae813fd491ee10bf870db292               | bc9126aaae813fd491ee10bf870db292               |
+| span_id                 | b2e339a595246e01                                | 414514cf1d40d6b2                                |
+| parent_span_id          | NA                                             | b2e339a595246e01                                |
+| name                    | VerwerkBatch                                   | VerzendBericht                                 |
+| start_time              | 2024-07-29 10:16:49.690                        | 2024-07-29 10:16:49.690                        |
+| end_time                | 2024-07-29 10:16:49.723                        | 2024-07-29 10:16:49.723                        |
+| status_code             | OK                                             | OK                                             |
+| resource.name           | BatchVerwerking                                | ZendDienst                                     |
+| resource.version        | 1.0                                            | 2.1                                            |
+| attributeKey1           | dpl.core.processing_activity_id                | dpl.core.processing_activity_id                |
+| attributeValue1         | 11x2ec2a-0774-3541-9b16                         | 12f2ec2a-0cc4-3541-9ae6                         |
+| attributeKey2           | dpl.core.data_subject_id                       | dpl.core.data_subject_id                       |
+| attributeValue2         | 13j2ec27-0cc4-3541-9av6                         | 19u2dd2a-0cb7-3541-9ae6-217                     |
+| attributeKey3           | dpl.core.data_subject_id_type                  | dpl.core.data_subject_id_type                  |
+| attributeValue3         | BSN                                    | BSN                                  |
+| attributeKey4           | dpl.core.foreign_operation.span_id             | dpl.core.foreign_operation.span_id             |
+| attributeValue4         | 8ccfd3c567c51d68937c263e00a352be               | 8ccfd3c567c51d68937c263e00a352be               |
+
+<div class="note">
+
+Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volstaan (geen persoonsgegevens zichtbaar).
+
+</div>
+
+## Use Case 04: Service Bericht Mededeling vanuit een overheidsinstantie naar een dienstverlener via een intermediair
+
+### Procesbeschrijving Use Case 04
+
+1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. Digipoort).
+3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
+
+![intermediairsituatie_UseCase04](./media/UseCase04_afbeelding1.png)
+
+<div class="note">
+
+Als er geen HTTP protocol wordt gebruikt, moet er  op een bepaalde manier toch headerinformatie worden verzonden.
+
+</div>
+
+## Use Case 05: Persoonsgebeurtenisberichten via een intermediair
+
+### Procesbeschrijving Use Case 05
+
+1. Een werkgeversdienst zendt individuele berichten naar een overheidsinstantie met betrekking tot personen met een werkverleden.
+2. De overheidsinstantie bundelt persoonsgebeurtenisberichten in een batch en zendt deze naar een centrale verwerkingsdienst.
+3. De centrale verwerkingsdienst verwerkt de batch en maakt hier individuele files van en zendt deze naar het juiste EU-land.
+
+![intermediairsituatie_UseCase05](./media/UseCase05_afbeelding1.png)
+
+Het proces kan ook andersom:
+
+1. EU-land komt een persoonsgebeurtenisbericht (bijvoorbeeld van een persoon in het buitenland) en zendt deze naar de centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
+3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
+
+<div class="note">
+
+* De organisatie die als centrale verwerkingsdienst acteert zou een `trace_id` aan moeten maken op het moment dat er een bericht vanuit een EU-land komt.
+* De overheidsinstantie in deze afbeelding is verantwoordelijke ook al komt het initiële bericht vanuit de werkgeversdienst.
+* Niet elke organisatie geeft een acknowledgement terug.
+
+</div>
+
+## Use Case 06: Register van Niet-Ingezetenen (RNI)
+
+### Procesbeschrijving Use Case 06
+
+1. Een overheidsinstantie/werkgeversdienst/uitkeringsinstantie/zorginstantie stuurt aanpassing ten aanzien van RNI naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst stuurt aanpassing naar het RVIG (Rijksdienst voor identiteitsgegevens). In dit voorbeeld maakt de centrale verwerkingsdienst alleen individuele berichten indien aanpassingen in batchvorm zijn aangeleverd.
+3. De RVIG voert aanpassing uit in de RNI.
+
+![intermediairsituatie_UseCase06](./media/UseCase06_afbeelding1.png)
+
+## Use Case 07: Statistische Informatie
+
+### Procesbeschrijving Use Case 07
+
+1. Een werkgeversdienst verstuurt statistische informatie over burgers bedoeld voor zowel een overheidsinstantie als het CBS (twee aparte berichten) in batch via een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst verwerkt de batch en stuurt individuele berichten naar zowel de overheidsinstantie als het CBS.
+3. Het CBS anonimiseert de aangeleverde data.
+
+![intermediairsituatie_UseCase07](./media/UseCase07_afbeelding1.png)
+
+<div class="note">
+
+Het CBS moet de verwerking loggen van verwerkingen persoonsgegevens om persoonsgegevens te anonimiseren.
+
+</div>
