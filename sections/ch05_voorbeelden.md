@@ -791,3 +791,13 @@ Het proces kan ook andersom:
 1. EU-land komt een persoonsgebeurtenisbericht (bijvoorbeeld van een persoon in het buitenland) en zendt deze naar de centrale verwerkingsdienst.
 2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
 3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
+
+## Use Case 06: Register van Niet-Ingezetenen (RNI)
+
+### Proces
+
+1. Een overheidsinstantie/werkgeversdienst/uitkeringsinstantie/zorginstantie stuurt aanpassing ten aanzien van RNI naar een centrale verwerkingsdienst.
+2. De centrale verwerkingsdienst stuurt aanpassing naar het RVIG (Rijksdienst voor identiteitsgegevens). In dit voorbeeld maakt de centrale verwerkingsdienst alleen individuele berichten indien aanpassingen in batchvorm zijn aangeleverd.
+3. De RVIG voert aanpassing uit in de RNI.
+
+![intermediairsituatie_UseCase06](./media/UseCase06_afbeelding1.png)
