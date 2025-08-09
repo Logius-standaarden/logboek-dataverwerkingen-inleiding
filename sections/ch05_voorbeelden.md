@@ -802,12 +802,6 @@ Het proces kan ook andersom:
 2. De centrale verwerkingsdienst bundelt persoonsgebeurtenisberichten van diverse EU-landen en stuurt deze als batch naar de overheidsinstantie.
 3. De overheidsinstantie stuurt de batch door naar de werkgeversdienst.
 
-### Opmerkingen Use Case 05
-
-* Huidige datum: 1-8-2025
-* envisedTimeLimit: 6 maanden
-* end_time: 1-1-2025
-
 ## Use Case 06: Register van Niet-Ingezetenen (RNI)
 
 ### Procesbeschrijving Use Case 06
