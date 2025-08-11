@@ -722,7 +722,7 @@ Let op:
 
 * De standaard Logboek Dataverwerkingen schrijft **niet** voor hoe het mechanisme van het verwijderen van logregels zou moeten werken. Het ontwerp en de architectuur moeten door de organisatie zelf bepaald worden.  
 * De standaard Logboek Dataverwerkingen schrijft **niet** voor wat de retentietijd is voor activiteiten. Het is de taak van de organisatie om te bepalen (op basis van de wettelijke basis) wat de bewaartijd is van een logregel.  
-* Het veld `envisedTimeLimit` in het Register van Verwerkingsactiviteiten moet altijd worden ingevuld, ook al is de bewaartijd voor alle activiteiten hetzelfde.
+* Het veld `envisedTimeLimit` in het Register van Verwerkingsactiviteiten moet **altijd** worden ingevuld, ook al is de bewaartijd voor alle activiteiten hetzelfde.
 
 </div>
 
@@ -778,7 +778,7 @@ Als het bericht 1 op 1 zou worden doorgestuurd, zou één logregel kunnen volsta
 
 ### Procesbeschrijving Use Case 04
 
-1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst.
+1. Een overheidsinstantie stuurt mededelende berichten in batchvorm naar een centrale verwerkingsdienst (intermediair).
 2. De centrale verwerkingsdienst verwerkt batch en maakt hier individuele files van. De individuele files worden verstuurd naar een portaaldienst (bijv. Digipoort).
 3. De portaaldienst verstuurt de individuele file naar de juiste dienstverlener.
 
@@ -795,7 +795,7 @@ Als er geen HTTP protocol wordt gebruikt, moet er  op een bepaalde manier toch h
 ### Procesbeschrijving Use Case 05
 
 1. Een werkgeversdienst zendt individuele berichten naar een overheidsinstantie met betrekking tot personen met een werkverleden.
-2. De overheidsinstantie bundelt persoonsgebeurtenisberichten in een batch en zendt deze naar een centrale verwerkingsdienst.
+2. De overheidsinstantie bundelt persoonsgebeurtenisberichten in een batch en zendt deze naar een centrale verwerkingsdienst (intermediair).
 3. De centrale verwerkingsdienst verwerkt de batch en maakt hier individuele files van en zendt deze naar het juiste EU-land.
 
 ![intermediairsituatie_UseCase05](./media/UseCase05_afbeelding1.png)
@@ -819,16 +819,16 @@ Het proces kan ook andersom:
 ### Procesbeschrijving Use Case 06
 
 1. Een overheidsinstantie/werkgeversdienst/uitkeringsinstantie/zorginstantie stuurt aanpassing ten aanzien van RNI naar een centrale verwerkingsdienst.
-2. De centrale verwerkingsdienst stuurt aanpassing naar het RVIG (Rijksdienst voor identiteitsgegevens). In dit voorbeeld maakt de centrale verwerkingsdienst alleen individuele berichten indien aanpassingen in batchvorm zijn aangeleverd.
-3. De RVIG voert aanpassing uit in de RNI.
+2. De centrale verwerkingsdienst stuurt aanpassing naar de RVIG (Rijksdienst voor identiteitsgegevens). In dit voorbeeld maakt de centrale verwerkingsdienst alleen individuele berichten indien aanpassingen in batchvorm zijn aangeleverd.
+3. De RVIG voert de aanpassing uit in de RNI.
 
 ![intermediairsituatie_UseCase06](./media/UseCase06_afbeelding1.png)
 
-## Use Case 07: Statistische Informatie
+## Use Case 07: Statistische Informatie via een intermediair
 
 ### Procesbeschrijving Use Case 07
 
-1. Een werkgeversdienst verstuurt statistische informatie over burgers bedoeld voor zowel een overheidsinstantie als het CBS (twee aparte berichten) in batch via een centrale verwerkingsdienst.
+1. Een werkgeversdienst verstuurt statistische informatie over burgers bedoeld voor zowel een overheidsinstantie als het CBS (twee aparte berichten) in batch via een centrale verwerkingsdienst (intermediair).
 2. De centrale verwerkingsdienst verwerkt de batch en stuurt individuele berichten naar zowel de overheidsinstantie als het CBS.
 3. Het CBS anonimiseert de aangeleverde data.
 
