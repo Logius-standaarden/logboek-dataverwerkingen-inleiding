@@ -98,22 +98,6 @@ Ter verduidelijking van de standaard is een Canoniek datamodel uitgewerkt, dit g
 | **Gebruikt in**              | Register                                                     |
 | **Enumeratiewaarden**        | Niet van toepassing                                          |
 
-### foreign_operation.entity
-
-| **Attribuut**                | **Beschrijving**                                             |
-| ---------------------------- | ------------------------------------------------------------ |
-| **Attribuutnaam**            | `foreign_operation.entity`                                    |
-| **Definitie Engels**         | Reference to external entity.                                |
-| **Attribuutnaam Nederlands** | entiteit                                                     |
-| **Definitie Nederlands**     | Verwijzing naar externe entiteit.                            |
-| **Toelichting**              | Indien er voor een verwerking ook een logging heeft plaatsgevonden door een externe informatiebron, dan wordt er een verwijzing aangemaakt om de data van deze logging in te kunnen zien. |
-| **Noodzakelijkheid**         | Indien het noodzakelijk is ook dataverwerkingsacties van een externe databron te gebruiken, dan wordt een unieke referentie naar deze externe dataverwerkingsactie geregistreerd in het logboek. Door alleen te verwijzen naar de externe dataverwerkingsactie, kan voorkomen worden dat data gedupliceerd worden opgeslagen in het logboek. |
-| **Datatype**                 | URI                                                          |
-| **Voorbeeld**                | foo://techtarget.com:8042/over/there?name=parrot#beak        |
-| **Verplicht**                | Nee                                                          |
-| **Gebruikt in**              | Logboek                                                      |
-| **Enumeratiewaarden**        | Niet van toepassing                                          |
-
 ### foreign_operation.span_id
 
 | **Attribuut**                | **Beschrijving**                                             |
