@@ -5,7 +5,7 @@
 
 ## Context en probleemstelling
 
-Uit de workshop casus met RINIS is naar voren gekomen dat `foreign_trace_id` overbodig is en niet gebruikt hoeft te worden.
+Tijdens de workshop casus met  RINIS is gebleken dat het veld `foreign_trace_id` overbodig is en geen praktische toepassing kent binnen de standaard. Dit inzicht heeft geleid tot heroverweging van de noodzaak ervan.
 
 ## Besluit
 
