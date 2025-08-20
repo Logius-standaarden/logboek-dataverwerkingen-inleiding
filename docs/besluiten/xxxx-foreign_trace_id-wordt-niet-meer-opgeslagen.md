@@ -1,4 +1,4 @@
-# Foreign_TraceId wordt niet meer opgeslagen
+# `foreign_trace_id` wordt niet meer opgeslagen
 
 - Status: draft
 - Datum: 2025-08-15
