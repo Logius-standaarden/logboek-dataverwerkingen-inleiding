@@ -19,7 +19,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 * Het is toegestaan de foutsituatie te registreren als transactie (Span) in het Logboek Dataverwerkingen **of** te integreren in een foutenlog **buiten** het Logboek Dataverwerkingen. Beiden hebben voor- en nadelen:
   
   * **In het Logboek Dataverwerkingen**:  
-    **Voordeel:** Alle transacties staan bij elkaar en fouten zijn te herkennen door `name` (=exception) en `status_code` (=error).  
+    **Voordeel:** Alle transacties staan bij elkaar en fouten zijn te herkennen door `name` (=exception) en `statusCode` (=STATUS_CODE_ERROR).  
     **Nadeel:** Er moet een trigger zijn, zodat de beheerder ingelicht wordt dat er een foutsituatie is ontstaan. Als er een grote hoeveelheid logregels zijn, is het zoeken lastig.
 
   * **Buiten het Logboek Dataverwerkingen**:  
@@ -37,7 +37,7 @@ De volgende punten zijn belangrijk in het ontwerpen en implementeren van de regi
 Als een fout gerelateerd aan een Span wordt geregistreerd, dan moet er in de Header de volgende zaken worden opgeslagen:
 
 <pre class="nohighlight"><code>name = "exception"
-status_code = "error"
+statusCode = "STATUS_CODE_ERROR"
 </code></pre>
 
 De overige gegevens in de Header worden ingevuld zoals bij een reguliere verwerking.
@@ -66,7 +66,7 @@ Op basis van het bovenstaande datamodel, kan een foutregistratie er als volgt ui
 {
   "trace_id": "7bba9f33312b3dabc8f8e90c7c61f194",
   "span_id": "2a3f5c8d1e6b4a09",
-  "status_code": "error",
+  "statusCode": "STATUS_CODE_ERROR",
   "name": "exception",
   "start_time": "2025-03-09T20:21:00Z",
   "end_time": "2025-03-09T20:23:00Z",
