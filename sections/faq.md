@@ -85,17 +85,17 @@ De keuze om aan te sluiten bij OpenTelemetry betekent dat het voor veel organisa
 
 Door OpenTelemetry aan te bevelen als een eenvoudige implementatie houdt men de vrijheid om daar waar dat nuttig is een andere oplossing te kiezen dan een OpenTelemetry collector.
 
-## Hoe verhoudt de standaard zich tot andere logging standaarden zoals NEN7513?
+## Hoe verhoudt de standaard zich tot andere logging standaarden zoals NEN 7513?
 
-De [NEN7513 norm](https://www.nen.nl/nen-7513-2024-nl-329182) legt vast welke data moet worden gelogd van acties op persoonlijke gezondheidsinformatie.
+De [NEN 7513 norm](https://www.nen.nl/nen-7513-2024-nl-329182) legt vast welke data moet worden gelogd van acties op persoonlijke gezondheidsinformatie.
 De norm beschrijft alle verschillende aspecten van gezondheidsinformatie die bij verschillende soorten activiteiten moet worden vastgelegd en verduidelijkt wat deze aspecten inhouden.
 Hierbij legt de norm niet het formaat van logging vast, enkel de vereiste informatie.
-Deze standaard is daarom inzetbaar in combinatie met de NEN7513 norm, door vast te leggen in welk formaat dat past.
+Deze standaard is daarom inzetbaar in combinatie met de NEN 7513 norm, door vast te leggen in welk formaat dat past.
 
 Hiervoor is, als onderdeel van de totstandkoming van deze standaard, allereerst [een modelanalyse van de norm](./media/modelanalyse-nen-7513-extensie.pdf) gemaakt in relatie tot welke informatie de core standaard bevat.
 Alle missende informatie is beschreven in [een potentiële extensie](https://logius-standaarden.github.io/logboek-extensie-nen7513/), om na te gaan of dit een haalbare aanpak is.
 Deze extensie zal niet worden vastgesteld en is enkel bedoeld als proof-of-concept tijdens de totstandkoming.
-Mocht in de toekomst er interesse zijn om de NEN7513 norm te implementeren op basis van deze standaard, dan kan deze extensie als startpunt van het traject gebruikt worden.
+Mocht in de toekomst er interesse zijn om de NEN 7513 norm te implementeren op basis van deze standaard, dan kan deze extensie als startpunt van het traject gebruikt worden.
 
 ## Als mijn organisatie besluit de Logboek Dataverwerkingen-standaard te implementeren, moeten wij dan historische logregels aanpassen?
 
