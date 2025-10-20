@@ -18,6 +18,29 @@ Een belangrijk instrument om verbetering van de informatiehuishouding te bereike
 
 Om eenduidige verantwoording over dataverwerkingen te regelen en te zorgen dat deze verantwoording over overheidsorganisaties heen relateerbaar is, is de standaard Logboek Dataverwerkingen in ontwikkeling. De standaard heeft tot doel geautomatiseerd eenduidige verslaglegging van dataverwerkingen binnen organisaties te bevorderen, en dataverwerkingen tussen organisaties aan elkaar te relateren.
 
+### Standaard als technisch middel
+
+De standaard Logboek Dataverwerkingen is een technische randvoorwaarde (een enabler) die organisaties in staat stelt om hun bredere doelen op het gebied van verantwoording en transparantie te bereiken. De standaard is niet het doel op zich, maar een middel om de verantwoordingsplicht van de overheid waar te kunnen maken.
+
+Het onderscheid tussen de beleidsmatige doelen van het bredere beleidsinstrument en de technische doelen van de standaard is als volgt:
+
+**Beleidsmatige doelen** (het waarom):
+* Het verbeteren van de transparantie en verantwoordelijkheid van de overheid ten opzichte van burgers en bedrijven
+* Het faciliteren van inzagerechten en het nakomen van wettelijke verplichtingen
+* Het mogelijk maken van auditing, toezicht en kwaliteitsverbetering van de informatiehuishouding
+* Het herstellen van fouten en onregelmatigheden
+
+Deze beleidsmatige doelen worden bereikt door middel van de technische mogelijkheden die de standaard biedt.
+
+**Technische doelen** (beschreven in de [normatieve standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/)):
+* Het bieden van interoperabele functionaliteit voor het loggen van dataverwerkingen
+* Het aan elkaar relateren van logs binnen en tussen systemen
+* Het specificeren van uniforme interfaces en gedrag voor logging-componenten
+
+Deze technische doelen zijn gericht op het hoe: hoe organisaties dataverwerkingen kunnen loggen op een eenduidige en interoperabele manier.
+
+De standaard vormt daarmee een bouwsteen binnen een groter geheel van wet- en regelgeving (zoals de AVG en AWB), organisatorische maatregelen en beleidsafspraken die samen de verantwoording van de overheid vormgeven.
+
 ## Scope van de Standaard Logboek dataverwerkingen
 
 Dit beschrijft een overzicht van de scope van de standaard, inclusief de zaken die wel en niet binnen de scope van de standaard vallen.
