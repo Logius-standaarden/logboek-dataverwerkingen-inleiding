@@ -30,7 +30,6 @@ Het onderscheid tussen de beleidsmatige doelen van het bredere beleidsinstrument
 Deze beleidsmatige doelen worden bereikt door middel van de technische mogelijkheden die de standaard biedt.
 **Technische doelen** (beschreven in de [normatieve standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/)):
 
-**Technische doelen** (beschreven in de [normatieve standaard](https://logius-standaarden.github.io/logboek-dataverwerkingen/)):
 * Het bieden van interoperabele functionaliteit voor het loggen van dataverwerkingen
 * Het aan elkaar relateren van logs binnen en tussen systemen
 * Het specificeren van uniforme interfaces en gedrag voor logging-componenten
