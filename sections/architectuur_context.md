@@ -1,8 +1,8 @@
-## Context
+# Architectuur
 
 De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossing. Wel biedt de standaard richtlijnen waar het Logboek dataverwerkingen van een applicatie aan moet voldoen. Dit document geeft aan hoe de standaard zich verhoudt tot de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) en de *Domeinarchitectuur Gegevensuitwisseling*
 
-### Bedrijfsarchitectuur
+## Bedrijfsarchitectuur
 
 * *Diensten en producten*
   * De standaard Logboek dataverwerkingen is als product voornamelijk gericht op het verantwoorden van dataverwerkingen door overheden in het kader van hun taken (**Regie op Gegevens** en de **Transparante Overheid)**. Dit betekent dat het gebruik van deze standaard door overheidsorganisaties de informatiepositie van burgers en bedrijven ten opzichte van de overheid sterk verbetert zodat zij meer grip op en inzicht in hun persoonsgebonden data hebben (**inzicht in data over jezelf**). Daarnaast draagt deze standaard aan bij **Verantwoord datagebruik en ruimer meervoudig gebruik data**. Implementatie van deze standaard draagt bij aan de verantwoording over, en het doelmatig gebruik van data.
@@ -15,7 +15,7 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 * *Bedrijfsfuncties*
   * Overheidsfuncties moeten eenduidig een helder belegd zijn, het moet helder zijn welke (overheids)organisaties verantwoordelijk zijn voor het leveren van product of dienst. Door het gebruiken van de standaard Logboek datalogverwerkingen door alle dataverwerkende (overheids)organisaties op een soortgelijke manier wordt het duidelijk welke data gebruikt zijn en door wie.
 
-### Informatie­architectuur (Information systems architecture)
+## Informatie­architectuur
 
 * *Api's / Services*
   * Naast richtlijnen voor de inrichting en het gedrag van het Logboek dataverwerkingen, biedt deze standaard ook een aantal voorbeeld API's:
@@ -53,9 +53,7 @@ Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI
 
 De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewerkt in de volgende paragraaf.
 
-### Technische architectuur (Technical architecture)
-
-#### Netwerken en slimme apparaten
+## Technische architectuur
 
 De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware- of cloud-omgeving. Het netwerkcomponent logt binnenkomende en uitgaande berichten.
 
@@ -63,22 +61,22 @@ De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware
 
 Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de databerichten logt.
 
-### Software architectuur
+## Software architectuur
 
 Hoofdstuk [2.2 Componenten](https://logius-standaarden.github.io/logboek-dataverwerkingen/#componenten) geeft een globaal overzicht van de benodigde softwarecomponenten om de standaard te implementeren.
 
-#### Platformen voor dagelijkse exploitatie en huisvesting
+### Platformen voor dagelijkse exploitatie en huisvesting
 
 De standaard Logboek dataverwerkingen gaat er vanuit dat de het Logboekcomponent op een beveiligd platform in een beveiligd datacenter is geïnstalleerd.
 
-#### Aspectgebieden
+### Aspectgebieden
 
 * *Informatiebeveiliging*
   * De standaard Logboek dataverwerkingen gaat er vanuit dat zowel het Logboekcomponent als de data in het Logboek beveiligd zijn volgens de BIO (=Baseline Informatiebeveiliging Overheid) – zie ook [Beleidskader](https://logius-standaarden.github.io/logboek-dataverwerkingen-juridisch-beleidskader/#beleidskader).
 * *Beheer en exploitatie*
   * Logius verzorgt het beheer en onderhoud van deze standaard volgens het [BOMOS](https://www.logius.nl/domeinen/infrastructuur/bomos)-model.
 
-### Relaties GDI architectuurprincipes  en de standaard
+## Relaties GDI architectuurprincipes  en de standaard
 
 <!-- markdownlint-disable link-fragments -->
 
