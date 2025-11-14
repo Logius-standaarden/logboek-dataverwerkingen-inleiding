@@ -78,11 +78,11 @@ Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzo
 
 Het nu volgende voorbeeld is volledig fictief en is puur bedoeld om een beeld te schetsen ten behoeve van een traceringsconstructie in een logboek.
 
-## Situatieschets
+### Situatieschets
 
 Een persoon heeft een parkeervergunning in een gemeente. Er is een nieuwe auto aangeschaft, het kenteken moet worden aangepast ten behoeve van de vergunning. De persoon kan het kenteken online wijzigen in de 'mijnGemeente' applicatie. Om het voorbeeld eenvoudig te houden, worden foutsituaties buiten beschouwing gelaten.
 
-## Procesgang
+### Procesgang
 
   1. Persoon logt in gemeenteapplicatie.
   2. Gemeente toont huidige parkeervergunning.
@@ -93,7 +93,7 @@ Een persoon heeft een parkeervergunning in een gemeente. Er is een nieuwe auto a
 
 De traceringsdata worden als volgt vastgelegd:
 
-## processing_activity_id
+### processing_activity_id
 
 In de gemeenteapplicatie worden de volgende Operations uitgevoerd die een relatie hebben met het Register van Verwerkingsactiviteiten van de gemeente:
 
@@ -107,7 +107,7 @@ In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie oo
 
 ![Afbeelding voorbeeld processing_activity_id en parent_processing_activity_id bij Gemeente en RDW](./media/relatie_logboekelementen_afbeelding11.svg)
 
-## trace_id
+### trace_id
 
 * De gemeenteOperations **Toon alle vergunningen, Wijzig kenteken en Controleer tenaamstelling** behoren tot dezelfde handeling (met als eindresultaat het wijzigingen van het kenteken op de vergunning). Deze Operations krijgen allemaal dezelfde `trace_id`.
 * De RDW-Operation **Verstrek houdergegevens** krijgt een eigen `trace_id`.
@@ -115,7 +115,7 @@ In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie oo
 
 ![Afbeelding voorbeeld trace_id en foreign_trace_id bij Gemeente en RDW](./media/relatie_logboekelementen_afbeelding12.svg)
 
-## span_id
+### span_id
 
 In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`.
 
@@ -125,7 +125,7 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 
 ![Afbeelding voorbeeld span_id, parent_span_id en foreign_span_id bij Gemeente en RDW](./media/relatie_logboekelementen_afbeelding13.svg)
 
-## Totaalbeeld
+### Totaalbeeld
 
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 
