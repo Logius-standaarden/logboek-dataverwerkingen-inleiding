@@ -1,11 +1,11 @@
-## De relatie tussen logboekelementen, waarom eigenlijk?
+# De relatie tussen logboekelementen, waarom eigenlijk?
 
 Logging van dataverwerkingen kunnen vaak en veelvuldig plaatsvinden. Het geheel kan groot en complex worden want sommige Logregels zijn aan elkaar gerelateerd. Deze relaties kunnen gelegd worden met Logregels met andere applicaties binnen dezelfde organisatie of met logregels van applicaties van andere organisaties.
 
 Maar ook zijn er relaties nodig met activiteiten in het Register van Verwerkingsactiviteiten.
 Wat nu als alle Logregels zonder relaties worden opgeslagen? Bij een rapportage (bijvoorbeeld een verzoek tot inzage van een burger) moet nu handmatig worden uitgezocht welke dataverwerkingen bij elkaar horen en er moet, in het ernstigste geval, ook contact worden gezocht moet andere organisaties om te onderzoeken of daar ook de nodige dataverwerkingen zijn uitgevoerd. Als er bij elke Logregel de nodige relatiedata worden bijgevoegd, kan de rapportage snel en accuraat worden gegenereerd.
 
-### Welke relatiedata moeten er dan worden opgeslagen per Logregel?
+## Welke relatiedata moeten er dan worden opgeslagen per Logregel?
 
 Om er zeker van te zijn dat de relatie tussen Logregels gelegd kan worden, moeten de volgende data worden geregistreerd per Logregel:
 
@@ -17,7 +17,7 @@ Om er zeker van te zijn dat de relatie tussen Logregels gelegd kan worden, moete
 
 In werkelijkheid worden alle relaties door de Applicatie in een fractie van een seconde (in parallel)  gelegd. Om het grote geheel beter te begrijpen, worden alle relaties hieronder stap voor stap uitgelegd.
 
-### Het logboek en het Register van Verwerkingsactiviteiten
+## Het logboek en het Register van Verwerkingsactiviteiten
 
 Als er een Dataverwerking plaatsvindt, moet dit altijd een relatie hebben met het Register van Verwerkingsactiviteiten. In dit Register staat informatie over de data die een organisatie verwerkt. Het Register is verplicht, een geautomatiseerde koppeling met het Logboek niet.
 
@@ -42,7 +42,7 @@ Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `pro
 
 ![Afbeelding relaties processing_activity_id tussen Logboek en Register met parent_processing_activity_id en meerdere organisaties](./media/relatie_logboekelementen_afbeelding4.svg)
 
-### trace_id als grootste gemene deler
+## trace_id als grootste gemene deler
 
 Operations kunnen bestaan uit meerdere (sub)Operations binnen de eigen organisatie maar ook over organisaties heen. Het geheel kan een grote en ingewikkelde constructie worden. Om toch het overzicht te kunnen behouden, is het noodzakelijk een `trace_id` te introduceren per (sub)Operation.
 
@@ -58,7 +58,7 @@ In het geval er data wordt opgevraagd aan een andere organisatie, krijgt elke op
 
 ![Afbeelding relaties trace_id en foreign_trace_id en meerdere organisaties ](./media/relatie_logboekelementen_afbeelding7.svg)
 
-### Relatie tussen (sub)Operations
+## Relatie tussen (sub)Operations
 
 Elke (sub)Operation krijgt een eigen, unieke `span_id`. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke `span_id`.
 
@@ -74,7 +74,7 @@ Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzo
 
 ![Afbeelding span_id, parent_span_id en foreign_span_id](./media/relatie_logboekelementen_afbeelding10.svg)
 
-### Voorbeeld van een traceringsconstructie
+## Voorbeeld van een traceringsconstructie
 
 Het nu volgende voorbeeld is volledig fictief en is puur bedoeld om een beeld te schetsen ten behoeve van een traceringsconstructie in een logboek.
 
@@ -131,4 +131,4 @@ Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 
 ![Afbeelding Voorbeeld met alle span, trace en processing elementen](./media/relatie_logboekelementen_afbeelding14.svg)
 
-Meer gedetailleerde voorbeelden staan beschreven in de [inleiding](https://github.com/Logius-standaarden/logboek-dataverwerkingen-inleiding/blob/main/ch05_voorbeelden.md) van de standaard logboek dataverwerkingen.
+Meer gedetailleerde voorbeelden staan beschreven op [developer.overheid.nl](https://developer.overheid.nl/kennisbank/data/standaarden/logboek-dataverwerkingen/voorbeelden).

@@ -1,8 +1,4 @@
-# Inleiding
-
-Het idee is dat het Logboek Dataverwerkingen een basis biedt om te zorgen dat de overheid precies de data logt die zij nodig heeft om verantwoording af te leggen over haar taken. Niet meer, maar ook niet minder. En om te zorgen dat organisaties data zodanig loggen dat zij zich niet alleen over een eigen handelen kunnen verantwoorden, maar ook over hun gezamenlijk handelen als “de overheid”.
-
-## Aanleiding en context van Logboek dataverwerkingen
+# Aanleiding en context van Logboek dataverwerkingen
 
 *Informatiehuishouding van de overheid moet op orde worden gebracht.* De overheid werkt ten dienste van burgers en bedrijven. De overheid verwerkt daarvoor informatie van deze burgers en bedrijven. Het is belangrijk dat de informatiehuishouding van de overheid op orde is, zodat de overheid transparant en aanspreekbaar is, en zich daarover goed kan verantwoorden.
 
@@ -14,7 +10,7 @@ Voorafgaand aan informatie-uitwisseling is het belangrijk dat transparant is waa
 
 Een belangrijk instrument om verbetering van de informatiehuishouding te bereiken is standaardisatie. Op diverse aspecten is daarom standaardisatie nodig en worden deze ontwikkeld. Een van deze aspecten is de wijze waarop overheden zich verantwoorden. Standaardisatie daarvan vormt daarmee een puzzelstukje in het bredere geheel. Hiermee kunnen overheden hun dataverwerkingen op dezelfde wijze verantwoorden en deze verantwoording onderling relateren, zodat de keten van dataverwerkingen tussen organisaties compleet inzichtelijk kan worden gemaakt.
 
-### Standaard als technisch middel
+## Standaard als technisch middel
 
 De standaard Logboek Dataverwerkingen is een technische randvoorwaarde (een enabler) die organisaties in staat stelt om hun bredere doelen op het gebied van verantwoording en transparantie te bereiken. De standaard is niet het doel op zich, maar een middel om de verantwoordingsplicht van de overheid waar te kunnen maken.
 
@@ -60,8 +56,6 @@ De volgende zaken worden **niet** behandeld in deze standaard:
 * **Beperkingen op informatieplichten (bijvoorbeeld indien er een strafrechtelijk onderzoek plaatsvindt)**: het is aan de organisatie zelf om procedures te implementeren om beperking van inzage uit te voeren. Voor meer informatie zie [besluit 4.6](https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/#vertrouwelijkheid-wordt-vastgelegd-per-verwerkingsactiviteit).
 
 ## Totstandkoming van de standaard
-
-### aanleiding en achtergrond
 
 Het Logboek Dataverwerkingen is een doorontwikkeling van de conceptstandaard GEMMA Verwerkingenlogging, die door VNG Realisatie is gemaakt met als doel de naleving van AVG-verplichtingen rondom de verwerking van persoonsdata te verbeteren.
 
