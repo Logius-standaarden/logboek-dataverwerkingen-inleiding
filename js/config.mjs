@@ -1,22 +1,24 @@
 import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
 
 loadRespecWithConfiguration({
-  useLogo: true,
-  useLabel: true,
   maxTocLevel: 2,
-  specStatus: "WV",
+  specStatus: "CV",
   specType: "PR",
   pubDomain: "logboek",
   shortName: "inleiding",
-  publishDate: "2024-10-23",
-  publishVersion: "0.1.0",
+  publishDate: "2025-11-27",
+  publishVersion: "1.0.0",
   // TODO: verwijder voor publicatie
   latestVersion: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
+  sotdText: {
+    nl: {
+      sotd: "Status van dit document",
+      cv: `Dit is een consultatieversie. We moedigen gebruikers aan om meldingen of suggesties aan te maken via GitHub. Mocht dit niet mogelijk zijn, dan kunt u ook een e-mail sturen naar api@logius.nl`,
+    },
+  },
   prevVersion: [],
 
-  edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
-
-  editors:
+  authors:
     [
       {
         name: "Vedran Bilanovic",
@@ -28,8 +30,13 @@ loadRespecWithConfiguration({
         company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
         companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       },
+      {
+        name: "Jeroen Mulder",
+        company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+        companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      },
     ],
-  authors:
+  editors:
     [
       {
         name: "Nil Barua",
@@ -45,11 +52,6 @@ loadRespecWithConfiguration({
         name: "Tim van der Lippe",
         company: "Logius",
         companyURL: "https://logius.nl",
-      },
-      {
-        name: "Jeroen Mulder",
-        company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
-        companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       },
     ],
 
