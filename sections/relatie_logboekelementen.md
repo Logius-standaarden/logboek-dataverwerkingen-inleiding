@@ -54,7 +54,7 @@ Alle bij elkaar horende (sub)Operations, krijgen vervolgens dezelfde `trace_id`-
 
 ![Afbeelding relaties trace_id](./media/relatie_logboekelementen_afbeelding6.svg)
 
-In het geval er data wordt opgevraagd aan een andere organisatie, geeft de vragende organisatie de `trace_id` door aan de verstrekkende organisatie.
+In het geval dat er data wordt opgevraagd aan een andere organisatie, geeft de vragende organisatie de `trace_id` door aan de verstrekkende organisatie.
 De `trace_id` is identiek bij beide organisaties, waardoor er een relatie te leggen is tussen de verwerkingen van de vragende en de verstrekkende organisatie.
 
 ![Afbeelding relaties trace_id en foreign_trace_id en meerdere organisaties ](./media/relatie_logboekelementen_afbeelding7.svg)
