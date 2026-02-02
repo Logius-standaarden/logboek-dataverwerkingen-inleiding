@@ -68,3 +68,16 @@ Voor de ontwikkeling van de standaard Logboek Dataverwerkingen was het essentiee
 ### Beheer en doorontwikkeling
 
 Om de overgang tussen ontwikkeling en beheer soepel te laten verlopen, was Logius vanaf een vroeg stadium betrokken bij het project. De inzet van Logius is in de loop van de tijd uitgebreid, zodat in 2025 het beheer van de standaard volledig kan worden overgedragen. Dit beheer wordt ingericht volgens de BOMOS-methodologie (Beheer- en OntwikkelModel voor Open Standaarden). Het opzetten van een goede governance-structuur is een integraal onderdeel van het beheer. Hierbij zullen, naast de gebruikers van de standaard, belangrijke rollen zijn weggelegd voor MIDO (Meerjarenprogramma Infrastructuur Digitale Overheid) en het Forum Standaardisatie. Deze gremia zullen naar verwachting respectievelijk de standaard vaststellen en deze opnemen op de Pas-Toe-Of-Leg-Uit-lijst. Het Ministerie van Binnenlandse Zaken blijft opdrachtgever voor het beheer van de standaard.
+
+## Relaties met andere standaarden
+
+Logboek Dataverwerkingen verhoudt zich goed tot andere standaarden. Zo kan het samen werken met twee andere standaarden uit het Federatief Datastelsel.
+In het Federatief Datastelsel zijn 3 logstandaarden ontwikkeld, elk met een eigen toepassingsgebied en ze sluiten op elkaar aan.
+
+* De [FSC log](https://logius-standaarden.github.io/fsc-logging/), die bijhoudt welke transacties er zijn gedaan. Dit is op de onderste laag, het transport. Er staat in wie met wie uitgewisseld heeft en welke contracten daarbij horen.
+  
+* Het [logboek toegangsbeslissingen](https://logius-standaarden.github.io/authorization-decision-log/). Daarin staat welke toegang verleend is, aan wie, waarvoor en op basis van welke regels. Doel is interne audit, het achteraf kunnen uitleggen waarom een beslissing op dat moment juist was (of misschien juist niet).
+
+* Ons Logboek Dataverwerkingen die is voor verantwoording toe. Daarin staan verwerkingen, in de AVG-definitie, er gedaan zijn door wie en waarom.
+
+De drie logs van de standaarden zijn verbonden door een W3C trace, zodat een totaalplaatje mogelijk is wat volledige transparantie bevordert tussen verschillende organisaties in een ketenoverzicht.
