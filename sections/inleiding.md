@@ -74,8 +74,11 @@ Om de overgang tussen ontwikkeling en beheer soepel te laten verlopen, was Logiu
 Logboek Dataverwerkingen verhoudt zich goed tot andere standaarden. Zo kan het samen werken met twee andere standaarden uit het Federatief Datastelsel.
 In het Federatief Datastelsel zijn 3 logstandaarden ontwikkeld, elk met een eigen toepassingsgebied en ze sluiten op elkaar aan.
 
-•	De FSC log, die bijhoudt welke transacties er zijn gedaan. Dit is op de onderste laag, het transport. Er staat in wie met wie uitgewisseld heeft en welke contracten daarbij horen.
-•	Het logboek toegangsbeslissingen. Daarin staat welke toegang verleend is, aan wie, waarvoor en op basis van welke regels. Doel is interne audit, het achteraf kunnen uitleggen waarom een beslissing op dat moment juist was (of misschien juist niet). Deze wordt in de toekomst aangemeld bij het Forum.
-•	Ons Logboek Dataverwerkingen die is voor verantwoording toe. Daarin staan verwerkingen, in de AVG-definitie, er gedaan zijn door wie en waarom.
+- De [FSC log](https://logius-standaarden.github.io/fsc-logging/), die bijhoudt welke transacties er zijn gedaan. Dit is op de onderste laag, het transport. Er staat in wie met wie uitgewisseld heeft en welke contracten daarbij horen.
+  
+- Het [logboek toegangsbeslissingen](https://logius-standaarden.github.io/authorization-decision-log/). Daarin staat welke toegang verleend is, aan wie, waarvoor en op basis van welke regels. Doel is interne audit, het achteraf kunnen uitleggen waarom een beslissing op dat moment juist was (of misschien juist niet).
+
+- Ons Logboek Dataverwerkingen die is voor verantwoording toe. Daarin staan verwerkingen, in de AVG-definitie, er gedaan zijn door wie en waarom.
+
 De drie logs van de standaarden zijn verbonden door een W3C trace, zodat een totaalplaatje mogelijk is wat volledige transparantie bevordert tussen verschillende organisaties in een ketenoverzicht.
 
