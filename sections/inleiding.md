@@ -81,4 +81,3 @@ In het Federatief Datastelsel zijn 3 logstandaarden ontwikkeld, elk met een eige
 * Ons Logboek Dataverwerkingen die is voor verantwoording toe. Daarin staan verwerkingen, in de AVG-definitie, er gedaan zijn door wie en waarom.
 
 De drie logs van de standaarden zijn verbonden door een W3C trace, zodat een totaalplaatje mogelijk is wat volledige transparantie bevordert tussen verschillende organisaties in een ketenoverzicht.
-
