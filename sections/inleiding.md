@@ -71,7 +71,7 @@ Om de overgang tussen ontwikkeling en beheer soepel te laten verlopen, was Logiu
 
 ## Relaties met andere standaarden
 
-Logboek Dataverwerkingen verhoudt zich goed tot andere standaarden. Zo kan het samen werken met twee andere standaarden uit het Federatief Datastelsel.
+Logboek Dataverwerkingen verhoudt zich goed tot andere standaarden. Zo kan het samen werken met twee andere standaarden uit het [Federatief Datastelsel](https://realisatieibds.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/wiki/view/6eb23feb-22b9-4d0a-abf1-512cc86c2d19/wat-is-het-federatief-datastelsel).
 In het Federatief Datastelsel zijn 3 logstandaarden ontwikkeld, elk met een eigen toepassingsgebied en ze sluiten op elkaar aan.
 
 * De [FSC log](https://logius-standaarden.github.io/fsc-logging/), die bijhoudt welke transacties er zijn gedaan. Dit is op de onderste laag, het transport. Er staat in wie met wie uitgewisseld heeft en welke contracten daarbij horen.
