@@ -57,7 +57,7 @@ De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewer
 
 De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware- of cloud-omgeving. Het netwerkcomponent logt binnenkomende en uitgaande berichten.
 
-![technische architectuur](./media/technische_architectuur.png)
+![technische architectuur](./media/technische_architectuur_LDV.png)
 
 Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de databerichten logt.
 
