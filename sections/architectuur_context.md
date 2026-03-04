@@ -37,19 +37,19 @@ Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aan
 
 ![Architectuur Digitale Overheid 2030](./media/stelselplaat.png)
 
-*[bron: Architectuur Digitale Overheid 2030]*
+*[Figuur 1, bron: Architectuur Digitale Overheid 2030]*
 
 Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat [GDI-Gegevensuitwisseling](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
 
 ![Bedrijfsobjectenmodel](./media/metadatamodel.png)
 
-*[Bron: GDI – Gegevensuitwisseling]*
+*[Figuur 2, Bron: GDI – Gegevensuitwisseling]*
 
 Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) en hun relatie met de belangrijkste functie voor data uitwisseling.
 
 ![architectuurprincipes ](./media/architectuurprincipes.png)
 
-*[Bron: MIDO/GDI Domeinarchitectuur Gegevensuitwisseling]*
+*[Figuur 3, Bron: MIDO/GDI Domeinarchitectuur Gegevensuitwisseling]*
 
 De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewerkt in de volgende paragraaf.
 
@@ -58,6 +58,8 @@ De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewer
 De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware- of cloud-omgeving. Het netwerkcomponent logt binnenkomende en uitgaande berichten.
 
 ![technische architectuur](./media/technische_architectuur_LDV.png)
+*[Figuur 4]*
+
 
 Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de databerichten logt.
 
