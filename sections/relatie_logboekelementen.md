@@ -25,7 +25,7 @@ Bij elke Dataverwerking wordt door het Logboek een relatie gelegd met het Regist
 Als er meerdere dezelfde Dataverwerkingen ('Operations') zijn, krijgen deze dus allemaal dezelfde `processing_activity_id`.
 
 <figure id='Afbeelding relaties processing_activity_id'>
-	<img alt="Afbeelding relaties processing_activity_id" src='media/relatie_logboekelementen_afbeelding1.svg' width="600" />
+	<img alt="Afbeelding relaties processing_activity_id" src='media/relatie_logboekelementen_afbeelding1.svg' width="1500" />
 	<figcaption>Afbeelding relaties processing_activity_id</figcaption>
 </figure>
 
