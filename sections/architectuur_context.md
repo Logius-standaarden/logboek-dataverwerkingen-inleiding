@@ -35,9 +35,10 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 
 Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aanbieders en afnemers van data.
 
-![Architectuur Digitale Overheid 2030](./media/stelselplaat.png)
-
-*[Figuur 1, bron: Architectuur Digitale Overheid 2030]*
+<figure id='stelselplaat'>
+	<img alt="Architectuur Digitale Overheid 2030" src='media/stelselplaat.png' width="600" />
+	<figcaption>Architectuur Digitale Overheid 2030</figcaption>
+ </figure>
 
 Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat [GDI-Gegevensuitwisseling](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
 
