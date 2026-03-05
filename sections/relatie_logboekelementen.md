@@ -24,9 +24,10 @@ Als er een Dataverwerking plaatsvindt, moet dit altijd een relatie hebben met he
 Bij elke Dataverwerking wordt door het Logboek een relatie gelegd met het Register door middel van het `processing_activity_id`.
 Als er meerdere dezelfde Dataverwerkingen ('Operations') zijn, krijgen deze dus allemaal dezelfde `processing_activity_id`.
 
-![Afbeelding relaties processing_activity_id](./media/relatie_logboekelementen_afbeelding1.svg)
-*[Figuur 5]*
-
+<figure id='Afbeelding relaties processing_activity_id'>
+	<img alt="Afbeelding relaties processing_activity_id" src='media/relatie_logboekelementen_afbeelding1.svg' width="600" />
+	<figcaption>Afbeelding relaties processing_activity_id</figcaption>
+</figure>
 
 In het geval er een Dataverwerking plaatsvindt ter ondersteuning van een andere Dataverwerking (suboperation), dan kan deze ondersteunende Dataverwerking een eigen `processing_activity_id` krijgen. Deze kan anders zijn dan het `processing_activity_id` van de 'hoofdprocessingActivity'.
 
