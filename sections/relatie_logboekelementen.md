@@ -43,7 +43,7 @@ Bij de subOperation wordt in dit geval naast de `processing_activity_id` ook een
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding3.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent processing activity id</figcaption>
+	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent_processing_activity_id</figcaption>
 </figure>
 
 Bij een Dataverwerking kan het zijn dat data moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation.
@@ -52,7 +52,7 @@ Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `pro
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding4.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent processing activity id en meerdere organisaties</figcaption>
+	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent_processing_activity_id en meerdere organisaties</figcaption>
 </figure>
 
 
@@ -80,7 +80,7 @@ De `trace_id` is identiek bij beide organisaties, waardoor er een relatie te leg
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding7.svg'/>
-	<figcaption>Afbeelding relaties trace_id en foreign_trace_id en meerdere organisaties</figcaption>
+	<figcaption>Afbeelding relaties trace_id en meerdere organisaties</figcaption>
 </figure>
 
 ## Relatie tussen (sub)Operations
@@ -155,7 +155,7 @@ In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie oo
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding12.svg'/>
-	<figcaption>Afbeelding trace_id en foreign_trace_id bij Gemeente en RDW</figcaption>
+	<figcaption>Afbeelding trace_id bij Gemeente en RDW</figcaption>
 </figure>
 
 ### span_id
