@@ -35,8 +35,8 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 
 Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aanbieders en afnemers van data.
 
-<figure id='stelselplaat'>
-	<img alt="Architectuur Digitale Overheid 2030" src='media/stelselplaat.png'/>
+<figure>
+	<img src='media/stelselplaat.png'/>
 	<figcaption>Architectuur Digitale Overheid 2030</figcaption>
 </figure>
 
