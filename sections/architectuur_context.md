@@ -36,21 +36,21 @@ De standaard Logboek dataverwerkingen levert geen kant-en-klare softwareoplossin
 Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aanbieders en afnemers van data.
 
 <figure id='stelselplaat'>
-	<img alt="Architectuur Digitale Overheid 2030" src='media/stelselplaat.png' width="1500" />
+	<img alt="Architectuur Digitale Overheid 2030" src='media/stelselplaat.png'/>
 	<figcaption>Architectuur Digitale Overheid 2030</figcaption>
 </figure>
 
 Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat [GDI-Gegevensuitwisseling](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
 
 <figure id='GDI-Gegevensuitwisseling'>
-	<img alt="GDI-Gegevensuitwisseling" src='media/metadatamodel.png' width="1500" />
+	<img alt="GDI-Gegevensuitwisseling" src='media/metadatamodel.png'/>
 	<figcaption>GDI-Gegevensuitwisseling</figcaption>
  </figure>
  
 Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) en hun relatie met de belangrijkste functie voor data uitwisseling.
 
 <figure id='MIDO/GDI Domeinarchitectuur Gegevensuitwisseling'>
-	<img alt="MIDO/GDI Domeinarchitectuur Gegevensuitwisseling" src='media/architectuurprincipes.png' width="1500" />
+	<img alt="MIDO/GDI Domeinarchitectuur Gegevensuitwisseling" src='media/architectuurprincipes.png'/>
 	<figcaption>MIDO/GDI Domeinarchitectuur Gegevensuitwisseling</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ De relatie en invulling van de standaard Logboek dataverwerkingen staat uitgewer
 De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware- of cloud-omgeving. Het netwerkcomponent logt binnenkomende en uitgaande berichten.
 
 <figure id='Technische Architectuur'>
-	<img alt="Technische Architectuur" src='media/technische_architectuur_LDV.png' width="1500" />
+	<img alt="Technische Architectuur" src='media/technische_architectuur_LDV.png'/>
 	<figcaption>Technische Architectuur</figcaption>
 </figure>
 
