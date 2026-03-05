@@ -44,8 +44,11 @@ Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking
 
 ![Bedrijfsobjectenmodel](./media/metadatamodel.png)
 
-*[Figuur 2, Bron: GDI – Gegevensuitwisseling]*
-
+<figure id='GDI-Gegevensuitwisseling'>
+	<img alt="GDI-Gegevensuitwisseling" src='media/metamodel.png' width="600" />
+	<figcaption>GDI-Gegevensuitwisseling</figcaption>
+ </figure>
+ 
 Onderstaand figuur geeft een overzicht van de architectuurprincipes uit het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) en hun relatie met de belangrijkste functie voor data uitwisseling.
 
 ![architectuurprincipes ](./media/architectuurprincipes.png)
@@ -60,7 +63,6 @@ De standaard Logboek dataverwerkingen kan ook worden toegepast in een middleware
 
 ![technische architectuur](./media/technische_architectuur_LDV.png)
 *[Figuur 4]*
-
 
 Ook voor mobiele Apps en IoT (Internet of Things) geldt dat het netwerkcomponent de databerichten logt.
 
