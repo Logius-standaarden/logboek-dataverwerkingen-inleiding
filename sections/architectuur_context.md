@@ -42,8 +42,6 @@ Onderstaande stelselplaat geeft een globaal overzicht van de bronhouders, de aan
 
 Een belangrijk kader voor de standaard Logboek dataverwerkingen is de uitwerking van het [GDI meerjarenvisie](https://github.com/minbzk/gdi-gegevensuitwisseling) op basis van de [Architectuur Digitale Overheid 2030](https://www.digitaleoverheid.nl/nieuws/architectuur-digitale-overheid-2030-vastgesteld-2/) met als specifiek onderwerp Gegevensuitwisseling. De standaard Logboek dataverwerking kan gepositioneerd worden in de GDI Gegevensuitwisseling als standaard waarin een 'Uitwisselingsafspraak' geformaliseerd wordt. Waarbij de daadwerkelijke logging betrekking heeft op de 'Operatie' in de modelplaat [GDI-Gegevensuitwisseling](https://minbzk.github.io/gdi-gegevensuitwisseling/?view=id-efc531031d114860a309f6eeacdad289).
 
-![Bedrijfsobjectenmodel](./media/metadatamodel.png)
-
 <figure id='GDI-Gegevensuitwisseling'>
 	<img alt="GDI-Gegevensuitwisseling" src='media/metamodel.png' width="600" />
 	<figcaption>GDI-Gegevensuitwisseling</figcaption>
