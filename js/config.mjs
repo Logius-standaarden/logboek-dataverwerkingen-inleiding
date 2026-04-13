@@ -4,11 +4,11 @@ loadRespecWithConfiguration({
   useLogo: true,
   useLabel: true,
   maxTocLevel: 2,
-  specStatus: "VV",
+  specStatus: "def",
   specType: "PR",
   pubDomain: "logboek",
   shortName: "inleiding",
-  publishDate: "2026-02-11",
+  publishDate: "2026-04-09",
   publishVersion: "1.0.0",
   prevVersion: [],
 
