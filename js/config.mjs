@@ -16,7 +16,7 @@ loadRespecWithConfiguration({
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
 
-  editors:
+  authors:
     [
       {
         name: "Vedran Bilanovic",
@@ -28,28 +28,28 @@ loadRespecWithConfiguration({
         company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
         companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       },
-    ],
-  authors:
-    [
-      {
-        name: "Nil Barua",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
-      {
-        name: "Martin van der Plas",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
-      {
-        name: "Tim van der Lippe",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
       {
         name: "Jeroen Mulder",
         company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
         companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      },
+    ],
+  editors:
+    [
+      {
+        name: "Nil Barua",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
+      },
+      {
+        name: "Martin van der Plas",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
+      },
+      {
+        name: "Tim van der Lippe",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
       },
     ],
 
