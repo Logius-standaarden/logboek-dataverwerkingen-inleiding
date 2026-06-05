@@ -42,7 +42,7 @@ Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `pro
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding4.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register en meerdere organisaties</figcaption>
+	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register bij meerdere organisaties</figcaption>
 </figure>
 
 
