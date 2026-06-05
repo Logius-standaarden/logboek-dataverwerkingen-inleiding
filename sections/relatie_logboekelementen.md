@@ -36,23 +36,13 @@ In het geval er een Dataverwerking plaatsvindt ter ondersteuning van een andere 
 	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register</figcaption>
 </figure>
 
-
-De subOperation heeft nu een eigen `processing_activity_id` gekregen, maar het is nog niet duidelijk aan welke hoofdprocessingActivityId deze gekoppeld is. Om dit op te lossen, wordt ook een 'parentProcessingActivityId' geregistreerd.
-
-Bij de subOperation wordt in dit geval naast de `processing_activity_id` ook een parentProcessingActivityId geregistreerd. De waarde van deze parentProcessingActivityId is gelijk aan de waarde van het hoofdProcessingActivityId.
-
-<figure>
-	<img src='media/relatie_logboekelementen_afbeelding3.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent_processing_activity_id</figcaption>
-</figure>
-
 Bij een Dataverwerking kan het zijn dat data moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation.
 
 Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `processing_activity_id` van de gegevensverstrekkende organisatie geregistreerd. Er is dus GEEN rechtstreekse koppeling tussen het Register van de aanvragende en het Register van de verstrekkende organisatie.
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding4.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register met parent_processing_activity_id en meerdere organisaties</figcaption>
+	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register bij meerdere organisaties</figcaption>
 </figure>
 
 
@@ -137,13 +127,13 @@ In de gemeenteapplicatie worden de volgende Operations uitgevoerd die een relati
 
 * **Wijzig kenteken**: het wijzigen van het kenteken valt ook onder de processingActivity **Parkeervergunningadministratie** voeren. Hierdoor is het `processing_activity_id` hetzelfde als die van de Operation **Toon alle vergunningen**.
 
-* **Controleer tenaamstelling:** deze Operation zorgt voor de aanvraag van data richting het RDW en controle van de terugontvangen data. Deze Operation is een subOperation van **Wijzig kenteken** en krijgt een processingActivity wat hoort bij de processingActivity in het Register genaamd **Tenaamstelling controleren**. De processingActivity is op zijn beurt weer een subprocessingActivity van **Parkeeradministratie voeren**. Om deze relatie te leggen, moet ook een parentProcessingActivityId worden geregistreerd. De waarde hiervan is gelijk aan de waarde van het `processing_activity_id` van **Parkeervergunningadministratie voeren**.
+* **Controleer tenaamstelling:** deze Operation zorgt voor de aanvraag van data richting het RDW en controle van de terugontvangen data. Deze Operation is een subOperation van **Wijzig kenteken** en krijgt een processingActivity wat hoort bij de processingActivity in het Register genaamd **Tenaamstelling controleren**. De processingActivity is op zijn beurt weer een subprocessingActivity van **Parkeeradministratie voeren**.
 
 In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie ook geregistreerd. De Operation **Verstrek houdergegevens** is gerelateerd aan de processingActivity **Kentekenhoudergegevens verstrekken**. Merk op dat er hier dus GEEN directe relatie is tussen het Register van Verwerkingsactiviteiten van de gemeente en die van het RDW.
 
 <figure>
 	<img src='media/relatie_logboekelementen_afbeelding11.svg'/>
-	<figcaption>Afbeelding voorbeeld processing_activity_id en parent_processing_activity_id bij Gemeente en RDW</figcaption>
+	<figcaption>Afbeelding voorbeeld processing_activity_id bij Gemeente en RDW</figcaption>
 </figure>
 
 
