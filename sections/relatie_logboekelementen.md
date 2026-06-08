@@ -25,15 +25,15 @@ Bij elke Dataverwerking wordt door het Logboek een relatie gelegd met het Regist
 Als er meerdere dezelfde Dataverwerkingen ('Operations') zijn, krijgen deze dus allemaal dezelfde `processing_activity_id`.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding1.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding1.svg' alt="Relatie tussen processing_activity_id en register van verwerkingsactiviteiten" />
+  <figcaption>Afbeelding relaties processing_activity_id</figcaption>
 </figure>
 
 In het geval er een Dataverwerking plaatsvindt ter ondersteuning van een andere Dataverwerking (suboperation), dan kan deze ondersteunende Dataverwerking een eigen `processing_activity_id` krijgen. Deze kan anders zijn dan het `processing_activity_id` van de 'hoofdprocessingActivity'.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding2.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding2.svg' alt="Relatie tussen processing_activity_id en register van verwerkingsactiviteiten met een suboperatie" />
+  <figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register</figcaption>
 </figure>
 
 Bij een Dataverwerking kan het zijn dat data moeten worden opgevraagd bij een andere organisatie. Deze organisatie heeft zelf ook een Register van Verwerkingsactiviteiten. In dit Register staat beschreven dat een specifieke organisatie specifieke gegevens mag opvragen als aparte operation.
@@ -41,10 +41,9 @@ Bij een Dataverwerking kan het zijn dat data moeten worden opgevraagd bij een an
 Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `processing_activity_id` van de gegevensverstrekkende organisatie geregistreerd. Er is dus GEEN rechtstreekse koppeling tussen het Register van de aanvragende en het Register van de verstrekkende organisatie.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding4.svg'/>
-	<figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register bij meerdere organisaties</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding4.svg' alt="Relatie tussen processing_activity_id en register van verwerkingsactiviteiten met meerdere organisaties" />
+  <figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register bij meerdere organisaties</figcaption>
 </figure>
-
 
 ## trace_id als grootste gemene deler
 
@@ -53,24 +52,23 @@ Operations kunnen bestaan uit meerdere (sub)Operations binnen de eigen organisat
 Het `trace_id` is als het ware de 'lijm' tussen alle  (sub)Operations. Als er nog geen `trace_id` bekend is, wordt deze automatisch gegenereerd voor de eerste Operation.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding5.svg'/>
-	<figcaption>Afbeelding trace_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding5.svg' alt="Eerste operatie genereert trace_id" />
+  <figcaption>Afbeelding trace_id</figcaption>
 </figure>
-
 
 Alle bij elkaar horende (sub)Operations, krijgen vervolgens dezelfde `trace_id`-waarde.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding6.svg'/>
-	<figcaption>Afbeelding relaties trace_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding6.svg' alt="Alle operaties hebben dezelfde trace_id" />
+  <figcaption>Afbeelding relaties trace_id</figcaption>
 </figure>
 
 In het geval dat er data wordt opgevraagd aan een andere organisatie, geeft de vragende organisatie de `trace_id` door aan de verstrekkende organisatie.
 De `trace_id` is identiek bij beide organisaties, waardoor er een relatie te leggen is tussen de verwerkingen van de vragende en de verstrekkende organisatie.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding7.svg'/>
-	<figcaption>Afbeelding relaties trace_id en meerdere organisaties</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding7.svg' alt="Alle operaties van meerdere organisaties hebben dezelfde trace_id" />
+  <figcaption>Afbeelding relaties trace_id en meerdere organisaties</figcaption>
 </figure>
 
 ## Relatie tussen (sub)Operations
@@ -78,16 +76,15 @@ De `trace_id` is identiek bij beide organisaties, waardoor er een relatie te leg
 Elke (sub)Operation krijgt een eigen, unieke `span_id`. Hiermee zijn alle loggings altijd uniek traceerbeer. Ook subOperations krijgen een eigen, unieke `span_id`.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding8.svg'/>
-	<figcaption>Afbeelding span_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding8.svg' alt="Alle operaties hebben een unieke span_id" />
+  <figcaption>Afbeelding span_id</figcaption>
 </figure>
-
 
 Als er ook subOperations plaatsvinden, moet er ook een `parent_span_id` worden geregistreerd om de koppeling met de hoofdOperation te realiseren.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding9.svg'/>
-	<figcaption>Afbeelding span_id en parent_span_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding9.svg' alt="Een suboperatie heeft een parent_span_id die de span_id van de hoofdoperatie heeft" />
+  <figcaption>Afbeelding span_id en parent_span_id</figcaption>
 </figure>
 
 In het geval er data nodig is van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke `span_id`.
@@ -95,10 +92,9 @@ In het geval er data nodig is van een andere organisatie, krijgt de Operation va
 Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke `span_id` wordt het `foreign_operation._span_id` genoemd en krijgt de waarde gelijk aan het `span_id` van de initiërende Operation van de vragende organisatie.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding10.svg'/>
-	<figcaption>Afbeelding span_id, parent_span_id en foreign_span_id</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding10.svg' alt="Een suboperatie heeft een parent_span_id die de span_id van de hoofdoperatie heeft, ook bij meerdere organisaties" />
+  <figcaption>Afbeelding span_id, parent_span_id en foreign_span_id</figcaption>
 </figure>
-
 
 ## Voorbeeld van een traceringsconstructie
 
@@ -132,10 +128,9 @@ In de gemeenteapplicatie worden de volgende Operations uitgevoerd die een relati
 In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie ook geregistreerd. De Operation **Verstrek houdergegevens** is gerelateerd aan de processingActivity **Kentekenhoudergegevens verstrekken**. Merk op dat er hier dus GEEN directe relatie is tussen het Register van Verwerkingsactiviteiten van de gemeente en die van het RDW.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding11.svg'/>
-	<figcaption>Afbeelding voorbeeld processing_activity_id bij Gemeente en RDW</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding11.svg' alt="Voorbeeldsituatie gemeente en RDW met processing_activity_id" />
+  <figcaption>Afbeelding voorbeeld processing_activity_id bij Gemeente en RDW</figcaption>
 </figure>
-
 
 ### trace_id
 
@@ -144,8 +139,8 @@ In de RDW-applicatie wordt het verstrekken van data aan de gemeenteapplicatie oo
 * Om het geheel te koppelen over de organisaties heen, wordt bij het RDW ook een `trace_id` opgeslagen, de waarde hier van is gelijk aan de waarde van de `trace_id` van de Operation **Controleer tenaamstelling**.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding12.svg'/>
-	<figcaption>Afbeelding trace_id bij Gemeente en RDW</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding12.svg' alt="Voorbeeldsituatie gemeente en RDW met trace_id" />
+  <figcaption>Afbeelding trace_id bij Gemeente en RDW</figcaption>
 </figure>
 
 ### span_id
@@ -157,8 +152,8 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 * Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een `foreign_operation.span_id` moeten worden vastgelegd. De waarde van deze `foreign_operation.span_id` is gelijk aan de waarde van de `span_id` van de gemeente-Operation **Controleer tenaamstelling**.
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding13.svg'/>
-	<figcaption>Afbeelding voorbeeld span_id, parent_span_id en foreign_span_id bij Gemeente en RDW</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding13.svg' alt="Voorbeeldsituatie gemeente en RDW met span_id en parent_span_id" />
+  <figcaption>Afbeelding voorbeeld span_id, parent_span_id en foreign_span_id bij Gemeente en RDW</figcaption>
 </figure>
 
 ### Totaalbeeld
@@ -166,8 +161,8 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 Als alle relaties gelegd zijn, ziet de traceringsconstructie er als volgt uit:
 
 <figure>
-	<img src='media/relatie_logboekelementen_afbeelding14.svg'/>
-	<figcaption>Afbeelding Voorbeeld met alle span, trace en processing elementen</figcaption>
+  <img src='media/relatie_logboekelementen_afbeelding14.svg' alt="Volledige plaat met alle identifiers en relaties tussen componenten" />
+  <figcaption>Afbeelding Voorbeeld met alle span, trace en processing elementen</figcaption>
 </figure>
 
 Meer gedetailleerde voorbeelden staan beschreven op [developer.overheid.nl](https://developer.overheid.nl/kennisbank/data/standaarden/logboek-dataverwerkingen/voorbeelden).
