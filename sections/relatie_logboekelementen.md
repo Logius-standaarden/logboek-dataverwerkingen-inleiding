@@ -93,7 +93,7 @@ Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzo
 
 <figure>
   <img src='media/relatie_logboekelementen_afbeelding10.svg' alt="Een suboperatie heeft een parent_span_id die de span_id van de hoofdoperatie heeft, ook bij meerdere organisaties" />
-  <figcaption>Afbeelding span_id, parent_span_id en foreign_span_id</figcaption>
+  <figcaption>Afbeelding span_id en parent_span_id</figcaption>
 </figure>
 
 ## Voorbeeld van een traceringsconstructie
@@ -153,7 +153,7 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 
 <figure>
   <img src='media/relatie_logboekelementen_afbeelding13.svg' alt="Voorbeeldsituatie gemeente en RDW met span_id en parent_span_id" />
-  <figcaption>Afbeelding voorbeeld span_id, parent_span_id en foreign_span_id bij Gemeente en RDW</figcaption>
+  <figcaption>Afbeelding voorbeeld span_id en parent_span_id bij Gemeente en RDW</figcaption>
 </figure>
 
 ### Totaalbeeld
