@@ -89,7 +89,7 @@ Als er ook subOperations plaatsvinden, moet er ook een `parent_span_id` worden g
 
 In het geval er data nodig is van een andere organisatie, krijgt de Operation van de verstrekkende organisatie ook een eigen, unieke `span_id`.
 
-Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke `span_id` wordt het `foreign_operation._span_id` genoemd en krijgt de waarde gelijk aan het `span_id` van de initiërende Operation van de vragende organisatie.
+Daarnaast wordt bij deze Operation ook het `span_id` geregistreerd die het verzoek voor informatie geïnitieerd heeft (vanuit de vragende organisatie). Deze specifieke `span_id` wordt het `parent_span_id` genoemd en krijgt de waarde gelijk aan het `span_id` van de initiërende Operation van de vragende organisatie.
 
 <figure>
   <img src='media/relatie_logboekelementen_afbeelding10.svg' alt="Een suboperatie heeft een parent_span_id die de span_id van de hoofdoperatie heeft, ook bij meerdere organisaties" />
@@ -149,7 +149,7 @@ In de gemeente-applicatie krijgt elke (sub)Operation een eigen, unieke `span_id`
 
 * De (sub)Operation **Controleer tenaamstelling** krijgt daarnaast ook nog een `parent_span_id` met de waarde van `span_id` van de **Operation Wijzig** kenteken om een relatie te leggen.
 * Ook de RDW-Operation **Verstrek houdergegevens** krijgt een eigen unieke `span_id`.
-* Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een `foreign_operation.span_id` moeten worden vastgelegd. De waarde van deze `foreign_operation.span_id` is gelijk aan de waarde van de `span_id` van de gemeente-Operation **Controleer tenaamstelling**.
+* Om de relatie over de organisaties heen te leggen, wordt er bij de RDW-Operation **Verstrek houdergegevens** ook een `parent_span_id` moeten worden vastgelegd. De waarde van deze `parent_span_id` is gelijk aan de waarde van de `span_id` van de gemeente-Operation **Controleer tenaamstelling**.
 
 <figure>
   <img src='media/relatie_logboekelementen_afbeelding13.svg' alt="Voorbeeldsituatie gemeente en RDW met span_id en parent_span_id" />
