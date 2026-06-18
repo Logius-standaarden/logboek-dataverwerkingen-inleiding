@@ -8,10 +8,8 @@ loadRespecWithConfiguration({
   specType: "PR",
   pubDomain: "logboek",
   shortName: "inleiding",
-  publishDate: "2024-10-23",
-  publishVersion: "0.1.0",
-  // TODO: verwijder voor publicatie
-  latestVersion: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
+  publishDate: "2026-04-09",
+  publishVersion: "1.0.0",
   prevVersion: [],
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
