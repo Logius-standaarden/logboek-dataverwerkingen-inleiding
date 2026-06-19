@@ -4,13 +4,14 @@ loadRespecWithConfiguration({
   useLogo: true,
   useLabel: true,
   maxTocLevel: 2,
-  specStatus: "WV",
+  specStatus: "DEF",
   specType: "PR",
   pubDomain: "logboek",
   shortName: "inleiding",
-  publishDate: "2026-04-09",
-  publishVersion: "1.0.0",
-  prevVersion: [],
+  publishDate: "2026-06-19",
+  publishVersion: "1.0.1",
+  previousPublishDate: "2026-04-09",
+  previousPublishVersion: "1.0.0",
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
 
