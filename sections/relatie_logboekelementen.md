@@ -41,7 +41,7 @@ Bij een Dataverwerking kan het zijn dat data moeten worden opgevraagd bij een an
 Bij het verstrekken van deze data aan de aanvragende organisatie, wordt het `processing_activity_id` van de gegevensverstrekkende organisatie geregistreerd. Er is dus GEEN rechtstreekse koppeling tussen het Register van de aanvragende en het Register van de verstrekkende organisatie.
 
 <figure>
-  <img src='media/relatie_logboekelementen_afbeelding4.svg' alt="Relatie tussen processing_activity_id en register van verwerkingsactiviteiten met meerdere organisaties" />
+  <img src='media/test_diagram.svg' alt="Relatie tussen processing_activity_id en register van verwerkingsactiviteiten met meerdere organisaties" />
   <figcaption>Afbeelding relaties processing_activity_id tussen Logboek en Register bij meerdere organisaties</figcaption>
 </figure>
 
