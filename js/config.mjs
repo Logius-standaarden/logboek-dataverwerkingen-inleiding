@@ -4,17 +4,18 @@ loadRespecWithConfiguration({
   useLogo: true,
   useLabel: true,
   maxTocLevel: 2,
-  specStatus: "def",
+  specStatus: "DEF",
   specType: "PR",
   pubDomain: "logboek",
   shortName: "inleiding",
-  publishDate: "2026-04-09",
-  publishVersion: "1.0.0",
-  prevVersion: [],
+  publishDate: "2026-06-19",
+  publishVersion: "1.0.1",
+  previousPublishDate: "2026-04-09",
+  previousPublishVersion: "1.0.0",
 
   edDraftURI: "https://logius-standaarden.github.io/logboek-dataverwerkingen-inleiding/",
 
-  editors:
+  authors:
     [
       {
         name: "Vedran Bilanovic",
@@ -26,28 +27,28 @@ loadRespecWithConfiguration({
         company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
         companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       },
-    ],
-  authors:
-    [
-      {
-        name: "Nil Barua",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
-      {
-        name: "Martin van der Plas",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
-      {
-        name: "Tim van der Lippe",
-        company: "Logius",
-        companyURL: "https://logius.nl",
-      },
       {
         name: "Jeroen Mulder",
         company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
         companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      },
+    ],
+  editors:
+    [
+      {
+        name: "Nil Barua",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
+      },
+      {
+        name: "Martin van der Plas",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
+      },
+      {
+        name: "Tim van der Lippe",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
       },
     ],
 
