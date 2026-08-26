@@ -9,6 +9,9 @@ Wat nu als alle Logregels zonder relaties worden opgeslagen? Bij een rapportage 
 
 Om er zeker van te zijn dat de relatie tussen Logregels gelegd kan worden, moeten de volgende data worden geregistreerd per Logregel:
 
+<p class="note">In het Engels gebruiken we "Data Processing Operation" als vertaling van Logregel.
+Dit wordt soms afgekort to "Operation" voor de leesbaarheid.
+
 * `processing_activity_id`: elke dataverwerking die een organisatie doet, moet bekend zijn in het Register van Verwerkingsactiviteiten. Het processingActivity legt de relatie tussen de dataverwerking door een applicatie, en de activiteit gedefinieerd in het Register. [Relatie tot NORA: Proces](https://www.noraonline.nl/wiki/Begrip:Id-bc58894b-84e5-667f-2712-361886ef4ae4)
 
 * `trace_id`: alle logregels die voor een specifieke dataverwerking bij elkaar horen, krijgen een `trace_id`. De `trace_id`-waarde voor alle Logregels die bij elkaar horen is hetzelfde. [Relatie tot NORA: Ketenproces](https://www.noraonline.nl/wiki/Begrip:Id-43600865-1743-4008-0865-174360086526)
